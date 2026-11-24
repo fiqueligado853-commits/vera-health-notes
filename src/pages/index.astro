@@ -1,16 +1,396 @@
+
 ---
+const categories = [
+  {
+    number: "01",
+    title: "Everyday Wellness",
+    description: "Practical ideas for making informed choices about your everyday well-being.",
+    label: "LIFESTYLE",
+  },
+  {
+    number: "02",
+    title: "Nutrition & Ingredients",
+    description: "A closer look at ingredients, nutrition questions, and what product labels actually say.",
+    label: "NUTRITION",
+  },
+  {
+    number: "03",
+    title: "Healthy Aging",
+    description: "Explore everyday habits, changing needs, and wellness topics across different life stages.",
+    label: "LONGEVITY",
+  },
+  {
+    number: "04",
+    title: "Product Research",
+    description: "Understand product claims, ingredient lists, purchasing considerations, and common questions.",
+    label: "RESEARCH",
+  },
+];
+
+const steps = [
+  {
+    number: "01",
+    title: "Ask better questions",
+    description: "Start with the details that matter instead of relying on bold marketing promises.",
+  },
+  {
+    number: "02",
+    title: "Look at the evidence",
+    description: "Consider what is known, what remains uncertain, and where reliable sources can help.",
+  },
+  {
+    number: "03",
+    title: "Make your own decision",
+    description: "Use clear information to decide what fits your needs, preferences, and circumstances.",
+  },
+];
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Vera Health Notes</title>
-	</head>
-	<body>
-		<h1>Vera Health Notes</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vera Health Notes is an independent editorial destination exploring everyday wellness, nutrition, healthy aging, and informed product decisions."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f8f7f3" />
+    <link rel="canonical" href="https://vera-health-notes.pages.dev/" />
+    <title>Vera Health Notes | Clearer Perspectives on Everyday Wellness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="announcement">
+      Independent perspectives for more informed wellness decisions.
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="brand" aria-label="Vera Health Notes home">
+          <span class="brand-icon">V<span class="brand-dot">.</span></span>
+          <span class="brand-text">VERA <span>HEALTH NOTES</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#explore">Explore Topics</a>
+          <a href="#approach">Our Approach</a>
+          <a href="#about">About Us</a>
+        </nav>
+
+        <a class="header-link" href="#explore">
+          Start Exploring <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span>
+              AN EDITORIAL WELLNESS JOURNAL
+            </div>
+
+            <h1>
+              Wellness is personal.
+              <em>Clarity matters.</em>
+            </h1>
+
+            <p class="hero-description">
+              Navigating wellness shouldn't mean sorting through endless
+              promises. We explore the questions behind everyday health,
+              nutrition, and wellness products — with curiosity, context,
+              and a commitment to clearer information.
+            </p>
+
+            <a href="#explore" class="primary-button">
+              Explore Our Topics <span aria-hidden="true">↗</span>
+            </a>
+
+            <p class="hero-footnote">
+              Thoughtful questions. Useful context. Independent decisions.
+            </p>
+          </div>
+
+          <div class="hero-art" aria-label="Decorative editorial illustration">
+            <div class="art-circle circle-one"></div>
+            <div class="art-circle circle-two"></div>
+            <div class="art-surface">
+              <div class="art-small-label">A NOTE ON WELLNESS</div>
+              <div class="art-quotation">"Good questions lead to better decisions."</div>
+              <div class="art-rule"></div>
+              <div class="art-footer">VERA / EST. 2026</div>
+            </div>
+            <div class="art-marker">V.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-strip">
+        <div class="container strip-inner">
+          <span>THE VERA PERSPECTIVE</span>
+          <p>Less noise. More understanding. Better questions.</p>
+          <span class="strip-star" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="topics section" id="explore">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">
+                <span class="eyebrow-line"></span>
+                AREAS OF EXPLORATION
+              </div>
+              <h2>Wellness, from<br /><em>every angle.</em></h2>
+            </div>
+            <p>
+              Different questions deserve thoughtful answers. Our editorial
+              coverage is being developed around the topics people research,
+              discuss, and consider in everyday life.
+            </p>
+          </div>
+
+          <div class="category-grid">
+            {categories.map((category) => (
+              <article class="category-card">
+                <div class="card-top">
+                  <span>{category.number} / {category.label}</span>
+                  <span aria-hidden="true">↗</span>
+                </div>
+                <div class="card-bottom">
+                  <h3>{category.title}</h3>
+                  <p>{category.description}</p>
+                  <span class="coming-soon">Editorial coverage in development</span>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="manifesto" id="approach">
+        <div class="container manifesto-grid">
+          <div>
+            <div class="eyebrow light-eyebrow">
+              <span class="eyebrow-line"></span>
+              HOW WE THINK
+            </div>
+            <h2>Curiosity first.<br /><em>Hype last.</em></h2>
+          </div>
+          <div class="manifesto-content">
+            <p>
+              There is no shortage of wellness advice. What's harder to find
+              is perspective that acknowledges complexity, asks useful
+              questions, and recognizes the difference between a claim
+              and the evidence supporting it.
+            </p>
+            <p>
+              Vera Health Notes is being built as a place to explore those
+              questions without pretending that every answer is simple.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="method section">
+        <div class="container">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            OUR EDITORIAL PHILOSOPHY
+          </div>
+          <h2>A more thoughtful <em>way to explore.</em></h2>
+          <div class="steps-grid">
+            {steps.map((step) => (
+              <div class="step">
+                <div class="step-number">{step.number}</div>
+                <h3>{step.title}</h3>
+                <p>{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-inner">
+          <div>
+            <span class="eyebrow">A DIFFERENT KIND OF WELLNESS CONVERSATION</span>
+            <h2>Welcome to <em>Vera.</em></h2>
+            <p>
+              Vera Health Notes is an emerging independent editorial project
+              focused on making wellness information easier to explore and
+              understand. Our article library is currently in development.
+            </p>
+            <p>
+              Our goal is to help readers evaluate information thoughtfully,
+              not replace professional medical guidance or make personal
+              health decisions for them.
+            </p>
+          </div>
+          <div class="about-monogram" aria-hidden="true">V.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <div class="footer-brand">VERA <span>HEALTH NOTES</span></div>
+            <p>Clearer perspectives on everyday wellness.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#explore">Topics</a>
+            <a href="#approach">Our Approach</a>
+            <a href="#about">About</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© {new Date().getFullYear()} Vera Health Notes. All rights reserved.</p>
+          <p>
+            For informational purposes only. This website does not provide
+            medical advice, diagnosis, or treatment.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
+
+<style>
+  :global(*) { box-sizing: border-box; }
+  :global(html) { scroll-behavior: smooth; }
+  :global(body) {
+    margin: 0;
+    background: #f8f7f3;
+    color: #222d28;
+    font-family: "DM Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  :global(a) { color: inherit; text-decoration: none; }
+  :global(em) { font-weight: 400; }
+  .container { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
+  .announcement {
+    background: #203a30; color: #e7e9de;
+    padding: 10px 20px; text-align: center;
+    font-size: 11px; letter-spacing: .07em;
+  }
+  .site-header { background: #f8f7f3; border-bottom: 1px solid #e8e7e1; }
+  .header-inner { min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-icon { font: 42px "DM Serif Display", Georgia, serif; line-height: 1; }
+  .brand-dot { color: #a87f50; }
+  .brand-text { font-weight: 700; letter-spacing: .13em; font-size: 14px; white-space: nowrap; }
+  .brand-text span { font-weight: 400; }
+  .desktop-nav { display: flex; gap: 32px; font-size: 12px; font-weight: 600; }
+  .desktop-nav a:hover, .footer-links a:hover { color: #ae8154; }
+  .header-link { font-size: 12px; font-weight: 700; border-bottom: 1px solid #34463a; padding-bottom: 5px; white-space: nowrap; }
+  .header-link span { margin-left: 8px; }
+  .hero { overflow: hidden; }
+  .hero-grid { min-height: 620px; display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 75px; padding: 76px 0 90px; }
+  .eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .22em; display: flex; align-items: center; gap: 12px; }
+  .eyebrow-line { display: inline-block; height: 1px; width: 27px; background: #ba925f; }
+  h1,h2,h3,p { margin-top: 0; }
+  h1,h2,.art-quotation { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; }
+  h1 { font-size: clamp(55px, 5.7vw, 87px); line-height: 1.07; letter-spacing: -.035em; margin: 30px 0; }
+  h1 em,h2 em { display: block; color: #9d7855; }
+  .hero-description { font-size: 15px; line-height: 1.95; color: #5f6760; max-width: 475px; }
+  .primary-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 50px; margin-top: 23px; padding: 18px 24px; background: #243c32; color: white; font-size: 12px; font-weight: 700; }
+  .primary-button:hover { background: #385747; }
+  .hero-footnote { font-size: 10px; letter-spacing: .04em; color: #8c9089; margin: 27px 0 0; }
+  .hero-art { height: 460px; background: #e2e8de; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .art-circle { position: absolute; border: 1px solid #c1cec1; border-radius: 50%; width: 420px; height: 420px; }
+  .circle-one { transform: translate(115px,-105px); }
+  .circle-two { transform: translate(-115px,115px); }
+  .art-surface { position: relative; background: #f5f1e8; width: 72%; min-height: 300px; padding: 35px; box-shadow: 18px 22px 45px #344c3920; transform: rotate(-5deg); display: flex; flex-direction: column; }
+  .art-small-label,.art-footer { font-size: 9px; letter-spacing: .2em; font-weight: 700; }
+  .art-quotation { font-size: clamp(30px,3vw,42px); line-height: 1.15; margin: auto 0; }
+  .art-rule { height: 1px; background: #c9c2b5; margin-bottom: 20px; }
+  .art-marker { position: absolute; right: 22px; bottom: 10px; font: 80px "DM Serif Display", Georgia, serif; color: #ffffff75; }
+  .intro-strip { border-top: 1px solid #e9e6dc; border-bottom: 1px solid #e9e6dc; }
+  .strip-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 0; }
+  .strip-inner span { font-size: 10px; font-weight: 700; letter-spacing: .15em; }
+  .strip-inner p { margin: 0; font: italic 21px "DM Serif Display", Georgia, serif; }
+  .strip-star { font-size: 25px !important; color: #a87f50; }
+  .section { padding: 105px 0; }
+  .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 70px; margin-bottom: 45px; }
+  h2 { font-size: clamp(40px,4vw,60px); letter-spacing: -.025em; line-height: 1.13; margin: 22px 0 0; }
+  .section-heading > p { max-width: 365px; font-size: 13px; line-height: 1.9; color: #6c756d; margin: 0 0 6px; }
+  .category-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 14px; }
+  .category-card { min-height: 330px; border: 1px solid #e3e4db; background: #fdfcf9; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; transition: transform .2s,border-color .2s; }
+  .category-card:hover { transform: translateY(-4px); border-color: #bdac95; }
+  .card-top { display: flex; justify-content: space-between; font-size: 10px; font-weight: 700; letter-spacing: .07em; color: #9a8369; }
+  .card-top span:last-child { font-size: 19px; }
+  h3 { font: 27px "DM Serif Display", Georgia, serif; line-height: 1.18; }
+  .card-bottom p { font-size: 12px; line-height: 1.8; color: #69726a; }
+  .coming-soon { font-size: 10px; color: #977956; border-top: 1px solid #e9e7df; padding-top: 13px; display: block; margin-top: 22px; }
+  .manifesto { background: #243d32; color: #f7f5ef; padding: 96px 0; }
+  .manifesto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; }
+  .light-eyebrow { color: #c9d5c8; }
+  .manifesto h2 em { color: #d9b996; }
+  .manifesto-content { padding-top: 26px; }
+  .manifesto-content p { font-size: 15px; line-height: 2.05; color: #d2dbd3; }
+  .method h2 em { display: inline; }
+  .steps-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 35px; margin-top: 55px; }
+  .step { border-top: 1px solid #b5bdb2; padding-top: 25px; }
+  .step-number { font-size: 12px; font-weight: 700; color: #a08261; margin-bottom: 37px; }
+  .step h3 { margin-bottom: 17px; }
+  .step p { color: #667168; font-size: 13px; line-height: 1.95; max-width: 310px; }
+  .about { background: #eeeae1; padding: 94px 0; }
+  .about-inner { display: grid; grid-template-columns: 1.3fr .7fr; align-items: center; gap: 70px; }
+  .about h2 { margin: 20px 0; }
+  .about h2 em { display: inline; }
+  .about p { max-width: 650px; font-size: 14px; line-height: 1.95; color: #586359; }
+  .about-monogram { text-align: center; font: 230px "DM Serif Display", Georgia, serif; color: #b7bead; }
+  .site-footer { background: #172920; color: #f4f2e9; padding: 70px 0 25px; }
+  .footer-top { display: flex; justify-content: space-between; gap: 30px; padding-bottom: 65px; }
+  .footer-brand { font-size: 19px; font-weight: 700; letter-spacing: .13em; }
+  .footer-brand span { font-weight: 400; }
+  .footer-top p { font-size: 12px; color: #b4c2b7; margin-top: 13px; }
+  .footer-links { display: flex; gap: 26px; font-size: 12px; }
+  .footer-bottom { border-top: 1px solid #405347; padding-top: 23px; display: flex; justify-content: space-between; gap: 30px; }
+  .footer-bottom p { color: #aebbb0; font-size: 10px; line-height: 1.6; max-width: 430px; }
+
+  @media (max-width: 850px) {
+    .desktop-nav { display: none; }
+    .hero-grid { grid-template-columns: 1fr; gap: 45px; padding: 65px 0; }
+    .hero-art { height: 360px; }
+    .section-heading { display: block; }
+    .section-heading > p { margin-top: 24px; }
+    .category-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .manifesto-grid { grid-template-columns: 1fr; gap: 20px; }
+    .about-inner { grid-template-columns: 1fr; }
+    .about-monogram { display: none; }
+  }
+  @media (max-width: 560px) {
+    .container { width: min(100% - 32px, 1160px); }
+    .header-inner { min-height: 74px; }
+    .brand-text { font-size: 11px; }
+    .brand-icon { font-size: 35px; }
+    .header-link { font-size: 10px; }
+    .hero-grid { padding: 55px 0; }
+    h1 { font-size: 54px; }
+    .hero-art { height: 305px; }
+    .art-surface { min-height: 245px; padding: 25px; }
+    .art-quotation { font-size: 30px; }
+    .strip-inner { flex-direction: column; text-align: center; }
+    .section { padding: 72px 0; }
+    .category-grid { grid-template-columns: 1fr; }
+    .category-card { min-height: 250px; }
+    .steps-grid { grid-template-columns: 1fr; gap: 32px; }
+    .step-number { margin-bottom: 22px; }
+    .manifesto,.about { padding: 70px 0; }
+    .footer-top,.footer-bottom { flex-direction: column; }
+    .footer-links { flex-wrap: wrap; }
+  }
+</style>
