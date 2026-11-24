@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/EditorialLayout.astro";
+import { topics } from "../../data/topics.js";
+---
+<Layout title="Explore Topics" description="Explore the wellness topics covered by Vera Health Notes.">
+  <div class="eyebrow">Explore our coverage</div>
+  <h1>Wellness, from every angle.</h1>
+  <p class="lead">Explore the questions, ideas, and information shaping everyday wellness decisions.</p>
+  <div class="topic-grid">
+    {topics.map(topic => (
+      <a class="topic-link" href={`/topics/${topic.slug}/`}>
+        <span>{topic.eyebrow.toUpperCase()}</span>
+        <h2>{topic.title}</h2>
+        <p>{topic.description}</p>
+        <strong>Explore topic ↗</strong>
+      </a>
+    ))}
+  </div>
+</Layout>

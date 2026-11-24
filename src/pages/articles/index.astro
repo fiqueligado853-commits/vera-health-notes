@@ -1,0 +1,23 @@
+---
+import Layout from "../../layouts/EditorialLayout.astro";
+import { articles } from "../../data/articles.js";
+---
+<Layout title="Articles" description="Editorial wellness articles from Vera Health Notes.">
+  <div class="eyebrow">The journal</div>
+  <h1>Wellness notes & research.</h1>
+  <p class="lead">Thoughtful articles developed around real questions and carefully reviewed sources.</p>
+  {articles.length === 0 ? (
+    <div class="notice">Our article library is currently in development. No articles have been published yet.</div>
+  ) : (
+    <div class="topic-grid">
+      {articles.map(article => (
+        <a class="topic-link" href={`/articles/${article.slug}/`}>
+          <span>{article.date}</span>
+          <h2>{article.title}</h2>
+          <p>{article.description}</p>
+          <strong>Read article ↗</strong>
+        </a>
+      ))}
+    </div>
+  )}
+</Layout>

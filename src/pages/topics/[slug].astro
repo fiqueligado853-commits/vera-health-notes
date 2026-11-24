@@ -1,0 +1,40 @@
+---
+import Layout from "../../layouts/EditorialLayout.astro";
+import { topics } from "../../data/topics.js";
+import { articles } from "../../data/articles.js";
+
+export function getStaticPaths() {
+  return topics.map(topic => ({
+    params: { slug: topic.slug },
+    props: { topic }
+  }));
+}
+
+const { topic } = Astro.props;
+const related = articles.filter(article => article.category === topic.slug);
+---
+<Layout title={topic.title} description={topic.description}>
+  <div class="eyebrow">{topic.eyebrow}</div>
+  <h1>{topic.title}</h1>
+  <p class="lead">{topic.description}</p>
+
+  <h2>Explore articles</h2>
+  {related.length === 0 ? (
+    <div class="notice">
+      Our editorial coverage for this topic is in development.
+      New articles will appear here after research and editorial review.
+    </div>
+  ) : (
+    <div class="topic-grid">
+      {related.map(article => (
+        <a class="topic-link" href={`/articles/${article.slug}/`}>
+          <span>{article.date}</span>
+          <h2>{article.title}</h2>
+          <p>{article.description}</p>
+          <strong>Read article ↗</strong>
+        </a>
+      ))}
+    </div>
+  )}
+  <a href="/topics/" class="back-link">← All topics</a>
+</Layout>

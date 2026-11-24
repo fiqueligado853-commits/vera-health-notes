@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/EditorialLayout.astro";
+import { articles } from "../../data/articles.js";
+
+export function getStaticPaths() {
+  return articles.map(article => ({
+    params: { slug: article.slug },
+    props: { article }
+  }));
+}
+const { article } = Astro.props;
+---
+<Layout title={article.title} description={article.description}>
+  <div class="eyebrow">{article.category.replaceAll("-", " ")} · {article.date}</div>
+  <h1>{article.title}</h1>
+  <p class="lead">{article.description}</p>
+
+  <div class="copy">
+    {article.paragraphs.map(paragraph => <p>{paragraph}</p>)}
+  </div>
+
+  <h2>Sources & references</h2>
+  <div class="copy">
+    <ul>
+      {article.sources.map(source =>
+        <li><a href={source.url} rel="noopener noreferrer">{source.title}</a></li>
+      )}
+    </ul>
+  </div>
+
+  <div class="notice">
+    Informational content only. This article does not provide medical advice.
+    Any affiliate relationship should be disclosed clearly where applicable.
+  </div>
+  <a href="/articles/" class="back-link">← All articles</a>
+</Layout>
