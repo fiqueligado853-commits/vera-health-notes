@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://vera-health-notes.pages.dev",
+  site: "https://verahealthnotes.com",
   integrations: [
     sitemap({
       filenameBase: "astro-sitemap",

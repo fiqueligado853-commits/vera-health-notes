@@ -3,7 +3,7 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { isPublishable } from "../src/lib/publishing.js";
 
-const site = "https://vera-health-notes.pages.dev";
+const site = "https://verahealthnotes.com";
 const dist = "dist";
 const read = (path) => readFileSync(join(dist, path), "utf8");
 const required = ["index.html", "404.html", "about/index.html", "contact/index.html",
@@ -32,6 +32,11 @@ for (const file of htmlFiles) {
   const html = read(file);
   const pageUrl = new URL(file.replaceAll("\\", "/").replace(/index\.html$/, ""), site);
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1, file + " H1");
+  if (file !== "404.html") {
+    assert.match(html, /<link rel="canonical" href="([^"]+)"/);
+    assert.equal(html.match(/<link rel="canonical" href="([^"]+)"/)[1], pageUrl.href, file + " canonical");
+    assert.doesNotMatch(html, /https:\/\/vera-health-notes\.pages\.dev/, file + " legacy hostname");
+  }
   for (const [, href] of html.matchAll(/<a\b[^>]*\bhref="([^"]+)"/g)) {
     const url = new URL(href, pageUrl);
     if (url.origin !== site) continue;

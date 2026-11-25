@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://vera-health-notes.pages.dev/astro-sitemap-index.xml
+Sitemap: https://verahealthnotes.com/astro-sitemap-index.xml
