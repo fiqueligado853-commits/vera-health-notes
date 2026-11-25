@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../../layouts/EditorialLayout.astro";
 import { getCollection } from "astro:content";
 import { isPublishable } from "../../lib/publishing.js";
@@ -35,6 +36,7 @@ const { topic, related } = Astro.props;
     <div class="topic-grid">
       {related.map(article => (
         <a class="topic-link" href={`/articles/${article.data.slug}/`}>
+          {article.data.hero && <Image src={article.data.hero.image} alt="" width={480} class="article-card-image" />}
           <h2>{article.data.title}</h2>
           <p>{article.data.description || "Read this article."}</p>
           <strong>Read article ↗</strong>

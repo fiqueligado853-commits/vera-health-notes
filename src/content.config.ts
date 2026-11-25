@@ -7,11 +7,19 @@ const articles = defineCollection({
     base: "./src/content/articles",
     pattern: "**/*.md"
   }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     id: z.string(),
     title: z.string().min(15),
     slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     description: z.string().optional(),
+    hero: z.object({
+      image: image(),
+      alt: z.string().min(1)
+    }).optional(),
+    related_ids: z.array(z.string()).default([]),
+    author: z.string().min(1).optional(),
+    published_at: z.coerce.date().optional(),
+    updated_at: z.coerce.date().optional(),
     category: z.enum([
       "everyday-wellness",
       "nutrition-ingredients",
