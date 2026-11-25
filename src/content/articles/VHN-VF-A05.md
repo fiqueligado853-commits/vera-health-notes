@@ -53,7 +53,7 @@ When you have a panel you can read, record the following.
 - **Other Ingredients and package statements.** Ask for a full view of the packaging. Screenshots can cut off lines that do not fit inside the main panel.
 - **The named business.** Copy the role alongside the name, such as manufacturer or distributor. Compare that information with the seller named for the order, since the two roles can differ.
 
-The [FDA’s supplement Q&A](https://www.fda.gov/food/dietary-supplements/questions-and-answers-dietary-supplements) describes required label information. A page should be easy to identify later, so keep the URL and date along with the response. If you are asking a pharmacist about the label, use the packaging for the exact item or state clearly when it is only an online image. This article cannot establish whether a given bottle is appropriate for someone or how it would interact with anything they take.
+The [FDA’s supplement Q&A](https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements) describes required label information. A page should be easy to identify later, so keep the URL and date along with the response. If you are asking a pharmacist about the label, use the packaging for the exact item or state clearly when it is only an online image. This article cannot establish whether a given bottle is appropriate for someone or how it would interact with anything they take.
 
 ## What an ingredient reference can tell you
 

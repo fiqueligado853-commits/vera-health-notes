@@ -43,7 +43,7 @@ The distinction saves time if something goes wrong. For example, a warehouse may
 
 ## Use the bottle label for the question it can answer
 
-The [FDA’s dietary supplement Q&A](https://www.fda.gov/food/dietary-supplements/questions-and-answers-dietary-supplements) describes the business information that appears on U.S. supplement labels. A label can name a manufacturer, packer, or distributor. Read the words next to the name. “Distributed by” describes a role and can be useful when comparing two packages. It does not tell you that company made the item or will sell it to you directly.
+The [FDA’s dietary supplement Q&A](https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements) describes the business information that appears on U.S. supplement labels. A label can name a manufacturer, packer, or distributor. Read the words next to the name. “Distributed by” describes a role and can be useful when comparing two packages. It does not tell you that company made the item or will sell it to you directly.
 
 Ask for clear front and back photos if you only see a studio image. Match the bottle size, form, and variant to the selected listing. A label on a slightly different package is worth keeping in a separate tab rather than treating it as proof about the one you are considering. Our [guide to reading Supplement Facts](/articles/how-to-read-supplement-facts-label/) explains which details to capture from the package itself.
 
