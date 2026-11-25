@@ -1,0 +1,87 @@
+---
+import { offers } from "../../data/offers.js";
+
+export function getStaticPaths() {
+  if (!import.meta.env.DEV) return [];
+  return [{ params: { slug: "vitalflush-lead-03" } }];
+}
+
+const offer = offers.vitalflush;
+const lead = offer.lead03;
+const ready = offer.status === "approved" && lead.checks.every((check) => check.approved === true) &&
+  lead.embedUrl && lead.packages.every((item) => item.checkoutUrl && item.terms);
+---
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <title>VitalFlush Lead 03 | Private review</title>
+  </head>
+  <body>
+    <main>
+      <p class="label">Vera Health Notes · Private review</p>
+      <h1>VitalFlush Lead 03</h1>
+      <p>Commercial presentation.</p>
+      <p class="disclosure">Affiliate disclosure: Vera Health Notes may earn a commission if you purchase through a link on this page.</p>
+      <section aria-labelledby="video-title">
+        <h2 id="video-title">Video presentation</h2>
+        {ready ? (
+          <>
+            <p>Playing the video connects your browser to the video provider.</p>
+            <div id="player-area" class="player">
+              <button id="load-video" type="button">Load video</button>
+            </div>
+            <template id="player-template">
+              <iframe src={lead.embedUrl} title="VitalFlush Lead 03 commercial presentation" referrerpolicy="no-referrer" allow="fullscreen" allowfullscreen></iframe>
+            </template>
+          </>
+        ) : <p class="player pending" role="status">Awaiting the verified and approved Lead 03 player.</p>}
+      </section>
+      <section aria-labelledby="packages-title">
+        <h2 id="packages-title">Purchase options</h2>
+        <div class="packages">
+          {lead.packages.map((item) => (
+            <article>
+              <h3>{item.label}</h3>
+              {ready ? (
+                <>
+                  <p>{item.terms}</p>
+                  <a href={item.checkoutUrl} rel="sponsored nofollow noreferrer">Open seller checkout</a>
+                </>
+              ) : <button type="button" disabled>Checkout unavailable</button>}
+            </article>
+          ))}
+        </div>
+      </section>
+      <footer><a href="/privacy-policy/">Privacy policy</a><a href="/affiliate-disclosure/">Affiliate disclosure</a></footer>
+    </main>
+    <script>
+      const button = document.querySelector("#load-video");
+      const template = document.querySelector<HTMLTemplateElement>("#player-template");
+      button?.addEventListener("click", () => {
+        if (template) document.querySelector("#player-area")?.replaceChildren(template.content.cloneNode(true));
+      }, { once: true });
+    </script>
+  </body>
+</html>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 1rem/1.55 system-ui, sans-serif; color: #20382b; background: #f6f4ed; }
+  main { width: min(58rem, calc(100% - 2rem)); margin: 3rem auto; }
+  .label { text-transform: uppercase; letter-spacing: .09em; font-size: .85rem; }
+  h1 { font: clamp(2.1rem, 7vw, 4.35rem)/1.1 Georgia, serif; margin: .6rem 0; }
+  h2 { margin-top: 2rem; }
+  .disclosure, article { background: #fff; border: 1px solid #cdd4ca; padding: 1rem; border-radius: .5rem; }
+  .player { display: grid; place-items: center; width: min(100%, 25rem); margin: 1rem auto; padding: 1rem; }
+  .pending { min-height: 11rem; color: #fff; background: #20382b; text-align: center; }
+  iframe { display: block; width: 100%; aspect-ratio: 9 / 16; border: 0; }
+  .packages { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: .8rem; }
+  article h3 { margin-top: 0; }
+  button { font: inherit; padding: .6rem .8rem; }
+  button:disabled { color: #4d554e; }
+  a { color: #174735; }
+  footer { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; }
+</style>

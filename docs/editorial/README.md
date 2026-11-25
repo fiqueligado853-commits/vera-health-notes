@@ -32,3 +32,7 @@ Preparar oportunidades por interesse declarado, como atualizações de leitura d
 - [Biblioteca de headlines](headlines.md)
 - [Pesquisa, briefing e decisões do primeiro lote](evergreen-2026-11-25.md)
 - [Pareceres editoriais do primeiro lote](reviews-2026-11-25.md)
+
+## Prioridade do próximo lote — 25/11/2026
+
+Os três artigos evergreen publicados no PR nº 4 são material de apoio. Para pautas novas, partir de persona, preocupação do cotidiano e linguagem observada. Investigar causas e fatores verificáveis, apresentar caminhos e benefícios realistas, e terminar com uma pergunta genuína e um próximo passo voluntário. Variar dores específicas, causas, listas de alimentos, hábitos, erros comuns, comparações e mitos conforme a evidência. Interesse comercial entra depois da utilidade para a persona. Não repetir guias genéricos de compra como prioridade do próximo lote. [Registro da decisão e do funil Lead 03](../commercial/vitalflush-lead-03.md)

@@ -34,3 +34,5 @@ As três imagens foram produzidas para Vera Health Notes em 25/11/2026, WebP de 
 
 - A04, A05 e A09 mudaram para src/drafts/retired com conteúdo intacto e histórico Git preservado. As antigas URLs devolvem 404 fora do sitemap. Não existe equivalente direto para redirecionar uma avaliação de marca a um guia geral. Um 404 uniforme reutiliza a página de erro do projeto.
 - A01 e A02 continuam em revisão clínica. Os guias de apoio existentes ficam preservados. Os novos textos têm escopo informativo ou organizacional e não recomendam produtos, doses ou tratamentos. Ofertas, VSLs e coleta continuam inativas no lote.
+
+- Decisão posterior de 25/11/2026: E01–E03 ficam como apoio. O próximo lote começa por preocupações cotidianas do público, pesquisa de fala real e causas verificáveis. A [base editorial](README.md) registra a prioridade e o [registro comercial](../commercial/vitalflush-lead-03.md) documenta a decisão por artigo de manter os três sem CTA para Lead 03.
