@@ -1,6 +1,13 @@
 
 ---
 import PolicyLinks from "../components/PolicyLinks.astro";
+import { getCollection } from "astro:content";
+import { topics } from "../data/topics.js";
+import { isPublishable } from "../lib/publishing.js";
+
+const publishedArticles = (await getCollection("articles")).filter(isPublishable);
+const coveredCategories = new Set(publishedArticles.map(({ data }) => data.category));
+const publishedTopicTitles = new Set(topics.filter(({ slug }) => coveredCategories.has(slug)).map(({ title }) => title));
 const categoryLinks = {
   "Everyday Wellness": "/topics/everyday-wellness/",
   "Nutrition & Ingredients": "/topics/nutrition-ingredients/",
@@ -184,7 +191,7 @@ const steps = [
                 <div class="card-bottom">
                   <h3>{category.title}</h3>
                   <p>{category.description}</p>
-                  <span class="coming-soon">Editorial coverage in development</span>
+                  <span class="coming-soon">{publishedTopicTitles.has(category.title) ? "Explore published articles" : "Editorial coverage in development"}</span>
                 </div>
               </a>
             ))}
@@ -243,7 +250,7 @@ const steps = [
             <p>
               Vera Health Notes is an emerging independent editorial project
               focused on making wellness information easier to explore and
-              understand. Our article library is currently in development.
+              understand. {publishedArticles.length ? "Visit our article library for the latest coverage." : "Our article library is currently in development."}
             </p>
             <p>
               Our goal is to help readers evaluate information thoughtfully,
