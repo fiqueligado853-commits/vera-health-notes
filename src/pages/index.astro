@@ -69,9 +69,9 @@ const steps = [
     <meta property="og:site_name" content="Vera Health Notes" />
     <meta property="og:title" content="Vera Health Notes | Clearer Perspectives on Everyday Wellness" />
     <meta property="og:description" content="Independent editorial coverage of everyday wellness, nutrition, healthy aging, and product research." />
-    <meta property="og:url" content="https://vera-health-notes.pages.dev/" />
+    <meta property="og:url" content={Astro.site?.href} />
     <meta name="theme-color" content="#f8f7f3" />
-    <link rel="canonical" href="https://vera-health-notes.pages.dev/" />
+    <link rel="canonical" href={Astro.site?.href} />
     <title>Vera Health Notes | Clearer Perspectives on Everyday Wellness</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
