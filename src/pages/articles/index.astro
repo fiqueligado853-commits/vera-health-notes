@@ -1,20 +1,29 @@
 ---
 import Layout from "../../layouts/EditorialLayout.astro";
-import { articles } from "../../data/articles.js";
+import { getCollection } from "astro:content";
+import { isPublishable } from "../../lib/publishing.js";
+
+const articles = (await getCollection("articles"))
+  .filter(isPublishable);
 ---
-<Layout title="Articles" description="Editorial wellness articles from Vera Health Notes.">
+<Layout title="Articles" description="Wellness articles from Vera Health Notes.">
   <div class="eyebrow">The journal</div>
   <h1>Wellness notes & research.</h1>
-  <p class="lead">Thoughtful articles developed around real questions and carefully reviewed sources.</p>
+  <p class="lead">
+    Thoughtful, evidence-informed articles for everyday wellness decisions.
+  </p>
+
   {articles.length === 0 ? (
-    <div class="notice">Our article library is currently in development. No articles have been published yet.</div>
+    <div class="notice">
+      Our article library is currently in development.
+    </div>
   ) : (
     <div class="topic-grid">
       {articles.map(article => (
-        <a class="topic-link" href={`/articles/${article.slug}/`}>
-          <span>{article.date}</span>
-          <h2>{article.title}</h2>
-          <p>{article.description}</p>
+        <a class="topic-link" href={`/articles/${article.data.slug}/`}>
+          <span>{article.data.category.replaceAll("-", " ")}</span>
+          <h2>{article.data.title}</h2>
+          <p>{article.data.description || "Explore this article."}</p>
           <strong>Read article ↗</strong>
         </a>
       ))}
