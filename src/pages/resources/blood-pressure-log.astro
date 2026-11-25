@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printable Home Blood Pressure Log | Vera Health Notes</title>
+<meta name="description" content="Print a free one-page home blood pressure log with space for two readings per session and notes for your appointment.">
+<link rel="canonical" href={new URL('/resources/blood-pressure-log/', Astro.site ?? Astro.url).href}>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Printable Home Blood Pressure Log | Vera Health Notes">
+<meta property="og:description" content="A one-page US Letter worksheet for bringing home readings to your healthcare appointment.">
+<style is:inline>
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  color: #24362c;
+  background: #f6f5f1;
+  margin: 0;
+  padding: 24px;
+}
+.sheet {
+  background: white;
+  max-width: 8.5in;
+  margin: auto;
+  padding: 35px;
+  border: 1px solid #ddd;
+}
+header {
+  border-bottom: 3px solid #254235;
+  padding-bottom: 14px;
+  margin-bottom: 24px;
+}
+.brand {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+h1 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+p, li { font-size: 12px; line-height: 1.6; }
+.subtitle { color: #52645a; }
+.fields {
+  display: flex;
+  gap: 25px;
+  margin: 25px 0;
+}
+.fields div { flex: 1; border-bottom: 1px solid #999; padding-bottom: 18px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th {
+  background: #e8eee8;
+  font-size: 10px;
+  padding: 10px 5px;
+  border: 1px solid #999;
+}
+td { height: 38px; border: 1px solid #999; }
+.notes { border: 1px solid #aaa; height: 65px; margin-top: 10px; }
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  background: #254235;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+.small { font-size: 10px; color: #555; }
+.table-wrap { max-width: 100%; }
+.screen-only { text-align: center; }
+@media screen and (max-width: 600px) {
+  body { padding: 12px; }
+  .sheet { padding: 16px; }
+  h1 { font-size: 27px; }
+  .table-wrap { overflow-x: auto; }
+  table { min-width: 500px; }
+}
+@media print {
+  body { padding: 0; background: white; }
+  .sheet { border: 0; padding: 0; }
+  button, .screen-only { display: none; }
+}
+
+/* VHN PRINT OPTIMIZATION */
+@media print {
+  @page { size: letter; margin: 0.35in; }
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+  .sheet {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  header { margin-bottom: 12px; padding-bottom: 8px; }
+  h1 { font-size: 25px; margin: 9px 0 5px; }
+  h2 { font-size: 15px; margin: 12px 0 7px; }
+  p, li { font-size: 10px; line-height: 1.3; }
+  ul { margin: 6px 0; padding-left: 22px; }
+  .fields { margin: 12px 0; gap: 15px; }
+  .fields div { padding-bottom: 8px; font-size: 11px; }
+  table { margin-top: 8px; }
+  th { font-size: 8px; padding: 5px 3px; }
+  td { height: 27px; }
+  .notes { height: 48px; margin-top: 5px; }
+  .small { font-size: 8px; line-height: 1.3; }
+  button, .screen-only { display: none; }
+  tr { break-inside: avoid; }
+}
+
+</style>
+</head>
+<body>
+<div class="sheet">
+<header>
+<div class="brand">VERA HEALTH NOTES</div>
+<h1>My Home Blood Pressure Log</h1>
+<p class="subtitle">
+A simple record to bring to your healthcare appointment.
+</p>
+</header>
+
+<div class="fields">
+<div>Name (optional):</div>
+<div>Week of:</div>
+</div>
+
+<h2>How to use this sheet</h2>
+<ul>
+<li>Follow the monitoring instructions from your healthcare professional.</li>
+<li>Use one row per session. Enter the time and both readings if taken.</li>
+<li>Use the notes column for details you want to discuss at your appointment.</li>
+</ul>
+
+<h2>Record your readings</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Blood pressure log table">
+<table>
+<thead>
+<tr>
+<th scope="col">Date</th>
+<th scope="col">Time</th>
+<th scope="col">Reading 1<br>Systolic / Diastolic</th>
+<th scope="col">Reading 2<br>Systolic / Diastolic</th>
+<th scope="col">Pulse<br>(optional)</th>
+<th scope="col">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Questions or notes for my appointment</h2>
+<div class="notes"></div>
+
+<p class="small">
+<a href="https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home">American Heart Association guide to home monitoring</a>.
+For personal recordkeeping only. Not a diagnosis or medical advice.
+Do not change prescribed treatment without consulting your healthcare professional.
+</p>
+<p class="small">
+Vera Health Notes — Editorial draft. Pending final review.
+</p>
+</div>
+
+<p class="screen-only"><a href="/">Vera Health Notes home</a></p>
+<button type="button" onclick="window.print()">Print This Log</button>
+</body>
+</html>
