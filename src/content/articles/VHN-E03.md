@@ -4,9 +4,12 @@ title: "A One-Page Medication and Supplement List for Your Next Visit"
 description: "Make a shareable medication and supplement list that records what you use, how you use it, and what you need your healthcare team to verify."
 slug: "medication-supplement-list-for-visit"
 category: "everyday-wellness"
-status: "draft"
+status: "approved"
 language: "en-US"
 affiliate_links: false
+editorial_review: "approved"
+source_review: "approved"
+published_at: "2026-11-25"
 clinical_review: "not-required"
 related_ids: ["VHN-E01"]
 hero:
@@ -20,7 +23,7 @@ Use one page to record what you are actually using, what the labels or instructi
 
 ## Start with what is in use now
 
-Gather current containers and any written instructions you can easily find. Look for prescription medicines, over-the-counter products, and dietary supplements. Include items you only use occasionally. If you take something less often than the package suggests or have not started something that still appears in the portal, write down the difference. Your notes describe what is happening. You can ask your healthcare team to reconcile the records.
+Gather current containers and any written instructions you can easily find. Look for prescription medicines, over-the-counter products, and dietary supplements. Check for patches, creams, drops, or inhalers you keep outside the usual medicine cabinet. Include items you only use occasionally. If you take something less often than the package suggests or have not started something that still appears in the portal, write down the difference. Your notes describe what is happening. You can ask your healthcare team to reconcile the records.
 
 The [NIH Office of Dietary Supplements medication and supplement record](https://ods.od.nih.gov/pubs/DietarySupplementandMedicineRecord.pdf) gives you space for product names and ingredients, how much you use, how often you use it, and why you use it. Its fields are useful even if you keep your list in a phone note. Put the update date at the top. If you find another copy later, you will be able to tell which one you brought to the visit.
 
@@ -66,4 +69,4 @@ You can also use the last few lines as a small handoff for the visit. Mark the i
 
 Before the visit ends, ask what the healthcare team wants changed on your list and what you should do if a pharmacy label or portal entry still differs. If you receive written instructions, save them with the dated list so they are easy to locate next time. Keeping one copy current is easier than rebuilding the whole list from memory at every appointment.
 
-If you also bring home blood pressure records, our [free printable log](/resources/blood-pressure-log/) has space for those readings. Keep the log and the medication list as separate sheets so each is easy to scan. For the medication list itself, you can copy the table above or download the [NIH's blank record](https://ods.od.nih.gov/pubs/DietarySupplementandMedicineRecord.pdf). You can start with the items you know and mark the rows you need help completing.
+If you also bring home blood pressure records, our [free printable log](/resources/blood-pressure-log/) has space for those readings. Keep the log and the medication list as separate sheets so each is easy to scan. For the medication list itself, you can copy the table above or use the [NIH's three-page blank record](https://ods.od.nih.gov/pubs/DietarySupplementandMedicineRecord.pdf) if you want more room. You can start with the items you know and mark the rows you need help completing.

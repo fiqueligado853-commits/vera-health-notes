@@ -4,9 +4,12 @@ title: "The Serving Size Traps on Supplement Labels"
 description: "Compare U.S. Supplement Facts labels using serving size, amount per serving, ingredient units, and price per labeled serving."
 slug: "supplement-label-serving-size-traps"
 category: "nutrition-ingredients"
-status: "draft"
+status: "approved"
 language: "en-US"
 affiliate_links: false
+editorial_review: "approved"
+source_review: "approved"
+published_at: "2026-11-25"
 clinical_review: "not-required"
 related_ids: ["VHN-E02", "VHN-E03"]
 hero:
@@ -16,7 +19,7 @@ hero:
 
 Two bottles each contain 60 capsules and cost $24. One label shows a serving size of one capsule. The other shows two. The first gives you 60 labeled servings at 40 cents each. The second gives you 30 labeled servings at 80 cents each. Nothing about that difference is visible from the two numbers on the front of the bottles.
 
-If you have two shopping tabs open, start by reading the Supplement Facts panels side by side. You can use the same approach for powders and liquids. The aim is to compare what the labels declare and what the packages cost. The numbers on the panel do not tell you what amount to take.
+If you have two shopping tabs open, start by reading the Supplement Facts panels side by side. You can use the same approach for powders and liquids. The aim is to compare what the labels declare and what the packages cost. A serving-size comparison does not determine the amount that is right for you.
 
 ## Trap 1: Counting capsules when you meant to count servings
 

@@ -4,9 +4,12 @@ title: "Who Actually Sells That Supplement in Your Cart?"
 description: "Use the seller field, checkout terms, package label, and return policy to identify who handles an online supplement order."
 slug: "who-sells-supplement-in-your-cart"
 category: "product-research"
-status: "draft"
+status: "approved"
 language: "en-US"
 affiliate_links: false
+editorial_review: "approved"
+source_review: "approved"
+published_at: "2026-11-25"
 clinical_review: "not-required"
 related_ids: ["VHN-E01"]
 hero:
@@ -51,7 +54,7 @@ If a company maintains its own list of authorized sellers, check the exact store
 
 A review that says “never arrived” may be relevant to delivery but tell you nothing about the formula. A review dated two years ago may describe another seller, package, or return policy. When you read reviews, keep the question small. Is the writer talking about the seller I would order from, and do they say what went wrong? If you cannot tell, treat the review as a prompt for a question. The [FTC's advice on evaluating reviews](https://consumer.ftc.gov/articles/how-evaluate-online-reviews) recommends using multiple sources and considering possible connections between reviewers and sellers.
 
-Do the same with claims that a site is official. A website can use the product name in its address and still be an advertising publisher. Look for a business name, a relationship disclosure, and the seller named at checkout. A padlock can tell you the connection uses encryption. It does not tell you whether the seller is trustworthy. The [FTC's online shopping guide](https://consumer.ftc.gov/articles/online-shopping) has more ways to check the seller and keep purchase records.
+Do the same with claims that a site is official. A website can use the product name in its address and still be an advertising publisher. Look for a business name, a relationship disclosure, and the seller named at checkout. An HTTPS address indicates that the browser connection is encrypted. It does not tell you whether the seller is trustworthy. The [FTC's online shopping guide](https://consumer.ftc.gov/articles/online-shopping) has more ways to check the seller and keep purchase records.
 
 Take one more look after a link opens a new site. If the address changed, the policies from the first tab may no longer describe the place where you would pay. If you are comparing a marketplace listing with a standalone checkout, write the two addresses on separate lines. The same package image can appear in both places while the seller, support contact, shipping charge, and return instructions differ. Keep the notes tied to the exact tab and selected item.
 

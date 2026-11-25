@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
 import { isPublishable } from "../src/lib/publishing.js";
 
 const site = "https://verahealthnotes.com";
@@ -50,10 +50,15 @@ assert.equal(isPublishable({ data: ready }), true);
 for (const key of Object.keys(ready)) {
   assert.equal(isPublishable({ data: { ...ready, [key]: key === "status" ? "draft" : "pending" } }), false, key);
 }
-const drafts = readdirSync("src/content/articles").filter((name) => name.endsWith(".md"));
-for (const draft of drafts) {
-  const markdown = readFileSync(join("src/content/articles", draft), "utf8");
-  if (!/^status: ["']?draft/m.test(markdown) && !/^clinical_review: ["']?pending/m.test(markdown)) continue;
+const draftDirectory = "src/content/articles";
+const retiredDirectory = "src/drafts/retired";
+const gatedFiles = [draftDirectory, retiredDirectory].flatMap((directory) =>
+  readdirSync(directory).filter((name) => name.endsWith(".md")).map((name) => join(directory, name))
+);
+for (const draft of gatedFiles) {
+  const markdown = readFileSync(draft, "utf8");
+  const retired = dirname(draft) === join(retiredDirectory);
+  if (!retired && !/^status: ["']?draft/m.test(markdown) && !/^clinical_review: ["']?pending/m.test(markdown)) continue;
   const slug = markdown.match(/^slug: ["']?([a-z0-9-]+)["']?\s*$/m)?.[1];
   assert.ok(slug, draft);
   assert.ok(!sitemap.includes("/articles/" + slug + "/"), slug + " on sitemap");
@@ -64,4 +69,4 @@ const worksheet = read("resources/blood-pressure-log/index.html");
 assert.equal((worksheet.match(/<th scope="col">/g) ?? []).length, 6);
 assert.match(worksheet, /size:\s*letter/);
 assert.doesNotMatch(worksheet, /<form\b/i);
-console.log(htmlFiles.length + " HTML pages and " + links + " internal links checked; drafts excluded; sitemap and printable worksheet verified.");
+console.log(htmlFiles.length + " HTML pages and " + links + " internal links checked; drafts and retired routes excluded; sitemap and printable worksheet verified.");
