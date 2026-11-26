@@ -43,7 +43,7 @@ Begin with the product. Was it the finished formulation, one ingredient, or a di
 
 Look next at the group and the comparison. Did researchers describe who took part and what they were compared with? Then find the outcome. If the ad talks about getting through a long afternoon, a study described in terms of a lab measurement does not establish that practical claim on its own. You do not need to interpret the lab measurement to notice that it is a different outcome.
 
-Finally, note the duration and the result reported. Do not borrow a timeframe from the advertisement and assume it came from the paper. A citation validates the existence of a document. To support a benefit claim, the relevant evidence still needs to answer the right question. The FTC guidance gives examples of problems with transferring evidence from a different ingredient, formula, or claimed benefit.
+Finally, note the duration and the result reported. Do not borrow a timeframe from the advertisement and assume it came from the paper. Finding the original record confirms that you located the document. To support a benefit claim, the relevant evidence still needs to answer the right question. The FTC guidance gives examples of problems with transferring evidence from a different ingredient, formula, or claimed benefit.
 
 ## Work through an example without guessing
 
