@@ -17,6 +17,21 @@ O Vera Health Notes é uma publicação editorial americana de wellness. O site 
 
 O [inventário oficial](editorial/article-index-vhn20.csv) relaciona os 20 IDs aos arquivos, imagens, gates e endereços. A002 é VHN-E04. A019 é VHN-VF-A01 e conserva o slug `why-blood-pressure-readings-differ`. Os originais em `src/drafts/intake/vhn-20` são arquivo de entrada. Na branch do PR #6, as versões de trabalho já estão na coleção Astro, com estado de rascunho.
 
+### Revisão editorial de 26/11/2026, horário de São Paulo
+
+O [PR #7](https://github.com/fiqueligado853-commits/vera-health-notes/pull/7) está aberto em Draft na branch `editorial/review-a001-a020`, com base na fila do PR #6 (`1851eba`) e HEAD verificado em [`2d629a0`](https://github.com/fiqueligado853-commits/vera-health-notes/commit/2d629a012c849f66d5b018d8f1f649fc891f88e9). O PR #5 continua como base do piloto e a `main` continua em `5a7bcc9`. Retome a revisão dos manuscritos na branch do PR #7.
+
+| Evidência | Resultado |
+| --- | --- |
+| [Parecer por artigo e fontes](https://github.com/fiqueligado853-commits/vera-health-notes/blob/2d629a012c849f66d5b018d8f1f649fc891f88e9/docs/editorial/queue-a001-a020.md) | 20 passagens editoriais e 20 factuais automatizadas. Foram corrigidos 18 textos e o alt de A020. A011 foi preservado. O parecer aponta as fontes, alterações e bloqueios por artigo. |
+| [Inventário da revisão](https://github.com/fiqueligado853-commits/vera-health-notes/blob/2d629a012c849f66d5b018d8f1f649fc891f88e9/docs/editorial/article-index-vhn20.csv) | Registra título atual, arquivo da coleção e decisão por item. As referências à entrada preservam a proveniência. |
+| [GitHub Actions](https://github.com/fiqueligado853-commits/vera-health-notes/actions/runs/45859863923/job/140047750724) | Build Astro aprovado. 20 páginas públicas e 329 links internos conferidos. Rascunhos e rotas desativadas ficaram fora da saída estática e do sitemap. A planilha imprimível foi validada. |
+| [Preview em Chromium](https://github.com/fiqueligado853-commits/vera-health-notes/actions/runs/45859863923/job/140047750724#step:6) | 60 verificações aprovadas, 20 a 1440 px, 20 a 390 px e 20 a 320 px. Metadados, imagens WebP, alt, ausência de rolagem horizontal, sumário, âncoras, links e rodapé verificados. Todos os rascunhos têm `noindex` e omitem canônica e dados estruturados. A comparação do piloto carregou ao entrar na tela. |
+
+A001 prioriza orçamento e aproveitamento em dois jantares. A013 explica grupos do DASH e a diferença entre frequência diária e semanal. A005 trata de quando a sensação surge após ficar sentado. A008 registra turno, sintomas e impacto funcional para uma consulta. A019 continua em `VHN-VF-A01.md` com o slug `why-blood-pressure-readings-differ`. O diagrama de pressão usa a proporção original para manter todo o texto visível no celular. A imagem original foi preservada e 21 WebP foram inspecionados visualmente.
+
+**Próximo passo editorial.** Solicitar revisão clínica de A005, A007, A008 e A019. A009 requer avaliação científica e clínica. A017 e A018 precisam de avaliação científica e clínica ou farmacêutica. Confirmar o enquadramento clínico do piloto A002 com quem aprova o lote. Os outros 12 artigos podem seguir para registro das aprovações editoriais e factuais e decisão do proprietário. Todos continuam em rascunho e inelegíveis para publicação. Registre nome, qualificação quando aplicável, data, versão exata e decisão. Uma aprovação automatizada não substitui parecer profissional ou autorização de publicação.
+
 ### Leia primeiro
 
 - [Sistema editorial, modelos, escrita e imagens](editorial/README.md)
@@ -36,7 +51,7 @@ O [inventário oficial](editorial/article-index-vhn20.csv) relaciona os 20 IDs a
 - Preserve nome, domínio, logotipo, paleta, tipografia, navegação e componentes aprovados. A página do piloto validou o sumário lateral, a comparação visual, a miniatura de leitura relacionada e o rodapé compacto do modelo D. Reabra somente um problema concreto demonstrado.
 - Use os quatro modelos da coleção e adapte a estrutura à pergunta do leitor. O blog cresce com pautas evergreen, SEO orgânico, links úteis e conteúdo social. Newsletter, publicidade e afiliação contextual dependem de missão, elegibilidade, consentimento ou validação próprios. O blog é independente da oferta e não é etapa obrigatória de funil pago.
 - A operação segue em **ChatGPT + Work**. Uma migração, VPS ou ferramentas externas como n8n, LangGraph e OpenClaw só voltam à pauta por nova solicitação.
-- Na próxima sessão, compare A001/A013 e A005/A008, resolva as revisões pendentes por risco e planeje uma publicação controlada após autorização. A etapa comercial e a medição de tráfego e indexação vêm depois.
+- Use o parecer do PR #7 e as pendências acima para retomar cada artigo. Planeje uma publicação controlada somente depois de registrar as aprovações exigidas e receber a autorização do proprietário.
 
 ## Lições aprendidas
 
@@ -52,6 +67,8 @@ O [inventário oficial](editorial/article-index-vhn20.csv) relaciona os 20 IDs a
 | Build interpretado como aprovação | Manter testes, pareceres e autorização em campos e registros separados. |
 | Pautas próximas com intenção pouco clara | Comparar intenção e slugs antes de criar rotas. A002 e A019 já têm correspondência oficial. |
 | Ajuste pequeno virou redesign | Restringir o diff e verificar o comportamento no desktop e no celular. |
+| Recorte de fotografia ocultou conteúdo de diagrama | Conferir imagens com texto em telas estreitas e preservar a proporção do diagrama quando necessário. |
+| Imagem interna carrega só após rolagem | Levar a figura à área visível antes de verificar a decodificação em Chromium. Usar o navegador do runner e manter as dependências do Astro do lockfile durante o preview. |
 
 ## Infraestrutura e monitoramento
 
