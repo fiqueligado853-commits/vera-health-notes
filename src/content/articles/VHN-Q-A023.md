@@ -6,10 +6,11 @@ description: "Learn what an FDA-registered facility claim refers to and how it d
 format: "C_EVIDENCE"
 category: "product-research"
 language: "en-US"
-status: "draft"
-clinical_review: "pending"
-editorial_review: "pending"
-source_review: "pending"
+status: "approved"
+published_at: "2026-11-26"
+clinical_review: "not-required"
+editorial_review: "approved"
+source_review: "approved"
 affiliate_links: false
 related_ids: ["VHN-E02","VHN-Q-A021","VHN-Q-A022"]
 hero:

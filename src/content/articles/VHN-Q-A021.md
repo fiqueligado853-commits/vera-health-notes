@@ -6,10 +6,11 @@ description: "Check a supplement’s certification directory, match the product 
 format: "D_GUIDE"
 category: "product-research"
 language: "en-US"
-status: "draft"
-clinical_review: "pending"
-editorial_review: "pending"
-source_review: "pending"
+status: "approved"
+published_at: "2026-11-26"
+clinical_review: "not-required"
+editorial_review: "approved"
+source_review: "approved"
 affiliate_links: false
 related_ids: ["VHN-E01","VHN-Q-A022","VHN-Q-A023"]
 hero:
