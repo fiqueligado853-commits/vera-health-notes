@@ -16,6 +16,10 @@ O Vera Health Notes é uma publicação editorial americana de wellness. O site 
 
 **Retomada.** Use `main` para os 12 publicados e o [PR #7](https://github.com/fiqueligado853-commits/vera-health-notes/pull/7) para os oito rascunhos. Para novas decisões, registre os pareceres separados por versão e hash antes de ativar os campos de publicação. Confira o deploy e cada URL pública antes de mudar o estado no inventário.
 
+### Visibilidade em buscadores e respostas de IA — 26/11/2026
+
+A [auditoria GEO/AEO](seo/ai-search-visibility-audit.md) reúne a matriz recuperada, a evidência do deploy do PR #8, a inspeção individual das 12 rotas e a documentação oficial de Google, OpenAI, Microsoft, Perplexity e Cloudflare. O robots de origem e as proteções editoriais foram conferidos. Restam a comparação do robots servido, os eventos de crawlers verificados, a indexação nas propriedades e a amostra nas interfaces nativas. Retome pelas seções de coleta do relatório quando houver acesso. Não há bloqueio de crawler comprovado que justifique alteração em produção.
+
 ### Histórico em 26/11/2026 — preparação antes da publicação
 
 **Publicação A001–A020: 0 no ar.** O proprietário autorizou a publicação de A001, A003, A004, A006, A010, A011, A012, A013, A014, A015, A016, A020, condicionada às aprovações aplicáveis. Os 12 têm pareceres automatizados no PR #7, mas as aprovações editorial independente e factual formais da versão final continuam pendentes. Os registros do projeto não exigem genericamente um revisor humano para o parecer editorial, mas exigem um revisor separado da redação e uma decisão registrada por versão. Aprovação profissional continua obrigatória quando indicada.
