@@ -58,9 +58,16 @@ try {
       const route = "/articles/" + data.slug + "/";
       const response = await page.goto(base + route, { waitUntil: "load" });
       assert.equal(response?.status(), 200, label);
-      await page.locator(".article-hero,.article-copy img").evaluateAll(images =>
-        Promise.all(images.map(image => image.decode()))
-      );
+      for (const image of await page.locator(".article-hero,.article-copy img").all()) {
+        await image.scrollIntoViewIfNeeded({ timeout: 10_000 });
+        await image.evaluate(element => {
+          const timeout = new Promise((_, reject) => {
+            setTimeout(() => reject(new Error("Could not decode " + element.alt)), 10_000);
+          });
+          return Promise.race([element.decode(), timeout]);
+        });
+      }
+      await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
       const information = await page.evaluate(() => {
         const article = document.querySelector(".editorial-article");
         const copy = document.querySelector(".article-copy");
