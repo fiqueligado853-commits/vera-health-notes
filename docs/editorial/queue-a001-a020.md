@@ -65,3 +65,17 @@ Registro de 25/11/2026, horário de São Paulo. Foram conferidas as 20 URLs do i
 Preview local nos servidores privados: HTTP 200 + noindex, 20/20
 Produção oficial, via curl: HTTP 404, 20/20
 ```
+
+## Preparação do lote autorizado em 26/11/2026
+
+O [PR #8](https://github.com/fiqueligado853-commits/vera-health-notes/pull/8) parte da `main` em `5a7bcc9`. Contém 12 rascunhos derivados do [PR #7](https://github.com/fiqueligado853-commits/vera-health-notes/pull/7), sem incorporar os demais oito. Os corpos e slugs foram preservados, e as 12 imagens têm os mesmos hashes do PR #7. A003 e A015 deixaram de apontar nos metadados de relacionados para o piloto A002, que ficou fora do lote.
+
+| Verificação | Resultado |
+| --- | --- |
+| Parecer editorial e factual por versão | Pareceres automatizados do PR #7 localizados. Aprovações formais não localizadas nos registros nem nos PRs #5, #6 e #7. |
+| [Build do candidato](https://github.com/fiqueligado853-commits/vera-health-notes/actions/runs/45862817881/job/140057949572) | `npm run verify` aprovado em `de6936e`. 20 páginas estáticas, 329 links internos e rascunhos fora da saída e do sitemap. |
+| [Preview Chromium](https://github.com/fiqueligado853-commits/vera-health-notes/actions/runs/45862817881/job/140057949572#step:6) | 36 renderizações aprovadas, 12 em cada largura de 1440, 390 e 320 px. Inclui imagens, alt, sumário, metadados e controle de `noindex`. |
+| [Preview do Cloudflare](https://dash.cloudflare.com/?to=/80a8a63269540b6baeeae32f30e267f9/pages/view/vera-health-notes/c195ca5a-0f64-45bd-bc24-e6d2d219ca90) | Check concluído com sucesso. Produção continua vinculada a `main` em `5a7bcc9`. |
+| Domínio e sitemap de produção | Todas as 20 rotas retornaram HTTP 404 e estavam ausentes da sitemap oficial. Nenhum artigo da fila foi publicado nesta rodada. |
+
+O [inventário](article-index-vhn20.csv) registra os 12 IDs autorizados sob condição e os oito fora do escopo, com decisão e próxima ação por artigo.

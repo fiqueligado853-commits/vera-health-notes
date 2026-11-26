@@ -6,7 +6,21 @@ O Vera Health Notes é uma publicação editorial americana de wellness. O site 
 
 **Antes de iniciar qualquer tarefa, verificar o estado real do GitHub e ler as instruções persistentes. Nunca depender exclusivamente de lembranças da conversa.** Confira o HEAD, a base, o estado e os checks de cada PR. Para edição, crie um worktree ou branch a partir da revisão certa. Preserve as alterações locais do proprietário. Antes do push, verifique novamente as refs remotas e o escopo do diff.
 
-### Estado confirmado em 25/11/2026, horário de São Paulo
+### Estado para retomada em 26/11/2026, horário de São Paulo
+
+**Publicação A001–A020: 0 no ar.** O proprietário autorizou a publicação de A001, A003, A004, A006, A010, A011, A012, A013, A014, A015, A016, A020, condicionada às aprovações aplicáveis. Os 12 têm pareceres automatizados no PR #7, mas as aprovações editorial independente e factual formais da versão final continuam pendentes. Os registros do projeto não exigem genericamente um revisor humano para o parecer editorial, mas exigem um revisor separado da redação e uma decisão registrada por versão. Aprovação profissional continua obrigatória quando indicada.
+
+| Linha | Estado verificado |
+| --- | --- |
+| Produção | `main` em [`5a7bcc9`](https://github.com/fiqueligado853-commits/vera-health-notes/commit/5a7bcc997d5c352b9d538039dada78a092089d72). [Cloudflare Pages](https://dash.cloudflare.com/80a8a63269540b6baeeae32f30e267f9/pages/view/vera-health-notes/0a06b2b8-8d04-41e6-8142-6b54a75955d3) mantém o deploy de produção `0a06b2b8`, iniciado em 25/11/2026 às 16h58 em São Paulo. A rodada atual não foi publicada. |
+| Lote autorizado | [PR #8](https://github.com/fiqueligado853-commits/vera-health-notes/pull/8) em Draft, branch `editorial/release-12-2026-11-26`, commit [`de6936e`](https://github.com/fiqueligado853-commits/vera-health-notes/commit/de6936efb60f8028ae998d928ce505f4007037de), diretamente a partir da `main`. Contém apenas os 12 manuscritos e imagens correspondentes, com dependências comuns. Os campos de revisão continuam pendentes. |
+| QA do lote | [GitHub Actions](https://github.com/fiqueligado853-commits/vera-health-notes/actions/runs/45862817881/job/140057949572) aprovou 20 páginas estáticas, 329 links internos e a exclusão de rascunhos e rotas desativadas da saída pública. O Chromium testou 12 rascunhos em 1440, 390 e 320 px, 36 renderizações ao todo. O [build de preview do Cloudflare](https://dash.cloudflare.com/?to=/80a8a63269540b6baeeae32f30e267f9/pages/view/vera-health-notes/c195ca5a-0f64-45bd-bc24-e6d2d219ca90) passou. |
+| Domínio oficial | HTTP 200 na página inicial, biblioteca, registro imprimível e sitemap. As 20 rotas de artigos retornaram HTTP 404 e não constavam na [sitemap vigente](https://verahealthnotes.com/astro-sitemap-0.xml). O inventário registra a verificação por artigo. |
+| Oito fora da autorização | A002 mantém enquadramento clínico pendente. A005, A007, A008 e A019 requerem parecer clínico. A009 requer parecer científico e clínico. A017 e A018 requerem parecer científico e clínico ou farmacêutico. O PR #8 não altera esses manuscritos. |
+
+**Retomada do PR #8.** Registrar as decisões editorial e factual da revisão exata por artigo, com responsável, data, fontes e resultado. Usar `clinical_review: not-required` só nos casos em que a análise de escopo esteja documentada. Promover apenas os IDs com todas as decisões registradas e a autorização já concedida. Repetir `npm run verify` no commit aprovado, conferir o escopo do diff e as rotas esperadas antes de integrar. Após o deploy, verificar HTTP 200, título, canônica, ausência de `noindex`, sitemap e páginas excluídas diretamente no domínio. Nenhuma nova autorização por artigo é necessária para os 12 IDs autorizados, dentro das condições já registradas.
+
+### Estado histórico em 25/11/2026, horário de São Paulo
 
 | Linha de trabalho | GitHub | Estado |
 | --- | --- | --- |
