@@ -1,22 +1,28 @@
 ---
 import Layout from "../../layouts/EditorialLayout.astro";
+import ArticleCard from "../../components/ArticleCard.astro";
+import ArticleContents from "../../components/ArticleContents.astro";
 import { Image } from "astro:assets";
 import { getCollection, render } from "astro:content";
 import { isPublishable } from "../../lib/publishing.js";
 
 export async function getStaticPaths() {
-  const articles = (await getCollection("articles")).filter(isPublishable);
-  return articles.map(article => ({
+  const all = await getCollection("articles");
+  const published = all.filter(isPublishable);
+  const preview = import.meta.env.DEV && process.env.VHN_EDITORIAL_PREVIEW === "1";
+  const visible = preview ? all : published;
+  return visible.map(article => ({
     params: { slug: article.data.slug },
-    props: { article, related: articles.filter(other => article.data.related_ids.includes(other.data.id)) }
+    props: { article, related: published.filter(other => article.data.related_ids.includes(other.data.id)) }
   }));
 }
 
 const { article, related } = Astro.props;
-const { Content } = await render(article);
+const draft = !isPublishable(article);
+const { Content, headings } = await render(article);
 const description = article.data.description ||
   "An evidence-informed article from Vera Health Notes.";
-const { hero, author, published_at, updated_at } = article.data;
+const { format, hero, author, published_at, updated_at } = article.data;
 const site = Astro.site ?? Astro.url;
 const imageUrl = hero ? new URL(hero.image.src, site).href : undefined;
 const structuredData = {
@@ -34,34 +40,95 @@ const structuredData = {
 };
 const articleJson = JSON.stringify(structuredData).replaceAll("<", "\\u003c");
 ---
-<Layout title={article.data.title} description={description} type="article" image={imageUrl} imageAlt={hero?.alt}>
-  <script type="application/ld+json" set:html={articleJson} />
-  <article>
+<Layout title={article.data.title} description={description} type="article" image={imageUrl} imageAlt={hero?.alt} noindex={draft}>
+  {!draft && <script type="application/ld+json" set:html={articleJson} />}
+  <article class="editorial-article" data-format={format}>
+    {draft && <p class="preview-status">Draft preview · Review required</p>}
+    <header class="article-heading">
     <div class="eyebrow">
       {article.data.category.replaceAll("-", " ")}
     </div>
     <h1>{article.data.title}</h1>
     {(author || published_at) && <p>{author && <span>By {author}</span>}{author && published_at && " · "}{published_at && <time datetime={published_at.toISOString()}>{published_at.toLocaleDateString("en-US", { dateStyle: "long", timeZone: "UTC" })}</time>}</p>}
-    {hero && <Image src={hero.image} alt={hero.alt} class="article-hero" loading="eager" fetchpriority="high" />}
-    <div class="copy">
-      <Content />
+    </header>
+    {hero && <Image src={hero.image} alt={hero.alt} class="article-hero" widths={[480, 768, 1080]} sizes="(max-width: 740px) 92vw, (max-width: 1140px) 96vw, 1100px" width={1080} loading="eager" fetchpriority="high" />}
+    <div class="article-layout" class:list={{ "has-contents": headings.filter(heading => heading.depth === 2).length >= 4 }}>
+      <ArticleContents {headings} {format} />
+      <div class="copy article-copy"><Content /></div>
     </div>
-    <div class="notice">
-      This content is for general information only and
-      does not replace professional medical advice.
+    <div class="article-ending">
+      <div class="notice">
+        This content is for general information only and
+        does not replace professional medical advice.
+      </div>
+      {related.length > 0 && (format === "D_GUIDE" ? (
+        <section class="article-related" aria-labelledby="related-heading">
+          <h2 id="related-heading">Related reading</h2>
+          {related.map(item => <ArticleCard article={item} heading="h3" compact />)}
+        </section>
+      ) : (
+        <section class="copy">
+          <h2>Related reading</h2>
+          <ul>{related.map(item => <li><a href={"/articles/" + item.data.slug + "/"}>{item.data.title}</a></li>)}</ul>
+        </section>
+      ))}
+      <a class="back-link" href="/articles/">
+        ← All articles
+      </a>
     </div>
-    {related.length > 0 && <section class="copy">
-      <h2>Related reading</h2>
-      <ul>{related.map(item => <li><a href={"/articles/" + item.data.slug + "/"}>{item.data.title}</a></li>)}</ul>
-    </section>}
-    <a class="back-link" href="/articles/">
-      ← All articles
-    </a>
   </article>
 </Layout>
 
 <style>
-.article-hero{display:block;width:min(100%,820px);height:auto;margin:0 0 32px;border-radius:8px}
-article :global(table){display:block;max-width:100%;overflow-x:auto;border-collapse:collapse}
-article :global(th),article :global(td){padding:8px 12px;border:1px solid #d0d9d0;text-align:left}
+  .article-heading{max-width:880px}
+  .article-heading h1{font-size:clamp(2.25rem,4.7vw,3.25rem);margin:12px 0 22px;letter-spacing:-.024em}
+  .preview-status{display:inline-block;margin:0 0 18px;padding:6px 12px;border-radius:6px;background:#ece7da;color:#4b3b29;font-size:.9rem;font-weight:700}
+  .article-hero{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;margin:0 0 34px;border-radius:14px}
+  .article-layout{display:grid;grid-template-columns:minmax(0,720px);gap:clamp(24px,4vw,48px);align-items:start}
+  .article-layout.has-contents{grid-template-columns:minmax(0,1fr) minmax(0,720px)}
+  .has-contents :global(.article-contents){width:100%;max-width:285px}
+  .article-copy{max-width:720px;font-size:1.1875rem;line-height:1.72;min-width:0}
+  .article-copy :global(h2){font-size:clamp(1.75rem,3.2vw,2.25rem);margin:1.4em 0 .46em;scroll-margin-top:1.4rem}
+  .article-copy :global(h3){font-size:clamp(1.3rem,2.4vw,1.625rem);margin:1.1em 0 .4em;scroll-margin-top:1.4rem}
+  .article-copy :global(h2:target){text-decoration:underline;text-underline-offset:.18em;text-decoration-color:#a87f50}
+  .article-copy :global(p){margin:0 0 1.2em}
+  .article-copy :global(li + li){margin-top:.35em}
+  .article-copy :global(img){display:block;width:100%;height:auto;border-radius:12px;margin-block:28px 12px}
+  .article-copy :global(table){display:block;max-width:100%;overflow-x:auto;border-collapse:collapse}
+  .article-copy :global(th),.article-copy :global(td){padding:8px 12px;border:1px solid #d0d9d0;text-align:left}
+  .article-copy :global(blockquote){border-left:3px solid #83998a;margin:1.4em 0;padding:.7em 1em;background:#eef1e9;border-radius:0 8px 8px 0}
+  .article-copy :global(blockquote p:last-child){margin-bottom:0}
+  [data-format="A_LIST"] .article-copy :global(h2){padding-bottom:.4em;border-bottom:1px solid #d8e0d7}
+  [data-format="B_SYMPTOMS"] .article-copy :global(blockquote){border-color:#a87f50;background:#f0ece2}
+  [data-format="C_EVIDENCE"] .article-copy :global(h2){border-left:3px solid #83998a;padding-inline-start:.55em}
+  [data-format="D_GUIDE"] .article-copy :global(ol){background:#eef1e9;border-radius:10px;padding:1em 1em 1em 2.3em}
+  .article-copy :global(.article-split){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start;margin-block:1.1em 1.5em}
+  .article-copy :global(.article-panel){padding:clamp(16px,2.5vw,24px);border-radius:12px;background:#eef1e9;border:1px solid #d9e2d7}
+  .article-copy :global(.article-split p:last-child),.article-copy :global(.article-panel > :last-child),.article-copy :global(.article-example > :last-child){margin-bottom:0}
+  .article-copy :global(.article-panel p:has(> strong:only-child)){margin-bottom:.45em}
+  .article-copy :global(.article-ingredients){display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 1.2em}
+  .article-copy :global(.article-ingredients li){padding:5px 12px;margin:0;border-radius:8px;background:#eef1e9;border:1px solid #d9e2d7;font-size:.94em}
+  .article-copy :global(.article-checklist){margin:0 0 1.2em}
+  .article-copy :global(.article-checklist ul){padding-inline-start:1.3em}
+  .article-copy :global(.article-example){background:#edf0e7;border:1px solid #d1ddce;border-top:3px solid #527063;border-radius:14px;padding:clamp(15px,3vw,28px);margin:1.6em 0}
+  .article-copy :global(.article-example h3){margin:0}
+  .article-copy :global(.article-example img){margin:12px 0 0}
+  .editorial-article[data-format="D_GUIDE"] .article-ending{max-width:720px}
+  @media(min-width:981px){.editorial-article[data-format="D_GUIDE"] .has-contents + .article-ending{margin-inline-start:auto}}
+  .article-related{display:grid;gap:12px;max-width:720px}
+  .article-related h2{margin:0;font-size:clamp(1.6rem,3vw,2rem)}
+  .editorial-article[data-format="D_GUIDE"] .notice{max-width:720px;padding:14px 18px;margin:20px 0 24px}
+  .editorial-article[data-format="D_GUIDE"] .back-link{margin-top:20px;line-height:1.7}
+  :global(main.content:has(> .editorial-article[data-format="D_GUIDE"])){padding-bottom:clamp(24px,4vw,44px)}
+  @media(max-width:620px){.article-copy :global(.article-split){grid-template-columns:minmax(0,1fr);gap:12px}}
+  @media(min-width:981px){.has-contents :global(.article-contents){position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto}}
+  @media(max-width:980px){
+    .article-layout.has-contents{grid-template-columns:minmax(0,720px)}
+    .has-contents :global(.article-contents){max-width:none}
+  }
+  @media(max-width:600px){
+    .article-heading h1{font-size:clamp(2rem,8vw,2.375rem)}
+    .article-hero{aspect-ratio:3/2;margin-bottom:20px}
+    .article-copy{font-size:1.0625rem;line-height:1.68}
+  }
 </style>
