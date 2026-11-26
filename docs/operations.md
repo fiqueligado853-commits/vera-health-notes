@@ -6,7 +6,17 @@ O Vera Health Notes é uma publicação editorial americana de wellness. O site 
 
 **Antes de iniciar qualquer tarefa, verificar o estado real do GitHub e ler as instruções persistentes. Nunca depender exclusivamente de lembranças da conversa.** Confira o HEAD, a base, o estado e os checks de cada PR. Para edição, crie um worktree ou branch a partir da revisão certa. Preserve as alterações locais do proprietário. Antes do push, verifique novamente as refs remotas e o escopo do diff.
 
-### Estado para retomada em 26/11/2026, horário de São Paulo
+### Estado atual em 26/11/2026 — publicação do PR #8
+
+**12 artigos da fila no ar.** O [PR #8](https://github.com/fiqueligado853-commits/vera-health-notes/pull/8) foi integrado à `main` em [`79e7120`](https://github.com/fiqueligado853-commits/vera-health-notes/commit/79e71202f37b3435f8d0dd94f237ca4101341053), a partir do candidato [`2626c07`](https://github.com/fiqueligado853-commits/vera-health-notes/commit/2626c07aeeac20a619d597d02946096ff7018a9d). Publicados em 26/11/2026: A001, A003, A004, A006, A010, A011, A012, A013, A014, A015, A016 e A020. O [inventário](editorial/article-index-vhn20.csv) contém as URLs verificadas e o [registro de QA](editorial/queue-a001-a020.md) contém a evidência de produção.
+
+- **Pareceres.** Três agentes automatizados separados da redação registraram [decisões editoriais e factuais individuais](https://github.com/fiqueligado853-commits/vera-health-notes/blob/79e71202f37b3435f8d0dd94f237ca4101341053/docs/editorial/reviews-pr8-2026-11-26.md), com nome do agente, versão, hash e fontes. A006, A013 e A015 foram aprovados após ajustes e leitura das versões corrigidas. Os 12 ficaram no escopo informativo com enquadramento clínico `not-required` fundamentado por artigo. A autorização expressa do proprietário foi o controle de liberação separado.
+- **Produção.** [Cloudflare Pages](https://dash.cloudflare.com/?to=/80a8a63269540b6baeeae32f30e267f9/pages/view/vera-health-notes/4ed390fe-3646-4378-a475-116d486565f5) concluiu com sucesso o deploy `4ed390fe` de `79e7120`. [GitHub Actions](https://github.com/fiqueligado853-commits/vera-health-notes/actions/runs/45866968854/job/140072171467) conferiu 32 páginas estáticas e 655 links internos. No domínio oficial, as 12 rotas responderam HTTP 200 e apresentaram canônica própria, navegação por âncoras válida, imagens carregadas com texto alternativo e ausência de `noindex` em meta e cabeçalho HTTP. As 12 URLs aparecem no [sitemap](https://verahealthnotes.com/astro-sitemap-0.xml). Conferidos também 12 destinos internos distintos apontados pelos cards relacionados, todos com HTTP 200.
+- **Oito fora do lote.** A002, A005, A007, A008, A009, A017, A018 e A019 retornaram HTTP 404 e seguem ausentes do sitemap. A002 aguarda enquadramento clínico. A005, A007, A008 e A019 exigem decisão clínica, A009 exige decisão científica e clínica, e A017 e A018 exigem decisão científica e clínica ou farmacêutica. Uma futura publicação desses oito requer autorização específica.
+
+**Retomada.** Use `main` para os 12 publicados e o [PR #7](https://github.com/fiqueligado853-commits/vera-health-notes/pull/7) para os oito rascunhos. Para novas decisões, registre os pareceres separados por versão e hash antes de ativar os campos de publicação. Confira o deploy e cada URL pública antes de mudar o estado no inventário.
+
+### Histórico em 26/11/2026 — preparação antes da publicação
 
 **Publicação A001–A020: 0 no ar.** O proprietário autorizou a publicação de A001, A003, A004, A006, A010, A011, A012, A013, A014, A015, A016, A020, condicionada às aprovações aplicáveis. Os 12 têm pareceres automatizados no PR #7, mas as aprovações editorial independente e factual formais da versão final continuam pendentes. Os registros do projeto não exigem genericamente um revisor humano para o parecer editorial, mas exigem um revisor separado da redação e uma decisão registrada por versão. Aprovação profissional continua obrigatória quando indicada.
 
@@ -67,7 +77,7 @@ A001 prioriza orçamento e aproveitamento em dois jantares. A013 explica grupos 
 - Preserve nome, domínio, logotipo, paleta, tipografia, navegação e componentes aprovados. A página do piloto validou o sumário lateral, a comparação visual, a miniatura de leitura relacionada e o rodapé compacto do modelo D. Reabra somente um problema concreto demonstrado.
 - Use os quatro modelos da coleção e adapte a estrutura à pergunta do leitor. O blog cresce com pautas evergreen, SEO orgânico, links úteis e conteúdo social. Newsletter, publicidade e afiliação contextual dependem de missão, elegibilidade, consentimento ou validação próprios. O blog é independente da oferta e não é etapa obrigatória de funil pago.
 - A operação segue em **ChatGPT + Work**. Uma migração, VPS ou ferramentas externas como n8n, LangGraph e OpenClaw só voltam à pauta por nova solicitação.
-- Use o parecer do PR #7 e as pendências acima para retomar cada artigo. Planeje uma publicação controlada somente depois de registrar as aprovações exigidas e receber a autorização do proprietário.
+- Consulte o estado atual acima. Use o PR #7 para retomar os oito excluídos. Registre as aprovações exigidas e a autorização do proprietário antes de publicar qualquer novo lote.
 
 ## Lições aprendidas
 

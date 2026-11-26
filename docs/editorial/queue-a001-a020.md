@@ -79,3 +79,24 @@ O [PR #8](https://github.com/fiqueligado853-commits/vera-health-notes/pull/8) pa
 | Domínio e sitemap de produção | Todas as 20 rotas retornaram HTTP 404 e estavam ausentes da sitemap oficial. Nenhum artigo da fila foi publicado nesta rodada. |
 
 O [inventário](article-index-vhn20.csv) registra os 12 IDs autorizados sob condição e os oito fora do escopo, com decisão e próxima ação por artigo.
+
+## Publicação verificada em 26/11/2026
+
+[PR #8](https://github.com/fiqueligado853-commits/vera-health-notes/pull/8) integrado a `main` em [`79e7120`](https://github.com/fiqueligado853-commits/vera-health-notes/commit/79e71202f37b3435f8d0dd94f237ca4101341053). [Pareceres independentes por versão e fontes](https://github.com/fiqueligado853-commits/vera-health-notes/blob/79e71202f37b3435f8d0dd94f237ca4101341053/docs/editorial/reviews-pr8-2026-11-26.md). O [build da main](https://github.com/fiqueligado853-commits/vera-health-notes/actions/runs/45866968854/job/140072171467) passou com 32 páginas e 655 links internos. O [Cloudflare](https://dash.cloudflare.com/?to=/80a8a63269540b6baeeae32f30e267f9/pages/view/vera-health-notes/4ed390fe-3646-4378-a475-116d486565f5) aprovou o deploy `4ed390fe` do merge.
+
+| ID | URL de produção | HTTP | Blob publicado |
+| --- | --- | --- | --- |
+| A001 | [10 Foods for a Heart-Healthy Grocery List on a Budget](https://verahealthnotes.com/articles/10-foods-worth-adding-to-a-heart-healthy-grocery-list/) | 200 | `3f80f695cd8be410ec4c810edc232bb959c7ae04` |
+| A003 | [5 Easy Food Swaps for a More Heart-Friendly Kitchen](https://verahealthnotes.com/articles/5-easy-food-swaps-for-a-more-heart-friendly-kitchen/) | 200 | `bb890bc2197a56b61c05efd0ed3aa8bf36b0de3c` |
+| A004 | [What Does a Heart-Healthy Breakfast Actually Look Like?](https://verahealthnotes.com/articles/what-does-a-heart-healthy-breakfast-actually-look-like/) | 200 | `b32135410be016d0a54c31eea05828e7a36ff5ca` |
+| A006 | [7 Ways to Move More on Long Sitting Days](https://verahealthnotes.com/articles/7-everyday-habits-that-can-make-long-sitting-days-more-comfortable/) | 200 | `309cefe0f55d884985bb75c99dc906917f0c0b19` |
+| A010 | [How to Build More Movement Into a Day Spent at a Desk](https://verahealthnotes.com/articles/how-to-build-more-movement-into-a-day-spent-at-a-desk/) | 200 | `abb4e2f786a783064c67be8e44f9c2ac538fb7b9` |
+| A011 | [5 Habits That May Be Getting in the Way of Better Sleep](https://verahealthnotes.com/articles/5-habits-that-may-be-getting-in-the-way-of-better-sleep/) | 200 | `a1426a03062df726bf1284ffa85a7ca2fd1c87a9` |
+| A012 | [How to Build a Simple Bedtime Wind-Down Routine](https://verahealthnotes.com/articles/why-your-evening-routine-matters-more-than-you-might-think/) | 200 | `1e240396917d194802f7d0fdefae40911b40fa41` |
+| A013 | [10 Everyday Foods That Fit DASH and the Food Groups They Cover](https://verahealthnotes.com/articles/10-everyday-foods-that-fit-a-dash-style-eating-plan/) | 200 | `c9365fde19152c0fc0e4e5fca8b6fca23557b12a` |
+| A014 | [Fresh, Frozen, or Canned Vegetables: Which Fit a Healthy Diet?](https://verahealthnotes.com/articles/fresh-frozen-or-canned-vegetables-which-fit-a-healthy-diet/) | 200 | `c222aa7301b432446a6a593776e255c9bb0d4041` |
+| A015 | [What to Look for When Buying Lower-Sodium Foods](https://verahealthnotes.com/articles/what-to-look-for-when-buying-lower-sodium-foods/) | 200 | `dfaf83e4a2fb3051a8028b3d7f1738e529a0d311` |
+| A016 | [7 Simple Ways to Make Heart-Healthy Meals Less Complicated](https://verahealthnotes.com/articles/7-simple-ways-to-make-heart-healthy-meals-less-complicated/) | 200 | `51c538eeceed5c4539c4251ff3fe9de80a5960a4` |
+| A020 | [How Much Movement Do You Really Need During a Busy Week?](https://verahealthnotes.com/articles/how-much-movement-do-you-really-need-during-a-busy-week/) | 200 | `2c7b054541b2e5f01f33ef01007d500b3bfa5c59` |
+
+Todas as 12 rotas apresentaram o título esperado, canônica correspondente no domínio oficial e constavam no sitemap. Em todas as páginas, as imagens principais carregaram com alt, as âncoras do sumário resolveram e nenhum `noindex` apareceu no meta ou no cabeçalho HTTP. Os 12 destinos internos distintos dos cards relacionados retornaram 200. As oito rotas fora do lote retornaram 404 e ficaram fora do sitemap. Indexação nos buscadores não foi aferida.
