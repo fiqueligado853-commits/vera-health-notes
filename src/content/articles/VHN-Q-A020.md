@@ -6,10 +6,11 @@ description: "Understand the weekly adult activity guideline, what counts as mod
 format: "C_EVIDENCE"
 category: "everyday-wellness"
 language: "en-US"
-status: "draft"
-clinical_review: "pending"
-editorial_review: "pending"
-source_review: "pending"
+status: "approved"
+published_at: "2026-11-26"
+clinical_review: "not-required"
+editorial_review: "approved"
+source_review: "approved"
 affiliate_links: false
 related_ids: []
 hero:
