@@ -126,6 +126,7 @@ try {
       assert.ok(information.related.includes("/articles/"), label);
       assert.ok(information.related.every(path => !draftPaths.has(path)), label + " leaks related drafts");
 
+      assert.ok(information.links.some(href => href.startsWith("https://")), label + " missing linked sources");
       for (const href of information.links.filter(value => value.startsWith("/"))) {
         if (verifiedLinks.has(href)) continue;
         assert.ok((await page.request.get(base + href)).ok(), label + " broken internal link " + href);
