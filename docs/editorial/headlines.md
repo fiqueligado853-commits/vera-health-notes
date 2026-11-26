@@ -36,7 +36,7 @@ O acervo interno de copy inclui `HOOKS.pdf`, `angulosdehook.pdf`, `angulosdeanun
 
 O roteiro histórico do Piloto 01 documenta um A/B de duas aberturas, mantendo corpo, CTA e destino para isolar a primeira fala. Mostra como qualificar quem está comparando rótulos por ação concreta. Era aprovação para produzir um teste sob condições, sem resultado publicado no documento. A indicação histórica de mostrar o frasco foi supersedida para criativos Vital Flush pelo protocolo que o mantém fora de cena. Uma versão de anúncio tem seu próprio briefing, compliance e validação.
 
-Os arquivos de ângulos e fascinations estão localizados. As listas completas de 17 ângulos, 11 fascinations e 18 elementos de prova ainda exigem extração verificável e confirmação de versão e escopo de aprovação editorial. Não inferir o restante pela contagem do material de outra coleção. Referências de Makepeace entram como estudo da relação entre característica, razão, benefício verificável, contexto e efeito percebido. A prova determina o limite da promessa.
+Os arquivos de ângulos e fascinations estão localizados. As listas completas de 17 ângulos e 11 fascinations ainda exigem extração verificável e confirmação de versão e escopo de aprovação editorial. Os 18 elementos foram localizados e estão indexados abaixo. Não inferir o restante pela contagem do material de outra coleção. Referências de Makepeace entram como estudo da relação entre característica, razão, benefício verificável, contexto e efeito percebido. A prova determina o limite da promessa.
 
 
 ### Índice de estudo de headlines recuperado
@@ -51,3 +51,30 @@ Os arquivos de ângulos e fascinations estão localizados. As listas completas d
 | 16–20 | Vale a pena pagar; guia com objeção explícita; informação essencial sobre um objetivo; perfil e padrão desejado; hábito que interfere no objetivo. |
 | 21–25 | Descoberta pessoal; conhecimento antes comercializado; bastidores com caso documentado; procedimento usado por um grupo; método pouco conhecido e duração. |
 | 26–30 | Lista de possíveis obstáculos; pergunta sobre informação pouco discutida; motivo de abandonar um comportamento; avaliação de uma prática prejudicial; experiência incomum com resultado verificável. |
+
+### Elementos de prova recuperados — 26/11/2026
+
+Fonte interna consultada integralmente: `Aula sobre elementos de prova.pdf`, cinco páginas, material de estudo de copy. Esta classificação define a aplicação no Vera Health Notes. Elementos de persuasão, prêmios, aparições e endossos só sustentam a alegação específica que realmente comprovam.
+
+| Número | Elemento no material | Aplicação com evidência |
+| --- | --- | --- |
+| 01 | Razões para ler, confiar e entender a diferença | Editorial e anúncios. Explicitar premissa e fonte. |
+| 02 | Especificidade | Editorial e anúncios. Números, datas e unidades verificáveis. |
+| 03 | Fundamentação lógica | Editorial e anúncios. Encadear passos verificáveis. |
+| 04 | Exemplos e documentação | Editorial e anúncios. Rotular simulações e vincular documentos reais. |
+| 05 | Garantia | Comercial quando comprovada para pedido, vendedor e canal. Editorial pode comparar termos datados. |
+| 06 | Testemunhos | Comercial somente com autenticidade, contexto e divulgação. Editorial pode analisar limites, sem usar depoimento como prova clínica. |
+| 07 | Mecanismo de ação | Qualquer alegação de saúde exige evidência aplicável e avaliação qualificada. Editorial pode explicar como verificar a fonte. |
+| 08 | Descrição vívida | Aplicável à redação como enquadramento, não como prova. |
+| 09 | Demonstração | Editorial e anúncios quando mostra a ação real e seus limites. |
+| 10 | Identidade e credibilidade do emissor | Somente autoria, vínculo e qualificação verdadeiros. |
+| 11 | Voz e personalidade | Aplicável à redação, sem valor probatório próprio. |
+| 12 | Histórico comprovável | Editorial e anúncios com evidência, datas e contexto. |
+| 13 | Estudo de caso | Caso real autorizado com limites e contexto. Exemplo simulado deve ser identificado e não serve como prova de resultado. |
+| 14 | Estudos clínicos | Identificar protocolo, produto, população, desfecho e limitação. Encaminhar conclusões de saúde à revisão aplicável. |
+| 15 | Publicações | Citar o documento original e explicar seu escopo. |
+| 16 | Quadros e gráficos de processo | Editorial e anúncios com rótulos, fontes e método claros. |
+| 17 | Aparições na mídia | Contexto verificável. Cobertura, patrocínio e evidência de eficácia são distintos. |
+| 18 | Endosso de celebridade | Comercial mediante evidência e divulgação. A notoriedade não comprova efeito do produto. |
+
+**Resultado parcial da extração.** `angulosdehook.pdf` (três páginas) e `fascinations.pdf` (cinco páginas) estão localizados como PDFs sem camada textual recuperável. A tentativa autorizada de baixar as páginas para OCR terminou em falha de rede. Os nove ângulos conferidos no Hook Master continuam documentados acima e não foram tratados como a coleção de 17. Os comandos originais e o piloto não definem cotas por seção ou posições fixas para todos os artigos. Os briefings registram a imagem principal, o ponto útil para complemento e direções de geração por pauta. Prompts finais de ativos antigos continuam sem confirmação.
