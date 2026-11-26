@@ -36,7 +36,7 @@ O acervo interno de copy inclui `HOOKS.pdf`, `angulosdehook.pdf`, `angulosdeanun
 
 O roteiro histórico do Piloto 01 documenta um A/B de duas aberturas, mantendo corpo, CTA e destino para isolar a primeira fala. Mostra como qualificar quem está comparando rótulos por ação concreta. Era aprovação para produzir um teste sob condições, sem resultado publicado no documento. A indicação histórica de mostrar o frasco foi supersedida para criativos Vital Flush pelo protocolo que o mantém fora de cena. Uma versão de anúncio tem seu próprio briefing, compliance e validação.
 
-Os arquivos de ângulos e fascinations estão localizados. As listas completas de 17 ângulos e 11 fascinations ainda exigem extração verificável e confirmação de versão e escopo de aprovação editorial. Os 18 elementos foram localizados e estão indexados abaixo. Não inferir o restante pela contagem do material de outra coleção. Referências de Makepeace entram como estudo da relação entre característica, razão, benefício verificável, contexto e efeito percebido. A prova determina o limite da promessa.
+Os arquivos de ângulos e fascinations estão localizados. Os 18 elementos de prova e as 11 fascinations foram recuperados. A coleção histórica exata de 17 ângulos ainda não foi confirmada. Não inferir o restante pela contagem do material de outra coleção. Referências de Makepeace entram como estudo da relação entre característica, razão, benefício verificável, contexto e efeito percebido. A prova determina o limite da promessa.
 
 
 ### Índice de estudo de headlines recuperado
@@ -78,3 +78,30 @@ Fonte interna consultada integralmente: `Aula sobre elementos de prova.pdf`, cin
 | 18 | Endosso de celebridade | Comercial mediante evidência e divulgação. A notoriedade não comprova efeito do produto. |
 
 **Resultado parcial da extração.** `angulosdehook.pdf` (três páginas) e `fascinations.pdf` (cinco páginas) estão localizados como PDFs sem camada textual recuperável. A tentativa autorizada de baixar as páginas para OCR terminou em falha de rede. Os nove ângulos conferidos no Hook Master continuam documentados acima e não foram tratados como a coleção de 17. Os comandos originais e o piloto não definem cotas por seção ou posições fixas para todos os artigos. Os briefings registram a imagem principal, o ponto útil para complemento e direções de geração por pauta. Prompts finais de ativos antigos continuam sem confirmação.
+
+### Fascinations e acervos de ângulos — conferência visual no Drive
+
+A leitura direta posterior recuperou a fonte `fascinations.pdf` (cinco páginas) e a lista de onze tipos. Guardamos o nome e a forma, sem transcrever exemplos promocionais. Uma técnica de abertura só pode prometer o que o texto entrega e a fonte sustenta.
+
+| # | Tipo | Uso no Vera Health Notes |
+| --- | --- | --- |
+| 1 | Por quê | Editorial quando explica uma diferença ou causa comprovável. |
+| 2 | Como | Editorial para procedimento reproduzível. |
+| 3 | Quando | Editorial para condições ou momento verificáveis. |
+| 4 | O que | Editorial para definição, evidência ou orientação direta. |
+| 5 | Segredo | Referência publicitária. No blog, use informação concreta pouco visível com fonte, sem alegar ocultação. |
+| 6 | Listagem | Editorial se a lista completa resolve a tarefa, sem reter a resposta. |
+| 7 | Nunca | Referência de publicidade. Evite absolutos. Use formulação proporcional e evidência quando houver uma proibição real. |
+| 8 | Contrariação | Editorial apenas para corrigir uma crença verificável, com evidência e limites. |
+| 9 | Questão nomeada | Editorial com nome reconhecido ou categoria transparente e explicada. Nenhuma autoridade ou condição inventada. |
+| 10 | Rápido | Pode descrever o tempo de um procedimento editorial conferido, sem prometer efeito clínico. |
+| 11 | Plus | Editorial quando um próximo passo complementar é realmente útil e apresentado após a resposta. |
+
+As diferentes coleções de ângulos foram consultadas separadamente:
+
+- `angulosdehook.pdf`, páginas 1–3, traz 11 títulos numerados: contrário, ideia paradoxal, Pop Quizz, curiosidade, conspiração, teaser do mecanismo, truque, receita estranha, nova descoberta, história e problema/solução.
+- `angulosdeanuncio.pdf`, páginas 1–4, traz nove títulos: contrarian, ideia paradoxal, Pop Quizz, curiosidade, conspiração, teaser do mecanismo, truque, história de horror e problema-solução.
+- `anguloscriativospaulocopy.pdf`, páginas 1–2, traz sete famílias explícitas: prova, promessa, curiosidade, história de fundo do poço, inimigo comum, conspiração e reason why.
+- `HOOKS.pdf` tem os nove títulos catalogados acima. O dossiê `COPY DECISION-MAKING SUPPORT_[JS VSL VITALFLUSH]` traz outra matriz nas páginas 109–114. Ela é pesquisa de criativos de uma oferta, não um protocolo editorial.
+
+**Escopo.** Pergunta, contraste factual, curiosidade com resposta, exemplo, descrição do problema e procedimento prático são transposições editoriais condicionadas a prova, relevância e respeito ao leitor. Medo, conspiração, falsa descoberta, autoridade ou depoimento inventados, garantia não comprovada e pretensão terapêutica sem sustentação não são padrões aprovados. A lista histórica exata de 17 ângulos não foi identificada em uma fonte que permita confirmar versão, contagem e aprovação. As coleções acima têm itens sobrepostos e não foram somadas para produzir esse número.
