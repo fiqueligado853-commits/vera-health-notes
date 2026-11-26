@@ -1,10 +1,11 @@
 import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
-import { chromium } from "playwright";
+import { createRequire } from "node:module";
 import { parse } from "yaml";
 import { isPublishable } from "../src/lib/publishing.js";
 
+const { chromium } = createRequire(import.meta.url)("playwright");
 const base = process.env.VHN_QA_URL ?? "http://127.0.0.1:4321";
 const collection = "src/content/articles";
 const paths = (await readdir(collection)).filter(name => /^VHN-(?:E04|VF-A01|Q-A\d{3})\.md$/.test(name));
@@ -88,7 +89,7 @@ try {
           allAnchorsResolve: anchors.every(id => document.getElementById(id)),
           links: articleLinks,
           related: Array.from(article.querySelectorAll(".article-ending a[href^='/articles/']"), a => a.pathname),
-          hero: { alt: hero.alt, loaded: hero.complete && hero.naturalWidth > 0, width: hero.clientWidth, height: hero.clientHeight },
+          hero: { alt: hero.alt, loaded: hero.complete && hero.naturalWidth > 0, width: hero.clientWidth, height: hero.clientHeight, naturalRatio: hero.naturalWidth / hero.naturalHeight, fit: getComputedStyle(hero).objectFit },
           images: Array.from(article.querySelectorAll(".article-hero,.article-copy img"), image => ({ alt: image.alt, loaded: image.complete && image.naturalWidth > 0 })),
           horizontalOverflow: document.documentElement.scrollWidth - window.innerWidth,
           tocLeft: contents.getBoundingClientRect().left < copy.getBoundingClientRect().left,
@@ -116,7 +117,9 @@ try {
       assert.equal(information.headings[0].depth, 2, label);
       assert.ok(information.hero.loaded && information.hero.alt === data.hero.alt, label);
       const ratio = information.hero.width / information.hero.height;
-      assert.ok(Math.abs(ratio - (width <= 600 ? 1.5 : 2)) < 0.04, label + " hero ratio");
+      const expectedRatio = data.hero.fit === "contain" ? information.hero.naturalRatio : width <= 600 ? 1.5 : 2;
+      assert.ok(Math.abs(ratio - expectedRatio) < 0.04, label + " hero ratio");
+      assert.equal(information.hero.fit, data.hero.fit ?? "cover", label + " hero fit");
       assert.equal(information.images.length, imageCount, label);
       assert.ok(information.images.every(image => image.alt && image.loaded), label);
       for (const id of data.related_ids) assert.ok(articleById.has(id), label + " related ID " + id);

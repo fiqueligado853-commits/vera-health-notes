@@ -51,7 +51,7 @@ const articleJson = JSON.stringify(structuredData).replaceAll("<", "\\u003c");
     <h1>{article.data.title}</h1>
     {(author || published_at) && <p>{author && <span>By {author}</span>}{author && published_at && " · "}{published_at && <time datetime={published_at.toISOString()}>{published_at.toLocaleDateString("en-US", { dateStyle: "long", timeZone: "UTC" })}</time>}</p>}
     </header>
-    {hero && <Image src={hero.image} alt={hero.alt} class="article-hero" widths={[480, 768, 1080]} sizes="(max-width: 740px) 92vw, (max-width: 1140px) 96vw, 1100px" width={1080} loading="eager" fetchpriority="high" />}
+    {hero && <Image src={hero.image} alt={hero.alt} class="article-hero" data-fit={hero.fit} widths={[480, 768, 1080]} sizes="(max-width: 740px) 92vw, (max-width: 1140px) 96vw, 1100px" width={1080} loading="eager" fetchpriority="high" />}
     <div class="article-layout" class:list={{ "has-contents": headings.filter(heading => heading.depth === 2).length >= 4 }}>
       <ArticleContents {headings} {format} />
       <div class="copy article-copy"><Content /></div>
@@ -84,6 +84,7 @@ const articleJson = JSON.stringify(structuredData).replaceAll("<", "\\u003c");
   .article-heading h1{font-size:clamp(2.25rem,4.7vw,3.25rem);margin:12px 0 22px;letter-spacing:-.024em}
   .preview-status{display:inline-block;margin:0 0 18px;padding:6px 12px;border-radius:6px;background:#ece7da;color:#4b3b29;font-size:.9rem;font-weight:700}
   .article-hero{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;margin:0 0 34px;border-radius:14px}
+  .article-hero[data-fit="contain"]{aspect-ratio:auto;object-fit:contain}
   .article-layout{display:grid;grid-template-columns:minmax(0,720px);gap:clamp(24px,4vw,48px);align-items:start}
   .article-layout.has-contents{grid-template-columns:minmax(0,1fr) minmax(0,720px)}
   .has-contents :global(.article-contents){width:100%;max-width:285px}

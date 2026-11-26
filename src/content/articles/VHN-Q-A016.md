@@ -66,3 +66,4 @@ Choose one practical change for this week: a freezer vegetable, a pantry dinner,
 - [NHLBI | DASH Eating Plan](https://www.nhlbi.nih.gov/health/dash-eating-plan)
 - [FDA | Sodium in Your Diet](https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet)
 - [FoodSafety.gov | Four Steps to Food Safety](https://www.foodsafety.gov/keep-food-safe/4-steps-to-food-safety)
+- [USDA FSIS | How do I handle leftovers safely?](https://ask.fsis.usda.gov/article/How-do-I-handle-leftovers-safely)

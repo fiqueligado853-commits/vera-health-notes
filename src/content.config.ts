@@ -15,7 +15,8 @@ const articles = defineCollection({
     format: z.enum(["A_LIST", "B_SYMPTOMS", "C_EVIDENCE", "D_GUIDE"]).optional(),
     hero: z.object({
       image: image(),
-      alt: z.string().min(1)
+      alt: z.string().min(1),
+      fit: z.literal("contain").optional()
     }).optional(),
     related_ids: z.array(z.string()).default([]),
     author: z.string().min(1).optional(),

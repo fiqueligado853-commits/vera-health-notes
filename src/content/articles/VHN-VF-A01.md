@@ -14,6 +14,7 @@ editorial_review: "pending"
 source_review: "pending"
 hero:
   image: "../../assets/articles/two-readings.webp"
+  fit: "contain"
   alt: "A timeline showing two home blood pressure readings one minute apart, with a reminder to record both."
 ---
 
