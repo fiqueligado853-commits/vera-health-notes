@@ -10,7 +10,7 @@ affiliate_links: false
 clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
-related_ids: []
+related_ids: ["VHN-E01"]
 format: "D_GUIDE"
 hero:
   image: "../../assets/articles/vhn-e04-lunch.webp"
@@ -49,13 +49,24 @@ You may find that changing one ingredient makes more sense than replacing the wh
 
 ## 3. Canned soup
 
+<div class="article-split">
+<div>
+
 A can of soup may hold more than one serving. Check the number of servings in the container before deciding what the number on the label means for your bowl. If the label has a per-container column and you plan to eat the whole can, use that column.
 
-**What to try:** Look at both the sodium per serving and the number of servings in the container.
+You can also make a quick soup from no-salt-added ingredients and season it with herbs, garlic, or lemon.
+
+</div>
+<div class="article-panel">
+
+**What to try**
+
+Look at both the sodium per serving and the number of servings in the container.
 
 Compare regular, reduced-sodium, and low-sodium varieties rather than assuming every soup in the same category is similar.
 
-You can also make a quick soup from no-salt-added ingredients and season it with herbs, garlic, or lemon.
+</div>
+</div>
 
 ## 4. Pizza
 
@@ -105,7 +116,12 @@ That's why a sandwich can be worth checking even when none of its ingredients se
 
 Consider a familiar lunch:
 
-Two slices of bread. Deli turkey. Cheese. Mustard.
+<ul class="article-ingredients" role="list">
+<li>Two slices of bread</li>
+<li>Deli turkey</li>
+<li>Cheese</li>
+<li>Mustard</li>
+</ul>
 
 You might not add a grain of salt, yet sodium can come from every part of that meal.
 
@@ -150,11 +166,15 @@ Try this three-step comparison.
 2. **Read sodium in milligrams.** Use the amount for the matched quantity.
 3. **Adjust for your portion.** Multiply the sodium per serving by the number of servings you plan to eat.
 
-![Illustration for two hypothetical soups, A with 360 milligrams per cup and B with 240 milligrams per half cup, or 480 milligrams per cup.](../../assets/articles/vhn-e04-sodium-comparison.webp)
+<div class="article-example">
 
 ### Example: What if the cans list different serving sizes?
 
+![Illustration for two hypothetical soups, A with 360 milligrams per cup and B with 240 milligrams per half cup, or 480 milligrams per cup.](../../assets/articles/vhn-e04-sodium-comparison.webp)
+
 Suppose soup A lists 360 mg per cup and soup B lists 240 mg per half cup. To compare a one-cup bowl, double soup B’s number. That gives you **360 mg for soup A and 480 mg for soup B**. These numbers are hypothetical. On a real package, check the stated weight or volume when converting.
+
+</div>
 
 A food with a modest sodium figure per serving can contribute more if your portion is several servings.
 
@@ -182,6 +202,8 @@ The [NHLBI overview of DASH](https://www.nhlbi.nih.gov/health/dash-eating-plan) 
 
 ## Grocery checklist
 
+<div class="article-panel article-checklist">
+
 Before putting a packaged food in your cart, ask:
 
 - Is the serving size similar to the amount I actually eat?
@@ -189,6 +211,8 @@ Before putting a packaged food in your cart, ask:
 - Is there another version with less sodium?
 - Will I enjoy the alternative enough to buy it again?
 - Does it fit the way I normally prepare meals?
+
+</div>
 
 If you only have time for one comparison, pick the food you buy most often. Save a photo of the label or jot down your preferred option so you can find it next time.
 

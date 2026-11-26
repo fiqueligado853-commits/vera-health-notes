@@ -50,3 +50,9 @@ hero:
   image: "./images/hero.webp"
   alt: "Specific alternative text for the supplied photo"
 ```
+
+## QA do refinamento visual
+
+- O bloco de sopa separa explicação e dica prática em duas colunas que se empilham no celular. A lista do sanduíche e o checklist alternam o ritmo da leitura. O exemplo de sódio usa a figura original, com a comparação por porções também disponível no texto.
+- O card compacto reutiliza a miniatura do VHN-E01, artigo publicado sobre tamanhos de porção em rótulos de suplementos. A seção final acompanha a largura da coluna de leitura. O espaço inferior do conteúdo é de 44 px em desktop e 24 px no celular.
+- Preview privado conferido no Chrome a 1440, 390 e 320 px. Sumário, imagem de comparação, miniatura e navegação do card funcionaram, sem rolagem horizontal. O build verificou 20 páginas e 329 links internos. O piloto mantém noindex no preview e fica fora do sitemap e do build de produção.
