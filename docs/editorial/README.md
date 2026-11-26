@@ -32,3 +32,6 @@ Preparar oportunidades por interesse declarado, como atualizações de leitura d
 - [Biblioteca de headlines](headlines.md)
 - [Pesquisa, briefing e decisões do primeiro lote](evergreen-2026-11-25.md)
 - [Pareceres editoriais do primeiro lote](reviews-2026-11-25.md)
+- [Modelos, imagens e fluxo do piloto VHN-E04](pilot-e04.md)
+- [Inventário reconciliado do pacote de 20 artigos](article-index-vhn20.csv)
+- [Briefings e visuais sugeridos no pacote de 20 artigos](article-briefs-vhn20.json)

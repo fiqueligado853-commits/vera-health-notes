@@ -1,0 +1,510 @@
+{
+  "project": "Vera Health Notes",
+  "created": "2026-11-25",
+  "status": "DRAFTS_NOT_PUBLICATION_APPROVAL",
+  "articles": [
+    {
+      "id": "A001",
+      "title": "10 Foods Worth Adding to a Heart-Healthy Grocery List",
+      "slug": "10-foods-worth-adding-to-a-heart-healthy-grocery-list",
+      "file": "articles/A001-10-foods-worth-adding-to-a-heart-healthy-grocery-list.md",
+      "model": "A_LIST",
+      "persona": "American grocery shopper seeking achievable changes",
+      "angle": "benefit + practical list",
+      "dek": "The most useful heart-healthy shopping list is one you can actually use next Tuesday.",
+      "word_count": 702,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal grocery guide",
+      "notes": "",
+      "visuals": [
+        "hero: approachable overhead real grocery bag with familiar produce, oats, canned beans and yogurt; 16:9",
+        "mid: editorial close-up of beans/grains/unsalted nuts in pantry; 3:2",
+        "end: original grocery checklist graphic; do not invent nutrient values"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+        "https://www.nhlbi.nih.gov/health/dash/living-with-dash",
+        "https://www.fda.gov/food/nutrition-education-resources-materials/sodium-nutrition-facts-label"
+      ]
+    },
+    {
+      "id": "A002",
+      "title": "7 Everyday Foods That Can Be Surprisingly High in Sodium",
+      "slug": "7-everyday-foods-that-can-be-surprisingly-high-in-sodium",
+      "file": "articles/A002-7-everyday-foods-that-can-be-surprisingly-high-in-sodium.md",
+      "model": "D_GUIDE",
+      "persona": "U.S. shopper cooking at home",
+      "angle": "curiosity + ingredient detective",
+      "dek": "The sodium you notice is not always the sodium you eat.",
+      "word_count": 825,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A001",
+      "notes": "",
+      "visuals": [
+        "hero: cinematic editorial kitchen countertop with bread, canned soup, turkey, sauce; no brand text, 16:9",
+        "mid after soup: adult hands comparing two neutral soup labels without numeric inventions, 3:2",
+        "before label section: original 5% vs 20% daily value diagram, accessible"
+      ],
+      "source_urls": [
+        "https://www.fda.gov/food/nutrition-education-resources-materials/sodium-nutrition-facts-label",
+        "https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm315393.htm",
+        "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+        "https://www.nhlbi.nih.gov/health/dash/living-with-dash"
+      ]
+    },
+    {
+      "id": "A003",
+      "title": "5 Easy Food Swaps for a More Heart-Friendly Kitchen",
+      "slug": "5-easy-food-swaps-for-a-more-heart-friendly-kitchen",
+      "file": "articles/A003-5-easy-food-swaps-for-a-more-heart-friendly-kitchen.md",
+      "model": "A_LIST",
+      "persona": "Busy cook who dislikes restrictive advice",
+      "angle": "easy improvements",
+      "dek": "Small changes are easier to repeat when dinner still tastes like dinner.",
+      "word_count": 685,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A002",
+      "notes": "",
+      "visuals": [
+        "hero: paired realistic kitchen ingredients sauces grains vegetables, tasteful no text 16:9",
+        "mid: visual before/after simple meal components without health outcome claim",
+        "end: five-swap checklist typography handled as native HTML"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+        "https://www.nhlbi.nih.gov/health/dash/living-with-dash",
+        "https://www.fda.gov/food/nutrition-education-resources-materials/sodium-nutrition-facts-label"
+      ]
+    },
+    {
+      "id": "A004",
+      "title": "What Does a Heart-Healthy Breakfast Actually Look Like?",
+      "slug": "what-does-a-heart-healthy-breakfast-actually-look-like",
+      "file": "articles/A004-what-does-a-heart-healthy-breakfast-actually-look-like.md",
+      "model": "D_GUIDE",
+      "persona": "Older adult trying to plan satisfying breakfast",
+      "angle": "question + examples",
+      "dek": "A better breakfast does not require a superfood, a blender, or an hour of prep.",
+      "word_count": 608,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A001",
+      "notes": "",
+      "visuals": [
+        "hero: realistic breakfast table oats berries yogurt wholegrain toast natural light 16:9",
+        "mid: three original photographic breakfast combinations 3 panels",
+        "end: simple meal builder as HTML accessible"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+        "https://www.nhlbi.nih.gov/health/dash/living-with-dash",
+        "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label"
+      ]
+    },
+    {
+      "id": "A005",
+      "title": "Why Your Legs May Feel Heavy After Sitting All Day",
+      "slug": "why-your-legs-may-feel-heavy-after-sitting-all-day",
+      "file": "articles/A005-why-your-legs-may-feel-heavy-after-sitting-all-day.md",
+      "model": "B_SYMPTOMS",
+      "persona": "U.S. desk worker noticing persistent heaviness",
+      "angle": "symptom + time context",
+      "dek": "A long day at a desk can leave your legs feeling unlike they did that morning. What should you pay attention to?",
+      "word_count": 741,
+      "gate": "CLINICAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A007",
+      "notes": "",
+      "visuals": [
+        "hero: candid adult at desk at dusk noticing tired legs, no distress exaggeration 16:9",
+        "mid: tasteful photo of walking break outdoors natural daylight",
+        "later: native red flag checklist no alarming medical stock"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/healthy-weight-growth/physical-activity/getting-started.html",
+        "https://www.nhlbi.nih.gov/health/varicose-veins",
+        "https://www.nhs.uk/conditions/Oedema/",
+        "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/"
+      ]
+    },
+    {
+      "id": "A006",
+      "title": "7 Everyday Habits That Can Make Long Sitting Days More Comfortable",
+      "slug": "7-everyday-habits-that-can-make-long-sitting-days-more-comfortable",
+      "file": "articles/A006-7-everyday-habits-that-can-make-long-sitting-days-more-comfortable.md",
+      "model": "D_GUIDE",
+      "persona": "Sedentary office worker seeking realistic movement",
+      "angle": "habit checklist",
+      "dek": "A calendar full of meetings does not have to mean hours without moving.",
+      "word_count": 692,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A005",
+      "notes": "",
+      "visuals": [
+        "hero: accessible real office worker taking light walking break during work 16:9",
+        "mid: shoes and notebook near desk, natural editorial 3:2",
+        "end: accessible 7-point checklist native HTML"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+        "https://www.cdc.gov/physical-activity/features/getting-more-active-minutes.html",
+        "https://www.nhs.uk/conditions/Oedema/"
+      ]
+    },
+    {
+      "id": "A007",
+      "title": "Why Do Your Ankles Look More Swollen at Night?",
+      "slug": "why-do-your-ankles-look-more-swollen-at-night",
+      "file": "articles/A007-why-do-your-ankles-look-more-swollen-at-night.md",
+      "model": "B_SYMPTOMS",
+      "persona": "Adult noticing shoe tightness after work",
+      "angle": "symptom + evening",
+      "dek": "When the shoes that fit at breakfast feel tight by dinner, the details matter.",
+      "word_count": 698,
+      "gate": "CLINICAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A005",
+      "notes": "",
+      "visuals": [
+        "hero: adult in home entryway removing ordinary shoes after day, natural editorial 16:9",
+        "mid: tasteful close-up shoes and socks not diagnostic skin lesion",
+        "end: clear urgency callout as native HTML"
+      ],
+      "source_urls": [
+        "https://www.nhs.uk/conditions/Oedema/",
+        "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+        "https://www.nhlbi.nih.gov/health/varicose-veins"
+      ]
+    },
+    {
+      "id": "A008",
+      "title": "Heavy Legs After Work? What Might Be Worth Paying Attention To",
+      "slug": "heavy-legs-after-work-what-might-be-worth-paying-attention-to",
+      "file": "articles/A008-heavy-legs-after-work-what-might-be-worth-paying-attention-to.md",
+      "model": "B_SYMPTOMS",
+      "persona": "Person whose evening discomfort affects routines",
+      "angle": "identification + symptom diary",
+      "dek": "Some days your legs are tired. Other days, the same feeling keeps asking for an explanation.",
+      "word_count": 671,
+      "gate": "CLINICAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A007",
+      "notes": "",
+      "visuals": [
+        "hero: commuter arriving home putting bag aside after work natural editorial without medical alarm",
+        "mid: notebook with blank symptom fields, not a mock patient record",
+        "end: symptom tracking checklist native HTML"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/varicose-veins",
+        "https://www.nhs.uk/conditions/Oedema/",
+        "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+        "https://www.cdc.gov/healthy-weight-growth/physical-activity/getting-started.html"
+      ]
+    },
+    {
+      "id": "A009",
+      "title": "Does Walking After Dinner Really Make a Difference?",
+      "slug": "does-walking-after-dinner-really-make-a-difference",
+      "file": "articles/A009-does-walking-after-dinner-really-make-a-difference.md",
+      "model": "C_EVIDENCE",
+      "persona": "Busy American adult seeking small movement habit",
+      "angle": "curiosity + science",
+      "dek": "A short stroll after dinner sounds simple. What can it realistically do?",
+      "word_count": 672,
+      "gate": "SCIENTIFIC_CLINICAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A010",
+      "notes": "",
+      "visuals": [
+        "hero: adults walking in neighborhood at dusk after dinner candid natural lifestyle 16:9",
+        "mid: original simple illustration dinner > comfortable stroll > routine, avoid claim graph",
+        "end: action checklist 3 steps"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10036272/",
+        "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+        "https://www.cdc.gov/healthy-weight-growth/physical-activity/getting-started.html"
+      ]
+    },
+    {
+      "id": "A010",
+      "title": "How to Build More Movement Into a Day Spent at a Desk",
+      "slug": "how-to-build-more-movement-into-a-day-spent-at-a-desk",
+      "file": "articles/A010-how-to-build-more-movement-into-a-day-spent-at-a-desk.md",
+      "model": "D_GUIDE",
+      "persona": "Remote worker with dense schedule",
+      "angle": "practical routine builder",
+      "dek": "You do not need a standing desk to stop a whole day disappearing into a chair.",
+      "word_count": 579,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A006",
+      "notes": "",
+      "visuals": [
+        "hero: home workspace with adult taking movement break by window, realistic non-stock 16:9",
+        "mid: native workday timeline simple accessible",
+        "end: checklist with two cues"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+        "https://www.cdc.gov/healthy-weight-growth/physical-activity/getting-started.html",
+        "https://www.cdc.gov/physical-activity/features/getting-more-active-minutes.html"
+      ]
+    },
+    {
+      "id": "A011",
+      "title": "5 Habits That May Be Getting in the Way of Better Sleep",
+      "slug": "5-habits-that-may-be-getting-in-the-way-of-better-sleep",
+      "file": "articles/A011-5-habits-that-may-be-getting-in-the-way-of-better-sleep.md",
+      "model": "A_LIST",
+      "persona": "Busy adult whose evenings feel too full",
+      "angle": "mistakes + simple fixes",
+      "dek": "Sometimes the problem is not your bedtime. It is everything competing for space before it.",
+      "word_count": 623,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A012",
+      "notes": "",
+      "visuals": [
+        "hero: warm bedroom nightstand book soft lamp phone placed aside authentic 16:9",
+        "mid: natural person winding down reading no text",
+        "end: short two-step routine card native HTML"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sleep/about/",
+        "https://health.nih.gov/health-topics-a-z/healthy-sleep",
+        "https://sleepeducation.org/healthy-sleep/healthy-sleep-habits/"
+      ]
+    },
+    {
+      "id": "A012",
+      "title": "Why Your Evening Routine Matters More Than You Might Think",
+      "slug": "why-your-evening-routine-matters-more-than-you-might-think",
+      "file": "articles/A012-why-your-evening-routine-matters-more-than-you-might-think.md",
+      "model": "C_EVIDENCE",
+      "persona": "Adult looking for sleep consistency",
+      "angle": "curiosity + ritual",
+      "dek": "A bedtime routine does not have to be elaborate to send a familiar signal: the day is ending.",
+      "word_count": 588,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A011",
+      "notes": "",
+      "visuals": [
+        "hero: evening adult closing laptop and turning on warm reading lamp photoreal editorial 16:9",
+        "mid: quiet bedroom natural subtle visual, no fake medical figures",
+        "end: 3-step bedtime sequence visual native HTML"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sleep/about/",
+        "https://health.nih.gov/health-topics-a-z/healthy-sleep",
+        "https://sleepeducation.org/healthy-sleep/healthy-sleep-habits/"
+      ]
+    },
+    {
+      "id": "A013",
+      "title": "10 Everyday Foods That Fit a DASH-Style Eating Plan",
+      "slug": "10-everyday-foods-that-fit-a-dash-style-eating-plan",
+      "file": "articles/A013-10-everyday-foods-that-fit-a-dash-style-eating-plan.md",
+      "model": "A_LIST",
+      "persona": "Shopper learning DASH without specialty products",
+      "angle": "practical DASH food list",
+      "dek": "DASH sounds technical. The grocery list can be wonderfully ordinary.",
+      "word_count": 660,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A001",
+      "notes": "",
+      "visuals": [
+        "hero: photographed colorful ordinary U.S. grocery ingredients on kitchen table overhead 16:9",
+        "mid: portrait separate photo groupings fruits vegetables grains 3:2",
+        "end: native printable list with clear ingredient names"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+        "https://www.nhlbi.nih.gov/health/dash/living-with-dash",
+        "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods"
+      ]
+    },
+    {
+      "id": "A014",
+      "title": "Fresh, Frozen, or Canned Vegetables: Which Fit a Healthy Diet?",
+      "slug": "fresh-frozen-or-canned-vegetables-which-fit-a-healthy-diet",
+      "file": "articles/A014-fresh-frozen-or-canned-vegetables-which-fit-a-healthy-diet.md",
+      "model": "C_EVIDENCE",
+      "persona": "Budget-conscious vegetable shopper",
+      "angle": "comparison + myth-busting",
+      "dek": "The best vegetables are not always the ones that look most impressive in the produce aisle.",
+      "word_count": 598,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A015",
+      "notes": "",
+      "visuals": [
+        "hero: triptych fresh broccoli frozen vegetables canned vegetables arranged as neutral kitchen still life 16:9",
+        "mid: hands using frozen vegetables while cooking real life",
+        "end: original three-column comparison accessible HTML"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+        "https://www.nhlbi.nih.gov/health/dash/living-with-dash",
+        "https://www.fda.gov/food/nutrition-education-resources-materials/sodium-nutrition-facts-label"
+      ]
+    },
+    {
+      "id": "A015",
+      "title": "What to Look for When Buying Lower-Sodium Foods",
+      "slug": "what-to-look-for-when-buying-lower-sodium-foods",
+      "file": "articles/A015-what-to-look-for-when-buying-lower-sodium-foods.md",
+      "model": "D_GUIDE",
+      "persona": "American shopper comparing packaged foods",
+      "angle": "how-to + confidence",
+      "dek": "A “better choice” label is less useful than knowing what is inside the package.",
+      "word_count": 661,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A002",
+      "notes": "",
+      "visuals": [
+        "hero: close photograph hands holding neutral packaged food and reading nutrition labels kitchen natural 16:9",
+        "mid: original accurate FDA 5% low 20% high pictogram",
+        "end: native four-step shopping checklist"
+      ],
+      "source_urls": [
+        "https://www.fda.gov/food/nutrition-education-resources-materials/sodium-nutrition-facts-label",
+        "https://www.fda.gov/Food/ResourcesForYou/Consumers/ucm315393.htm",
+        "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+        "https://www.nhlbi.nih.gov/health/dash/living-with-dash"
+      ]
+    },
+    {
+      "id": "A016",
+      "title": "7 Simple Ways to Make Heart-Healthy Meals Less Complicated",
+      "slug": "7-simple-ways-to-make-heart-healthy-meals-less-complicated",
+      "file": "articles/A016-7-simple-ways-to-make-heart-healthy-meals-less-complicated.md",
+      "model": "A_LIST",
+      "persona": "Busy household cook",
+      "angle": "benefit + simplicity",
+      "dek": "A healthy dinner should not require a second job.",
+      "word_count": 645,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A003",
+      "notes": "",
+      "visuals": [
+        "hero: realistic simple weeknight dinner colorful vegetables grains fish on plates home dining table 16:9",
+        "mid: 3 small varied dinner photos, not copied from competitors",
+        "end: meal planning simple checklist native HTML"
+      ],
+      "source_urls": [
+        "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+        "https://www.nhlbi.nih.gov/health/dash/living-with-dash",
+        "https://www.fda.gov/food/nutrition-education-resources-materials/sodium-nutrition-facts-label"
+      ]
+    },
+    {
+      "id": "A017",
+      "title": "What Does the Research Actually Say About Garlic and Heart Health?",
+      "slug": "what-does-the-research-actually-say-about-garlic-and-heart-health",
+      "file": "articles/A017-what-does-the-research-actually-say-about-garlic-and-heart-health.md",
+      "model": "C_EVIDENCE",
+      "persona": "Consumer intrigued by wellness ingredient advertising",
+      "angle": "evidence + limitations",
+      "dek": "Garlic is familiar on the plate. The claims around garlic supplements are much more complicated.",
+      "word_count": 650,
+      "gate": "SCIENTIFIC_CLINICAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A018",
+      "notes": "NO VitalFlush CTA until verified formula/product evidence and separate compliant commercial review",
+      "visuals": [
+        "hero: fresh garlic on cutting board herbs kitchen natural still life no bottle claims 16:9",
+        "mid: original evidence ladder illustration, no fake study graphics",
+        "end: three question label audit native HTML"
+      ],
+      "source_urls": [
+        "https://www.nccih.nih.gov/health/garlic",
+        "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods"
+      ]
+    },
+    {
+      "id": "A018",
+      "title": "Garlic in Food vs. Garlic Supplements: What Changes?",
+      "slug": "garlic-in-food-vs-garlic-supplements-what-changes",
+      "file": "articles/A018-garlic-in-food-vs-garlic-supplements-what-changes.md",
+      "model": "C_EVIDENCE",
+      "persona": "Reader comparing ingredient in dinner vs bottle",
+      "angle": "comparison + evidence literacy",
+      "dek": "The same familiar ingredient can appear in dinner and on a supplement label. The meaning is not the same.",
+      "word_count": 653,
+      "gate": "SCIENTIFIC_CLINICAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A017",
+      "notes": "Do not name VitalFlush, do not infer product equivalence",
+      "visuals": [
+        "hero: visual split fresh garlic culinary ingredients vs unbranded closed supplement bottle, no implied endorsement 16:9",
+        "mid: accessible table food vs supplement differences native HTML",
+        "end: label questions graphic without fake numbers"
+      ],
+      "source_urls": [
+        "https://www.nccih.nih.gov/health/garlic",
+        "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+        "https://www.nhlbi.nih.gov/health/heart-healthy-living/healthy-foods"
+      ]
+    },
+    {
+      "id": "A019",
+      "title": "Why Your First Blood Pressure Reading May Be Different From the Second",
+      "slug": "why-your-first-blood-pressure-reading-may-be-different-from-the-second",
+      "file": "articles/A019-why-your-first-blood-pressure-reading-may-be-different-from-the-second.md",
+      "model": "B_SYMPTOMS",
+      "persona": "Person monitoring home BP after a medical visit",
+      "angle": "measurement uncertainty",
+      "dek": "Two numbers, one minute apart. Which one should you believe?",
+      "word_count": 642,
+      "gate": "CLINICAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "existing clinic-reviewed monitoring log ONLY",
+      "notes": "CRITICAL: overlaps original A01 and old clinical-gated draft. DO NOT PUBLISH as new URL; reconcile with existing A01 and A02, require AHA primary source readback and qualified clinical review",
+      "visuals": [
+        "hero: natural adult at table with unbranded upper arm home monitor and notebook, display obscured no fake clinical numbers",
+        "mid: neutral schematic correct seated position only after clinical review",
+        "end: printable measurement log native form"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+        "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+        "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home"
+      ]
+    },
+    {
+      "id": "A020",
+      "title": "How Much Movement Do You Really Need During a Busy Week?",
+      "slug": "how-much-movement-do-you-really-need-during-a-busy-week",
+      "file": "articles/A020-how-much-movement-do-you-really-need-during-a-busy-week.md",
+      "model": "C_EVIDENCE",
+      "persona": "Adult struggling to fit activity around work",
+      "angle": "practical guideline + reassurance",
+      "dek": "A full calendar does not mean movement has to be all or nothing.",
+      "word_count": 623,
+      "gate": "EDITORIAL_REVIEW",
+      "monetization": "NOT APPROVED; contextual component OFF",
+      "cta": "internal A010",
+      "notes": "",
+      "visuals": [
+        "hero: adult on casual weekend neighborhood walk comfortable approachable editorial photo 16:9",
+        "mid: original weekly planner visual no exact individualized prescription",
+        "end: small habit tracker native HTML"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+        "https://www.cdc.gov/healthy-weight-growth/physical-activity/getting-started.html",
+        "https://www.cdc.gov/physical-activity/features/getting-more-active-minutes.html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  article: CollectionEntry<"articles">;
+  showCategory?: boolean;
+  heading?: "h2" | "h3";
+}
+
+const { article, showCategory = false, heading: Heading = "h2" } = Astro.props;
+const { slug, hero, category, title, description } = article.data;
+---
+<a class="topic-link article-card" href={`/articles/${slug}/`}>
+  {hero && <Image src={hero.image} alt="" widths={[320, 480, 640]} sizes="(max-width: 700px) 90vw, 520px" width={640} class="article-card-image" />}
+  <div class="card-copy">
+    {showCategory && <span>{category.replaceAll("-", " ")}</span>}
+    <Heading>{title}</Heading>
+    {description && <p>{description}</p>}
+    <strong>Read article <span aria-hidden="true">→</span></strong>
+  </div>
+</a>
+
+<style>
+  .article-card{padding:0;overflow:hidden;border-radius:14px;transition:border-color .18s}
+  .article-card:hover,.article-card:focus-visible{border-color:#527063;color:#24352b}
+  .article-card-image{aspect-ratio:16/9;object-fit:cover;margin:0;background:#e8ebe3}
+  .card-copy{padding:22px 24px 24px}
+  .card-copy h2,.card-copy h3{font-size:clamp(1.45rem,2.4vw,1.875rem);line-height:1.2;margin:6px 0 10px}
+  .card-copy p{margin:0 0 14px;font-size:1rem;line-height:1.55}
+  strong{font-size:.95rem;color:#325247}
+  @media(max-width:480px){.card-copy{padding:18px}}
+</style>

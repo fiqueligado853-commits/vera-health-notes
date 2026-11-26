@@ -12,6 +12,7 @@ const articles = defineCollection({
     title: z.string().min(15),
     slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     description: z.string().optional(),
+    format: z.enum(["A_LIST", "B_SYMPTOMS", "C_EVIDENCE", "D_GUIDE"]).optional(),
     hero: z.object({
       image: image(),
       alt: z.string().min(1)

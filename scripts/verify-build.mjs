@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { isPublishable } from "../src/lib/publishing.js";
+import { parse } from "yaml";
 
 const site = "https://verahealthnotes.com";
 const dist = "dist";
@@ -41,7 +42,14 @@ for (const file of htmlFiles) {
     const url = new URL(href, pageUrl);
     if (url.origin !== site) continue;
     assert.ok(resolveOutput(url.pathname), file + " → " + href);
+    if (href.startsWith("#") && url.hash) {
+      assert.ok(html.includes(`id="${decodeURIComponent(url.hash.slice(1))}"`), file + " missing anchor " + href);
+    }
     links++;
+  }
+  for (const [, src] of html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)) {
+    const url = new URL(src, pageUrl);
+    if (url.origin === site) assert.ok(resolveOutput(url.pathname), file + " missing image " + src);
   }
 }
 
@@ -53,13 +61,16 @@ for (const key of Object.keys(ready)) {
 const draftDirectory = "src/content/articles";
 const retiredDirectory = "src/drafts/retired";
 const gatedFiles = [draftDirectory, retiredDirectory].flatMap((directory) =>
-  readdirSync(directory).filter((name) => name.endsWith(".md")).map((name) => join(directory, name))
+  readdirSync(directory, { recursive: true }).filter((name) => name.endsWith(".md")).map((name) => join(directory, name))
 );
 for (const draft of gatedFiles) {
   const markdown = readFileSync(draft, "utf8");
   const retired = dirname(draft) === join(retiredDirectory);
-  if (!retired && !/^status: ["']?draft/m.test(markdown) && !/^clinical_review: ["']?pending/m.test(markdown)) continue;
-  const slug = markdown.match(/^slug: ["']?([a-z0-9-]+)["']?\s*$/m)?.[1];
+  const frontmatter = markdown.match(/^\uFEFF?---\r?\n([\s\S]+?)\r?\n---/);
+  assert.ok(frontmatter, draft);
+  const data = parse(frontmatter[1]);
+  if (!retired && isPublishable({ data })) continue;
+  const { slug } = data;
   assert.ok(slug, draft);
   assert.ok(!sitemap.includes("/articles/" + slug + "/"), slug + " on sitemap");
   assert.ok(!resolveOutput("/articles/" + slug + "/"), slug + " has an output route");

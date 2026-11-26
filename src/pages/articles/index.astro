@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import ArticleCard from "../../components/ArticleCard.astro";
 import Layout from "../../layouts/EditorialLayout.astro";
 import { getCollection } from "astro:content";
 import { isPublishable } from "../../lib/publishing.js";
@@ -21,13 +21,7 @@ const articles = (await getCollection("articles"))
   ) : (
     <div class="topic-grid">
       {articles.map(article => (
-        <a class="topic-link" href={`/articles/${article.data.slug}/`}>
-          <span>{article.data.category.replaceAll("-", " ")}</span>
-          {article.data.hero && <Image src={article.data.hero.image} alt="" width={480} class="article-card-image" />}
-          <h2>{article.data.title}</h2>
-          <p>{article.data.description || "Explore this article."}</p>
-          <strong>Read article ↗</strong>
-        </a>
+        <ArticleCard {article} showCategory />
       ))}
     </div>
   )}
