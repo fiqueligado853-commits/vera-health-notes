@@ -14,6 +14,7 @@ editorial_review: "pending"
 source_review: "pending"
 hero:
   image: "../../assets/articles/two-readings.webp"
+  fit: "contain"
   alt: "A timeline showing two home blood pressure readings one minute apart, with a reminder to record both."
 ---
 
@@ -70,7 +71,7 @@ People sometimes take a third or fourth reading because the first two do not agr
 
 ## When a high reading needs prompt attention
 
-The [AHA’s guidance for very high readings](https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/when-to-call-911-for-high-blood-pressure) calls for immediate action if your systolic pressure is above 180 or your diastolic pressure is above 120 mm Hg and you have symptoms such as chest pain, shortness of breath, back pain, numbness, weakness, vision changes, or difficulty speaking. Call 911 in the United States right away in that situation.
+**Call 911 right away** in the United States if your systolic (top) number is above 180 mm Hg or your diastolic (bottom) number is above 120 mm Hg and you have symptoms such as chest pain, shortness of breath, back pain, numbness, weakness, vision changes, or difficulty speaking. See the [American Heart Association’s emergency guidance](https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/when-to-call-911-for-high-blood-pressure).
 
 If you have a reading above either of those levels and have no emergency symptoms, the AHA advises waiting at least one minute and testing again. If it is still that high, contact a healthcare professional immediately. Follow any individualized instructions you have been given about when to call or seek care.
 

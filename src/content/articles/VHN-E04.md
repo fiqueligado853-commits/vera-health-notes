@@ -10,7 +10,7 @@ affiliate_links: false
 clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
-related_ids: ["VHN-E01"]
+related_ids: ["VHN-E01","VHN-Q-A015"]
 format: "D_GUIDE"
 hero:
   image: "../../assets/articles/vhn-e04-lunch.webp"
@@ -31,21 +31,9 @@ You don't have to stop eating bread. You may simply discover that one similar op
 
 ## 2. Deli turkey and ham
 
-A turkey sandwich can feel like a straightforward lunch choice.
+Bread, deli turkey, cheese, and condiments may each contribute sodium to a sandwich. Check the serving weight on two packages of deli meat and compare the amounts for the same number of ounces or grams.
 
-But packaged deli meats often contain added sodium as part of processing and preservation. The amount varies among products.
-
-That means a sandwich made with turkey, cheese, bread, and condiments can contain sodium from several ingredients before you add anything else.
-
-Here's a useful question to ask in the grocery aisle:
-
-*Am I comparing the same amount of meat, or just two packages with different serving sizes?*
-
-**What to try:** Look for lower-sodium versions of deli meats, then compare the Nutrition Facts panels.
-
-For another lunch option, consider home-cooked poultry prepared without heavily salted seasonings.
-
-You may find that changing one ingredient makes more sense than replacing the whole meal.
+**What to try:** Look for a version with less sodium, or use home-cooked poultry seasoned with herbs and spices.
 
 ## 3. Canned soup
 
@@ -70,21 +58,9 @@ Compare regular, reduced-sodium, and low-sodium varieties rather than assuming e
 
 ## 4. Pizza
 
-Pizza isn't surprising because it contains cheese.
+The crust, sauce, cheese, and toppings can all contribute sodium. Pepperoni and other processed meats may add more. Check whether the nutrition information covers one slice, multiple slices, or a stated weight.
 
-What's easier to overlook is how sodium can come from multiple parts of the same slice: crust, sauce, cheese, and toppings.
-
-Pepperoni, sausage, and other processed meat toppings can add more.
-
-Portion size matters, too. The amount listed for a serving may not match how much you actually eat.
-
-You don't have to ban pizza from your life to pay attention to it.
-
-**What to try:** Compare the nutrition information for different toppings and serving sizes when it's available.
-
-At home, experiment with vegetables, smaller amounts of cheese, and less processed meat.
-
-The goal isn't to turn a Friday-night favorite into a nutrition exam. It's to know what you're choosing.
+**What to try:** Compare the same amount of two pizzas before comparing toppings. At home, try adding vegetables in place of some processed meat.
 
 ## 5. Prepared chicken
 
@@ -184,21 +160,9 @@ The label helps you compare. Your usual portion helps you put that comparison in
 
 ## One change to try this week
 
-It's easy to read about sodium and decide that the entire refrigerator needs an overhaul.
+At your next grocery trip, compare two versions of a food you buy every week. If the option with less sodium costs a little more, check the price for the amount you’ll actually use. A change you can afford and enjoy is easier to keep.
 
-But consider a smaller approach.
-
-On your next grocery trip, choose just one category from this list.
-
-Maybe it's the bread you buy every week. Maybe it's soup, turkey slices, or the dressing you reach for without thinking.
-
-Compare two options.
-
-If one meets your needs, tastes good, fits your budget, and contains less sodium, you've found a practical change you can repeat.
-
-You can also think about the bigger pattern of your meals.
-
-The [NHLBI overview of DASH](https://www.nhlbi.nih.gov/health/dash-eating-plan) describes an eating pattern that emphasizes vegetables, fruit, whole grains, and other everyday foods. It also gives examples of ways to compare groceries and season meals.
+The [NHLBI overview of DASH](https://www.nhlbi.nih.gov/health/dash-eating-plan) shows how these choices fit into a broader eating pattern.
 
 ## Grocery checklist
 

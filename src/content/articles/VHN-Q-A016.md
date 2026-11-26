@@ -11,7 +11,7 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: []
+related_ids: ["VHN-Q-A003","VHN-Q-A014"]
 hero:
   image: "../../assets/articles/queue/a016.webp"
   alt: "Vegetables, beans and grains set out in meal-prep containers"
@@ -55,7 +55,7 @@ DASH emphasizes variety across food groups as well as attention to sodium and sa
 
 Plan one dish from the fridge and one from the pantry. You might cook vegetables and brown rice tonight, then use leftover vegetables in a grain bowl the next day. When plans change, keep a different meal ready to assemble from beans and a plain freezer vegetable.
 
-[The USDA advises](https://ask.fsis.usda.gov/article/How-do-I-handle-leftovers-safely) refrigerating perishable leftovers promptly, within two hours in ordinary conditions and within one hour above 90°F. Use shallow containers to help the food cool and follow the USDA guidance on storage time. Planning a second meal works best when you know when you cooked the first one.
+[Federal food-safety guidance recommends](https://www.foodsafety.gov/keep-food-safe/4-steps-to-food-safety) refrigerating perishable leftovers within two hours, or within one hour if the temperature is above 90°F. Use shallow containers for quick cooling. Refrigerate leftovers for three to four days or freeze them, and reheat leftovers to 165°F. Planning a second meal works best when you know when you cooked the first one.
 
 ## Choose a useful shortcut
 
@@ -65,4 +65,5 @@ Choose one practical change for this week: a freezer vegetable, a pantry dinner,
 
 - [NHLBI | DASH Eating Plan](https://www.nhlbi.nih.gov/health/dash-eating-plan)
 - [FDA | Sodium in Your Diet](https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet)
+- [FoodSafety.gov | Four Steps to Food Safety](https://www.foodsafety.gov/keep-food-safe/4-steps-to-food-safety)
 - [USDA FSIS | How do I handle leftovers safely?](https://ask.fsis.usda.gov/article/How-do-I-handle-leftovers-safely)

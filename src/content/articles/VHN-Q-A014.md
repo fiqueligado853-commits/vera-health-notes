@@ -11,13 +11,13 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: []
+related_ids: ["VHN-Q-A015","VHN-Q-A016"]
 hero:
   image: "../../assets/articles/queue/a014.webp"
   alt: "Fresh broccoli, frozen peas and canned green beans presented separately"
 ---
 
-You reach for a bag of frozen broccoli, then wonder whether fresh would be “healthier.” Or you buy fresh spinach with good intentions and watch it wilt before Wednesday. Eating well should account for what you can store, afford, prepare, and enjoy. [USDA recognizes fresh, frozen, and canned vegetables](https://www.myplate.gov/food-groups/vegetables) as options in the vegetable food group. The differences often depend on added ingredients, preparation, and how you will actually use them.
+You reach for a bag of frozen broccoli, then wonder whether fresh would be “healthier.” Or you buy fresh spinach with good intentions and watch it wilt before Wednesday. Eating well should account for what you can store, afford, prepare, and enjoy. The [NHLBI’s DASH guide](https://www.nhlbi.nih.gov/health/dash/living-with-dash) suggests choosing fresh or frozen vegetables and checking sodium when you buy canned. The differences often depend on added ingredients, preparation, and how you will actually use them.
 
 ## Fresh: flexible but time-sensitive
 
@@ -59,7 +59,7 @@ The winning choice is the vegetable that fits your life and actually makes it on
 
 ## Sources and further reading
 
-- [USDA | Vegetables](https://www.myplate.gov/food-groups/vegetables)
+- [NHLBI | Living with DASH](https://www.nhlbi.nih.gov/health/dash/living-with-dash)
 - [NHLBI | DASH Eating Plan](https://www.nhlbi.nih.gov/health/dash-eating-plan)
 - [FDA | Sodium in Your Diet](https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet)
 - [FDA | How to Understand and Use the Nutrition Facts Label](https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label)

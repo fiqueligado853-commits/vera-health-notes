@@ -14,7 +14,7 @@ affiliate_links: false
 related_ids: []
 hero:
   image: "../../assets/articles/queue/a020.webp"
-  alt: "Walking shoes and an open notebook near a doorway"
+  alt: "Walking shoes, an open notebook, and a glass of water on a woven mat"
 ---
 
 You see an exercise recommendation and immediately think about the week ahead: long shifts, family obligations, a commute, and the occasional evening when you simply run out of energy. Health guidance can sound impossible when imagined as one uninterrupted workout. But minutes of activity can accumulate through daily life. The point is to understand the evidence-based target and then begin at a level that fits your abilities and circumstances.

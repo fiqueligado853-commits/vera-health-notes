@@ -11,7 +11,7 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: []
+related_ids: ["VHN-Q-A005"]
 hero:
   image: "../../assets/articles/queue/a007.webp"
   alt: "Shoes beside a seated adult’s bare feet at the end of the day"
@@ -29,7 +29,7 @@ Spending a long time upright or seated can contribute to dependent swelling in s
 
 ## What veins have to do with it
 
-Vein conditions such as varicose veins and chronic venous problems may be associated with heaviness, aching, and swelling. Clinicians consider the full history and examination rather than relying on a sock mark or a single photo. Visible veins do not establish the whole diagnosis, and people can have swelling without obvious varicose veins. Avoid the common leap from “my ankles are swollen” to “I need a circulation supplement.” There is no such shortcut.
+Vein conditions such as varicose veins and chronic venous problems may be associated with heaviness, aching, and swelling. Clinicians consider the full history and examination rather than relying on a sock mark or a single photo. Visible veins do not establish the whole diagnosis, and people can have swelling without obvious varicose veins.
 
 ## Other explanations are possible
 
@@ -51,7 +51,7 @@ The same pair of socks or shoes can make it easier to describe the change in fit
 
 ## Decide what to do next
 
-If your shoes seem tighter at night, take the observation seriously without assuming the worst. Persistent swelling merits a clinical conversation; sudden or one-sided changes deserve faster attention.
+If your shoes seem tighter at night, take the observation seriously without assuming the worst. Arrange a clinical evaluation if swelling persists or worsens. Seek urgent evaluation for sudden or unexplained swelling in one leg.
 
 ## Sources and further reading
 

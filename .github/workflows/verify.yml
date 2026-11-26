@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -16,3 +16,20 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run verify
+      - name: Check draft layouts in Chromium
+        if: github.event_name == 'pull_request'
+        timeout-minutes: 8
+        env:
+          VHN_EDITORIAL_PREVIEW: '1'
+          VHN_QA_EXPECTED_DRAFTS: ${{ github.head_ref == 'editorial/review-a001-a020' && '20' || '' }}
+          ASTRO_TELEMETRY_DISABLED: '1'
+        run: |
+          qa_tools="$RUNNER_TEMP/vhn-browser-qa"
+          npm install --prefix "$qa_tools" --no-package-lock --no-audit --no-fund playwright@1.58.2
+          chrome="$(command -v google-chrome || command -v chromium)"
+          "$chrome" --version
+          npm run dev -- --host 127.0.0.1 &
+          server=$!
+          trap 'kill "$server" 2>/dev/null || true' EXIT
+          curl --fail --silent --show-error --retry 12 --retry-delay 1 --retry-connrefused http://127.0.0.1:4321/ > /dev/null
+          VHN_QA_CHROMIUM="$chrome" NODE_PATH="$qa_tools/node_modules" node scripts/verify-editorial-preview.mjs
