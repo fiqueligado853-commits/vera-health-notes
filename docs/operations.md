@@ -20,6 +20,8 @@ O Vera Health Notes é uma publicação editorial americana de wellness. O site 
 
 **Retomada do PR #8.** Registrar as decisões editorial e factual da revisão exata por artigo, com responsável, data, fontes e resultado. Usar `clinical_review: not-required` só nos casos em que a análise de escopo esteja documentada. Promover apenas os IDs com todas as decisões registradas e a autorização já concedida. Repetir `npm run verify` no commit aprovado, conferir o escopo do diff e as rotas esperadas antes de integrar. Após o deploy, verificar HTTP 200, título, canônica, ausência de `noindex`, sitemap e páginas excluídas diretamente no domínio. Nenhuma nova autorização por artigo é necessária para os 12 IDs autorizados, dentro das condições já registradas.
 
+**A011.** O manuscrito no PR #8 tem o mesmo hash da versão revisada no PR #7. A checagem dirigida confirmou as orientações de rotina e exposição a telas do [CDC](https://www.cdc.gov/sleep/about/) e a descrição dos sinais de apneia do [NHLBI](https://www.nhlbi.nih.gov/health/sleep-apnea/symptoms). A revisão automática de segurança bloqueou a tentativa de preparar A011 como publicável usando essa checagem automatizada sem os pareceres formais exigidos. Nenhum commit ou branch de publicação foi criado para A011, e o artigo continua em rascunho no PR #8. A checagem dirigida é evidência factual para o próximo parecer.
+
 ### Estado histórico em 25/11/2026, horário de São Paulo
 
 | Linha de trabalho | GitHub | Estado |
