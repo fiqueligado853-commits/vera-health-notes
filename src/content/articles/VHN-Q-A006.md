@@ -1,8 +1,8 @@
 ---
 id: "VHN-Q-A006"
-title: "7 Everyday Habits That Can Make Long Sitting Days More Comfortable"
+title: "7 Ways to Move More on Long Sitting Days"
 slug: "7-everyday-habits-that-can-make-long-sitting-days-more-comfortable"
-description: "Seven small ways to vary your position and add comfortable movement on long sitting days, including options beyond the work desk."
+description: "Seven practical ways to break up long periods of sitting at work, at home, or while traveling."
 format: "D_GUIDE"
 category: "everyday-wellness"
 language: "en-US"

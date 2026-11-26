@@ -33,7 +33,7 @@ According to the FDA, 5% Daily Value or less per serving is generally considered
 
 ## Step 4: Understand the wording on the front
 
-[The FDA’s general guide](https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet) distinguishes “low sodium” (140 mg or less per serving) from “reduced sodium” (at least 25% less than the regular version). “No salt added” means no salt was added during processing, and the food may still contain sodium. To choose between brands, compare the milligrams for the amount you’ll eat.
+[FDA labeling rules](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-D/section-101.61) set different “low sodium” limits depending on the food category and the amount used for the claim. “Reduced sodium” means at least 25% less sodium than an appropriate reference food, using the comparison basis required for that category. Check the package for the food used as the comparison. “No salt added” means no salt was added during processing, and the food may still contain sodium. To compare brands, use the milligrams for the amount you’ll eat.
 
 ## Step 5: Check how much you will actually use
 
@@ -59,3 +59,4 @@ The next time you compare two packages, use this order: serving size, sodium mil
 
 - [FDA | Sodium in Your Diet](https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet)
 - [FDA | How to Understand and Use the Nutrition Facts Label](https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label)
+- [21 CFR § 101.61 | Sodium claims on food labels](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-D/section-101.61)

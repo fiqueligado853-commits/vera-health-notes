@@ -29,7 +29,7 @@ These vegetables can be served raw, roasted, or added to familiar dishes. Frozen
 
 ## 5–6. Oats and brown rice
 
-Whole grains are a central DASH food group. Plain oats can make a simple breakfast, and brown rice can work with beans, vegetables, fish, or poultry. They are not the only options; whole-grain bread, barley, and other foods can fit too.
+The NHLBI table calls this group “Grains.” DASH emphasizes whole grains such as plain oats and brown rice. Plain oats can make a simple breakfast, and brown rice can work with beans, vegetables, fish, or poultry. They are not the only options; whole-grain bread, barley, and other foods can fit too.
 
 ## 7–8. Beans and unsalted nuts
 
@@ -51,10 +51,10 @@ The NHLBI tables distinguish goals reported by day from goals reported by week. 
 | --- | --- |
 | Fruit | Apples and berries |
 | Vegetables | Carrots and broccoli |
-| Whole grains | Plain oats and brown rice |
-| Nuts, legumes and seeds | Beans and unsalted nuts |
-| Low-fat dairy | Plain low-fat yogurt |
-| Fish, poultry and lean meat | Plain fish |
+| Grains | Plain oats and brown rice |
+| Nuts, seeds, dry beans, and peas | Beans and unsalted nuts |
+| Low-fat or fat-free dairy products | Plain low-fat yogurt |
+| Meats, poultry, and fish | Plain fish |
 
 Take a familiar plate and identify which groups are present. A bowl of rice, beans and broccoli includes a grain, a legume and a vegetable. On another day the ingredients might change while the same broad groups are still represented. Use the NHLBI’s plan to explore the balance across a week if you want more detail.
 
