@@ -48,7 +48,7 @@ for (const field of ["id", "slug", "title"]) {
 assert.equal(new Set(articles.map(({ data }) => data.description)).size, articles.length);
 const articleById = new Map(allArticles.map(data => [data.id, data]));
 const draftPaths = new Set(articles.map(({ data }) => "/articles/" + data.slug + "/"));
-const browser = await chromium.launch();
+const browser = await chromium.launch({ executablePath: process.env.VHN_QA_CHROMIUM || undefined });
 try {
   const verifiedLinks = new Set();
   for (const width of [1440, 390, 320]) {
