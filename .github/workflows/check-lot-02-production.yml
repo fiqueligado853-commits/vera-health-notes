@@ -1,0 +1,16 @@
+name: Verify live editorial lot 02
+on:
+  push:
+    branches: [qa/lot-02-production-2026-11-26]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node scripts/check-lot-02-production.mjs
