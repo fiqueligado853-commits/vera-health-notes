@@ -45,3 +45,23 @@ O revisor editorial independente avaliou os 19 originais, a redação revisada, 
 - O build estático verificou 20 páginas e 329 links internos. Os rascunhos continuam fora da saída estática e do sitemap. A019 usa a rota existente <code>/articles/why-blood-pressure-readings-differ/</code>.
 - Foram verificados 21 destinos externos distintos. Dezenove devolveram HTTP 200 no terminal. Os dois destinos da American Heart Association bloquearam a requisição automatizada e abriram no Chrome.
 - Para conferir as rotas, inicie o preview de desenvolvimento já documentado no piloto e use o <code>slug</code> no início de cada Markdown. O encaminhamento do Codespace deve permanecer privado. O PR #5 segue separado deste lote.
+
+
+## Evidências preservadas no encerramento
+
+| Evidência | Resultado registrado |
+| --- | --- |
+| [Checks do PR #5](https://github.com/fiqueligado853-commits/vera-health-notes/pull/5/checks) | Astro build e Cloudflare Pages aprovados em `efb9048`. |
+| [Checks do PR #6](https://github.com/fiqueligado853-commits/vera-health-notes/pull/6/checks) | Astro build e Cloudflare Pages aprovados em `1851eba`. |
+| Saída do verificador do PR #6 | `20 HTML pages and 329 internal links checked; drafts and retired routes excluded; sitemap and printable worksheet verified.` |
+| QA visual | Piloto em 1440, 390 e 320 px, conforme seu registro. Demais 19 em 1440 e 390 px, com imagem, texto alternativo, sumário e largura conferidos. |
+| Fontes | 19 retornos HTTP 200 e dois destinos da AHA confirmados manualmente no Chrome após HTTP 403 no terminal. |
+
+### Verificação no encerramento
+
+Registro de 25/11/2026, horário de São Paulo. Foram conferidas as 20 URLs do inventário. A primeira consulta pública com Python retornou HTTP 403, por isso a verificação pública foi repetida com curl.
+
+```text
+Preview local nos servidores privados: HTTP 200 + noindex, 20/20
+Produção oficial, via curl: HTTP 404, 20/20
+```

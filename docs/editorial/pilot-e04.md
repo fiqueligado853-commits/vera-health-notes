@@ -1,7 +1,7 @@
 # Piloto visual VHN-E04 e fluxo de publicação
 
 - **Decisão do proprietário em 25/11/2026.** Trabalhar no PR #5 em Draft, preservar o slug e a identidade visual, usar o A002 no arquivo existente e aguardar aprovação antes de merge ou publicação.
-- **Carteira.** O [inventário](article-index-vhn20.csv) registra 20 entradas, incluindo o piloto. Os outros 19 textos estão em `src/drafts/intake/vhn-20`, fora da coleção Astro. A019 está em `reconcile` e cobre a pergunta clínica já tratada por VHN-VF-A01. Decidir qual conteúdo incorporar na revisão desse artigo antes de criar qualquer rota. As quatro filas do inventário mantêm gates individuais. Ver também os [briefings](article-briefs-vhn20.json).
+- **Carteira.** O [inventário oficial](article-index-vhn20.csv) tem 20 entradas. Os 19 itens além do piloto estão em revisão no PR #6, com A019 reconciliado no VHN-VF-A01. O pacote de entrada permanece arquivado. Consulte o [registro da fila](queue-a001-a020.md) para os gates e o QA.
 
 ## Modelos
 
@@ -13,6 +13,22 @@
 | `D_GUIDE` | Situação prática, passos numerados, exemplo, checklist e fontes | Navegação do guia e sequência de passos destacada. Pode usar a lista visual de A dentro da estrutura |
 
 O H1 vem do frontmatter. Use H2 para as seções e H3 para subdivisões. A navegação é gerada a partir dos H2 a partir de quatro seções. Em telas largas fica ao lado da leitura e no celular vem antes do corpo. O sistema reutiliza fontes, cores e cabeçalho do site. A coluna de artigos tem até 720 px, com corpo de 19 px em desktop e 17 px no celular. Os cards de biblioteca e tópicos usam o mesmo componente.
+
+## Valores implementados
+
+Valores lidos no HEAD do PR #5, mantidos na base do PR #6. O código em `src/pages/articles/[slug].astro`, `src/layouts/EditorialLayout.astro`, `src/pages/index.astro`, `src/components/ArticleContents.astro` e `src/components/ArticleCard.astro` é a referência.
+
+| Elemento | Implementação |
+| --- | --- |
+| H1 de artigo | `clamp(2.25rem,4.7vw,3.25rem)`. Até 600 px, `clamp(2rem,8vw,2.375rem)`. |
+| H2 e H3 do corpo | H2 `clamp(1.75rem,3.2vw,2.25rem)`, H3 `clamp(1.3rem,2.4vw,1.625rem)`. |
+| Corpo | `1.1875rem`, entrelinha `1.72`, largura máxima de 720 px. Até 600 px, `1.0625rem` e entrelinha `1.68`. Parágrafos com margem inferior de `1.2em`. |
+| Navegação | 16 px no menu desktop da homepage. Menu editorial `1rem`, reduzido para `.9375rem` até 700 px. |
+| Hero | Homepage com grade de altura mínima de 550 px e H1 `clamp(48px,5.1vw,76px)` na regra base. Hero editorial 2:1, 3:2 até 600 px, larguras ofertadas de 480, 768 e 1080 px com carregamento prioritário. |
+| Sumário | Quatro ou mais H2. Lateral e sticky a partir de 981 px, topo de 24 px. Vem antes da leitura em telas menores, com uma coluna até 520 px. |
+| Modelo D | Divisão do corpo empilha até 620 px. Card compacto preserva a miniatura inteira. Espaço inferior `clamp(24px,4vw,44px)`. |
+
+O piloto demonstra painel de dica, divisão em colunas, lista visual de ingredientes, checklist, diagrama acompanhado da conta em texto e leitura relacionada com thumbnail. Use esses elementos quando resolvem uma dificuldade real da pauta.
 
 ## Imagens e checagem
 

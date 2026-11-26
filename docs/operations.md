@@ -1,18 +1,61 @@
 # Vera Health Notes
 
-Para novas pautas, consulte o [sistema editorial v3.0](editorial/README.md) e registre a revisão de conteúdo antes do QA técnico.
+## START HERE — VERA HEALTH NOTES
 
-## Publicação editorial
+O Vera Health Notes é uma publicação editorial americana de wellness. O site oficial é [verahealthnotes.com](https://verahealthnotes.com/) e o código está no [repositório oficial](https://github.com/fiqueligado853-commits/vera-health-notes). O site usa Astro, GitHub e Cloudflare Pages. Artigos ficam em Markdown, e as imagens otimizadas ficam em WebP.
 
-Use o [fluxo de importação e preview privado](editorial/pilot-e04.md) para receber um artigo e seus arquivos de imagem já preparados. O VHN-E04 usa esse preview para revisão no PR #5. Os lotes do [inventário editorial](editorial/article-index-vhn20.csv) ficam fora da coleção ativa até triagem individual.
+**Antes de iniciar qualquer tarefa, verificar o estado real do GitHub e ler as instruções persistentes. Nunca depender exclusivamente de lembranças da conversa.** Confira o HEAD, a base, o estado e os checks de cada PR. Para edição, crie um worktree ou branch a partir da revisão certa. Preserve as alterações locais do proprietário. Antes do push, verifique novamente as refs remotas e o escopo do diff.
 
-O arquivo ativo de cada artigo fica em src/content/articles. VHN-VF-A01 em src/drafts é um registro histórico da v2. Antes da aprovação, documente as fontes e a validação de cada alegação, confirme autoria, datas e créditos, confira imagens e links, e registre o responsável e a data de cada revisão. Separe revisão de fontes, revisão editorial e revisão clínica. A rota e os cards só são gerados com status aprovado e todos os estados requeridos. Nos dois pilotos há revisão clínica pendente. Valide em uma cópia isolada antes de publicar.
+### Estado confirmado em 25/11/2026, horário de São Paulo
 
-Os diagramas originais two-readings.webp e log-fields.webp foram produzidos para Vera Health Notes em 25/11/2026. Uso editorial do projeto, sem material fotográfico de terceiros e sem crédito externo requerido. Referência factual para o primeiro: guia de monitoramento domiciliar da American Heart Association. O segundo ilustra os campos da planilha original e omite valores de saúde. As tabelas nos artigos marcam números como exemplos fictícios. Cada imagem tem 1200 × 630 px. O Astro gera o card a 480 px e preserva a altura proporcional.
+| Linha de trabalho | GitHub | Estado |
+| --- | --- | --- |
+| Produção | [`main` em `5a7bcc9`](https://github.com/fiqueligado853-commits/vera-health-notes/commit/5a7bcc997d5c352b9d538039dada78a092089d72) | A base de produção contém o merge do PR #4. |
+| Piloto A002 / VHN-E04 | [PR #5](https://github.com/fiqueligado853-commits/vera-health-notes/pull/5), `fiqueligado853-commits-patch-1`, `efb9048a7773e82b6dbed2da153a6f3ebe7999d2` | Aberto em Draft, base `main`. A direção visual foi aprovada pelo proprietário. Os gates editorial, factual, clínico e de liberação continuam pendentes. |
+| Fila editorial | [PR #6](https://github.com/fiqueligado853-commits/vera-health-notes/pull/6), `editorial/queue-a001-a020`, `1851ebaba039d8a9db2855c62974c35e1e29f230` | Aberto em Draft, com base na branch do PR #5. Contém 18 novos rascunhos e a reconciliação de A019. |
+| Memória operacional | `docs/operational-memory` | Branch de documentação baseada no HEAD verificado do PR #6. Para retomar edição de artigos, consulte a branch do PR correspondente. |
+
+O [inventário oficial](editorial/article-index-vhn20.csv) relaciona os 20 IDs aos arquivos, imagens, gates e endereços. A002 é VHN-E04. A019 é VHN-VF-A01 e conserva o slug `why-blood-pressure-readings-differ`. Os originais em `src/drafts/intake/vhn-20` são arquivo de entrada. Na branch do PR #6, as versões de trabalho já estão na coleção Astro, com estado de rascunho.
+
+### Leia primeiro
+
+- [Sistema editorial, modelos, escrita e imagens](editorial/README.md)
+- [Padrão visual implementado, importação e QA do piloto](editorial/pilot-e04.md)
+- [Revisões, sobreposições e QA da fila](editorial/queue-a001-a020.md)
+
+### Importação, preview e controles
+
+1. Prepare o pacote com `article.md`, pasta `images` com WebP e ficha no formato documentado no piloto. Rode `npm run editorial:stage -- /caminho/do/pacote` na branch de revisão. O importador valida ID/slug, modelo, categoria, idioma, estados pendentes, ausência de afiliação, hero com texto alternativo e arquivos de até 350.000 bytes. Para manuscrito já integrado, edite o arquivo existente.
+2. Rode `npm ci` em um checkout limpo e `npm run verify` para compilar e testar a saída. O `package.json` requer Node 22.23.4 ou superior. O workflow do GitHub e os checks do Cloudflare são evidência técnica adicional.
+3. Para rascunhos, rode `VHN_EDITORIAL_PREVIEW=1 npm run dev` no checkout correto e mantenha o encaminhamento **Private**. Siga o equivalente PowerShell no guia do piloto se necessário. Acesse `/articles/<slug>/`. Os links do inventário funcionam quando o Codespace e o servidor daquela branch estiverem ativos. O preview de desenvolvimento usa `noindex`, omite canônica e dados estruturados do artigo em rascunho e depende da autenticação do Codespace. O build estático exclui rascunhos da rota, listas e sitemap.
+4. Registre separadamente verificação factual, parecer editorial independente, revisão científica ou clínica qualificada quando aplicável, aprovação do proprietário e resultado técnico. Registre revisor, data, fontes e versão. O gate do código exige `status: approved`, `editorial_review: approved`, `source_review: approved` e `clinical_review: approved` ou `not-required`. Use `not-required` só após decisão documentada. A revisão científica fica no parecer e no inventário.
+5. Faça merge e publicação somente quando houver todas as aprovações e autorização explícita do proprietário. Depois, confira HTTP, canônica, links e sitemap em produção. Registre resultados de indexação à parte.
+
+### Decisões que orientam a retomada
+
+- Preserve nome, domínio, logotipo, paleta, tipografia, navegação e componentes aprovados. A página do piloto validou o sumário lateral, a comparação visual, a miniatura de leitura relacionada e o rodapé compacto do modelo D. Reabra somente um problema concreto demonstrado.
+- Use os quatro modelos da coleção e adapte a estrutura à pergunta do leitor. O blog cresce com pautas evergreen, SEO orgânico, links úteis e conteúdo social. Newsletter, publicidade e afiliação contextual dependem de missão, elegibilidade, consentimento ou validação próprios. O blog é independente da oferta e não é etapa obrigatória de funil pago.
+- A operação segue em **ChatGPT + Work**. Uma migração, VPS ou ferramentas externas como n8n, LangGraph e OpenClaw só voltam à pauta por nova solicitação.
+- Na próxima sessão, compare A001/A013 e A005/A008, resolva as revisões pendentes por risco e planeje uma publicação controlada após autorização. A etapa comercial e a medição de tráfego e indexação vêm depois.
+
+## Lições aprendidas
+
+| Ocorrência | Procedimento atual |
+| --- | --- |
+| Pesquisa ou configuração repetida | Ler o Git e decisões vigentes antes de iniciar. Registrar qual evidência justificou reabrir algo. |
+| Planejamento sem entrega | Definir um resultado verificável por rodada, como commit, preview, resultado de teste ou bloqueio comprovado. |
+| Markdown criado manualmente pelo proprietário | Usar o importador e PR de revisão. Atualizar manuscrito existente se já houver ID ou slug correspondente. |
+| ZIP preparado sem integração | Registrar separadamente artefato, transferência, commit, testes e publicação. |
+| Bloqueio de upload no Chrome | Testar cedo a transferência para o Codespace. Usar só a permissão necessária e verificar o arquivo recebido. |
+| Texto burocrático | Trabalhar a partir da pergunta da persona, explorar exemplos e conferir a voz em inglês americano. |
+| Hero genérico ou imagem sem função | Planejar fotografia contextual, diagrama ou checklist pelo que cada visual explica. |
+| Build interpretado como aprovação | Manter testes, pareceres e autorização em campos e registros separados. |
+| Pautas próximas com intenção pouco clara | Comparar intenção e slugs antes de criar rotas. A002 e A019 já têm correspondência oficial. |
+| Ajuste pequeno virou redesign | Restringir o diff e verificar o comportamento no desktop e no celular. |
 
 ## Infraestrutura e monitoramento
 
-O Cloudflare Pages continua ligado ao repositório GitHub, com build do Astro em main. Cada revisão técnica deve passar por npm run verify e preview do Pages. Para voltar a uma versão estável, use o histórico do Cloudflare e reavalie o commit correspondente no GitHub. Não use backups antigos como sitemap ativo.
+O Cloudflare Pages continua ligado ao repositório GitHub, com build do Astro em main. Cada revisão técnica deve passar por `npm run verify`. Use o preview do Cloudflare para rotas elegíveis e o Codespace privado para rascunhos. Para voltar a uma versão estável, use o histórico do Cloudflare e reavalie o commit correspondente no GitHub. Não use backups antigos como sitemap ativo.
 
 | Indicador | Fonte | Quando registrar |
 | --- | --- | --- |
@@ -41,8 +84,10 @@ Confirmação em inglês. Assunto “Confirm your Vera Health Notes subscription
 - https://www.mailerlite.com/pricing
 - https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
 
-## Ofertas e VSLs
+## Monetização futura, missão separada
 
-O catálogo em src/data/offers.js concentra estado, destino, relação editorial, versões e evidências comerciais. Mantenha os identificadores de conta e condições não verificadas no registro privado do proprietário. As duas ofertas começam em espera. A01 e A02 têm finalidade editorial e não integram a rota comercial. Para VitalFlush, priorize primeiro a pauta A04 de checagem da oferta conforme a revisão comercial já documentada no Drive, sem estimar volume nem prometer eficácia. Valide rótulo e responsável, política de reembolso divergente, custo final, permissão de mídia e atribuição antes de aprovar uma página comercial.
+VitalFlush permanece uma oferta candidata. A decisão é trabalhar somente com **Lead 03** quando houver nova autorização. O histórico descreve a cena de uma mulher de óculos com fundo azul e acesso ao Dropbox do produtor. A identificação do vídeo, a permissão de uso e a reprodução ainda precisam de evidência atual.
 
-Quando autorizado, use o Astro e o Cloudflare existentes. Reserve uma rota de oferta com assets HTML versionados e players hospedados pelo produtor autorizado. Documente as variantes Lead 02 e Lead 03, checkout elegível e comportamento de cada destino. Suba apenas uma versão autorizada, com revisão de claims, política, dados e consentimento. Use links patrocinados identificados e divulgação junto ao CTA. Dependências de vídeo ficam fora do Git, sem cópia de VSLs para esta entrega.
+O [endereço histórico do Pageus](https://paginas-vitalflush-bff238.pageus.app/lead-3) teve relato de 404. Preserve a referência como histórico. Os três destinos de checkout de referência eram os caminhos CartPanda `/checkout/212800345`, `/checkout/212800346` e `/checkout/212800347`, informados respectivamente para 1, 2 e 3 frascos. Mantenha o identificador de afiliado e os links parametrizados no registro privado do proprietário.
+
+Numa missão comercial posterior, confirme player, destino, quantidade, condições, atribuição de comissão, permissões e alegações antes de ativar qualquer integração. A presença de `afid` só mostra um parâmetro na URL. Use o catálogo versionado em `src/data/offers.js` e mantenha essa frente separada da revisão editorial. Não salve senhas, cookies ou tokens no repositório.
