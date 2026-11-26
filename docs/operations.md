@@ -6,6 +6,26 @@ O Vera Health Notes é uma publicação editorial americana de wellness. O site 
 
 **Antes de iniciar qualquer tarefa, verificar o estado real do GitHub e ler as instruções persistentes. Nunca depender exclusivamente de lembranças da conversa.** Confira o HEAD, a base, o estado e os checks de cada PR. Para edição, crie um worktree ou branch a partir da revisão certa. Preserve as alterações locais do proprietário. Antes do push, verifique novamente as refs remotas e o escopo do diff.
 
+### Protocolo permanente de inicialização
+
+**O proprietário não é a memória operacional do Vera Health Notes.** Cabe ao agente recuperar, aplicar, registrar e verificar o conhecimento acumulado. Uma nova conversa começa pela versão remota desta seção em `docs/operational-memory`. A leitura local de outra branch é apenas apoio histórico.
+
+1. Leia este START HERE e todas as autoridades pertinentes da matriz abaixo. Registre a ref e o commit consultados. Confira o HEAD real de `main`, a branch de trabalho, o inventário, os PRs e as aprovações aplicáveis. Uma evidência histórica só descreve a versão que foi testada.
+2. Identifique o escopo e recupere as correções anteriores antes de editar. Confirme idioma, modelo, extensão, visuais, intenção, fontes, riscos, SEO/GEO/AEO e requisitos de autorização. Resolva discrepâncias pela versão aplicável e pela decisão aprovada mais recente. Registre conflito e procedência quando o estado continuar incerto.
+3. Em cada lote, registre os aprendizados aplicáveis e preencha o checklist por artigo. Confirme exceções, pendências e evidências no mesmo PR ou no registro de QA. Compare rotas, intenção e IDs com o inventário antes da redação.
+4. Se faltar acesso à autoridade ou a um requisito obrigatório, tente recuperá-lo e interrompa a parte dependente. Registre qual documento ou prova faltou e continue atividades independentes. Uma cota ou técnica ainda sem fonte aprovada fica pendente.
+5. Antes de encerrar, valide o resultado, incorpore o aprendizado ao padrão e aos checklists afetados, registre no histórico e confirme os arquivos no GitHub. O procedimento detalhado está em [Lições aprendidas](#lições-aprendidas).
+
+| Trabalho | Leitura obrigatória e fonte de verdade |
+| --- | --- |
+| Estratégia, pesquisa de ofertas, persona, VSL ou monetização | [Inteligência editorial e comercial](editorial/inteligencia-editorial-comercial.md), [dossiê de aplicação evergreen](editorial/evergreen-2026-11-25.md) e a seção de monetização abaixo. Leia os originais internos identificados na inteligência quando a tarefa depender deles. |
+| Pauta, redação e hooks | [Sistema editorial e checklist](editorial/README.md), [headlines e aberturas](editorial/headlines.md), [briefings](editorial/article-briefs-vhn20.json) e [inventário](editorial/article-index-vhn20.csv). |
+| Imagens, visual, integração e preview | [Piloto e modelos](editorial/pilot-e04.md), [importador](../scripts/stage-article.mjs) e [QA da fila](editorial/queue-a001-a020.md). Compare com os componentes da branch de trabalho. |
+| SEO técnico, GEO e AEO | [Auditoria e monitoramento](seo/ai-search-visibility-audit.md), [sistema editorial](editorial/README.md) e [verificação do build](../scripts/verify-build.mjs). |
+| Revisão e publicação | [Pareceres evergreen](editorial/reviews-2026-11-25.md), [QA da fila](editorial/queue-a001-a020.md), [pareceres formais da versão publicada no PR #8](https://github.com/fiqueligado853-commits/vera-health-notes/blob/79e71202f37b3435f8d0dd94f237ca4101341053/docs/editorial/reviews-pr8-2026-11-26.md) e os controles abaixo. |
+
+Esta ordem é permanente. Regra obrigatória ou decisão aprovada exige referência e escopo. Uma hipótese é proposta a verificar. Um teste é uma observação datada e vinculada à versão. Uma pendência identifica a evidência ou autorização ausente. Um registro histórico preserva a decisão original e a versão em que se aplicava. Alterações que revoguem uma regra aprovada precisam de justificativa, evidência e autorização quando exigida. A atualização dos documentos acompanha a correção.
+
 ### Estado atual em 26/11/2026 — publicação do PR #8
 
 **12 artigos da fila no ar.** O [PR #8](https://github.com/fiqueligado853-commits/vera-health-notes/pull/8) foi integrado à `main` em [`79e7120`](https://github.com/fiqueligado853-commits/vera-health-notes/commit/79e71202f37b3435f8d0dd94f237ca4101341053), a partir do candidato [`2626c07`](https://github.com/fiqueligado853-commits/vera-health-notes/commit/2626c07aeeac20a619d597d02946096ff7018a9d). Publicados em 26/11/2026: A001, A003, A004, A006, A010, A011, A012, A013, A014, A015, A016 e A020. O [inventário](editorial/article-index-vhn20.csv) contém as URLs verificadas e o [registro de QA](editorial/queue-a001-a020.md) contém a evidência de produção.
@@ -21,6 +41,8 @@ O Vera Health Notes é uma publicação editorial americana de wellness. O site 
 A [auditoria GEO/AEO](seo/ai-search-visibility-audit.md) reúne a matriz recuperada, a evidência do deploy do PR #8, a inspeção individual das 12 rotas e a documentação oficial de Google, OpenAI, Microsoft, Perplexity e Cloudflare. O robots de origem e as proteções editoriais foram conferidos. Restam a comparação do robots servido, os eventos de crawlers verificados, a indexação nas propriedades e a amostra nas interfaces nativas. Retome pelas seções de coleta do relatório quando houver acesso. Não há bloqueio de crawler comprovado que justifique alteração em produção.
 
 ### Histórico em 26/11/2026 — preparação antes da publicação
+
+**Registro histórico anterior ao merge.** Para os estados, autorizações e números vigentes, use a seção de publicação do PR #8 no início do START HERE.
 
 **Publicação A001–A020: 0 no ar.** O proprietário autorizou a publicação de A001, A003, A004, A006, A010, A011, A012, A013, A014, A015, A016, A020, condicionada às aprovações aplicáveis. Os 12 têm pareceres automatizados no PR #7, mas as aprovações editorial independente e factual formais da versão final continuam pendentes. Os registros do projeto não exigem genericamente um revisor humano para o parecer editorial, mas exigem um revisor separado da redação e uma decisão registrada por versão. Aprovação profissional continua obrigatória quando indicada.
 
@@ -99,6 +121,23 @@ A001 prioriza orçamento e aproveitamento em dois jantares. A013 explica grupos 
 | Ajuste pequeno virou redesign | Restringir o diff e verificar o comportamento no desktop e no celular. |
 | Recorte de fotografia ocultou conteúdo de diagrama | Conferir imagens com texto em telas estreitas e preservar a proporção do diagrama quando necessário. |
 | Imagem interna carrega só após rolagem | Levar a figura à área visível antes de verificar a decodificação em Chromium. Usar o navegador do runner e manter as dependências do Astro do lockfile durante o preview. |
+
+### Fechamento e proteção contra regressão
+
+1. Registre problema, causa e alcance. Identifique a regra anterior e as levas afetadas.
+2. Aplique e valide a solução na versão pertinente. Registre teste executado, resultado e limites. Quando houver impacto clínico, científico, comercial ou de publicação, preserve as decisões e autorizações separadas.
+3. Atualize as autoridades e checklists afetados. Se uma regra foi substituída, preserve sua origem no histórico e indique a nova regra, vigência, justificativa e autorização quando aplicável.
+4. Acrescente uma entrada ao histórico abaixo. Cada linha tem nove campos. Na referência, use o commit ou PR da solução. Se a solução e a entrada nascerem no mesmo commit, use o ID no assunto do commit e confirme o permalink após gravar. Nunca reescreva uma entrada anterior. Adicione uma correção com ID próprio.
+5. Execute `node scripts/verify-operational-memory.mjs memory <base>` no checkout da memória e consulte o workflow [Verify Vera Health Notes operational memory](../.github/workflows/verify-operational-memory.yml). Confirme o HEAD remoto, o diff e o resultado dos checks. Um check estrutural verde permite localizar regras e evidências. A aplicação e o mérito editorial são verificados no checklist e nos pareceres.
+6. Na próxima leva, use a tabela e o histórico como lista de regressões. Revalide casos próximos, incluindo ID/slug reconciliados, relações entre pautas, elegibilidade de rascunho, recorte de diagramas e aprovações independentes. Se uma alteração for aprovada sem a documentação correspondente, o fechamento fica pendente.
+
+O comando de medição de extensão e os controles de build, importação e preview têm usos complementares no [checklist editorial](editorial/README.md#checklist-obrigatório-por-artigo). O workflow de memória é executado na branch de memória. Antes de cada nova leva, rode o verificador no checkout de memória e os controles técnicos pertinentes na branch dos manuscritos.
+
+### Histórico versionado de aprendizado
+
+| ID | Data | Problema | Causa | Regra anterior | Solução e nova regra | Documentos afetados | Evidência de validação | Status e referência |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| VHN-MEM-20261126-01 | 2026-11-26 | Uma nova conversa podia perder requisitos e aprendizados dispersos. | Autoridades divididas entre Git, briefing, pesquisa e registros de execução, sem checagem de regressão da memória. | START HERE com orientação de consulta e lições históricas, sem checklist individual nem comparação automática do histórico. | Inicialização obrigatória por tarefa, checklist por versão, síntese da inteligência, registro cumulativo, medição de extensão e comparação automática no Git. | operations.md, editorial/README.md, editorial/headlines.md, inteligência editorial e comercial, verificador, testes e workflow. | Node 24: 4 testes aprovados, 14 links de leitura, comparação local com base Git e medição dos 24 manuscritos presentes na coleção da branch de memória, incluindo os 20 da fila. | Implementado. Commit com assunto VHN-MEM-20261126-01; evidência editorial histórica no PR #8. |
 
 ## Infraestrutura e monitoramento
 

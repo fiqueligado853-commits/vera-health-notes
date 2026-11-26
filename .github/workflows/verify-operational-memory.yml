@@ -1,0 +1,26 @@
+name: Verify Vera Health Notes operational memory
+on:
+  push:
+    branches: [docs/operational-memory]
+permissions:
+  contents: read
+jobs:
+  memory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node --test scripts/verify-operational-memory.test.mjs
+      - name: Check entry point, links and learning history
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [[ -n "$BEFORE" && ! "$BEFORE" =~ ^0+$ ]]; then
+            node scripts/verify-operational-memory.mjs memory "$BEFORE"
+          else
+            node scripts/verify-operational-memory.mjs memory
+          fi
