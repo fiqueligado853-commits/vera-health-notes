@@ -4,6 +4,7 @@ title: "Why Are My Blood Pressure Readings Different One Minute Apart?"
 description: "Two blood pressure readings a minute apart may differ. Learn how to check your setup, what to record, and when to seek help."
 slug: "why-blood-pressure-readings-differ"
 category: "everyday-wellness"
+format: "B_SYMPTOMS"
 related_ids: ["VHN-VF-A02"]
 status: "draft"
 language: "en-US"
@@ -74,6 +75,10 @@ The [AHA’s guidance for very high readings](https://www.heart.org/en/health-to
 If you have a reading above either of those levels and have no emergency symptoms, the AHA advises waiting at least one minute and testing again. If it is still that high, contact a healthcare professional immediately. Follow any individualized instructions you have been given about when to call or seek care.
 
 When neither reading calls for immediate action and you are unsure what to make of the difference, bring the pair and the circumstances to your healthcare team. The record gives you something concrete to discuss and helps them decide what additional information they need.
+
+## Questions for your next appointment
+
+Ask when to measure, how many readings to take, which changes should prompt a call, and whether your cuff fits. If your team wants to check your technique, ask if you should bring your monitor and a record of both readings.
 
 ## Sources and further reading
 
