@@ -4,6 +4,8 @@ Para novas pautas, consulte o [sistema editorial v3.0](editorial/README.md) e re
 
 ## Publicação editorial
 
+Use o [fluxo de importação e preview privado](editorial/pilot-e04.md) para receber um artigo e seus arquivos de imagem já preparados. O VHN-E04 usa esse preview para revisão no PR #5. Os lotes do [inventário editorial](editorial/article-index-vhn20.csv) ficam fora da coleção ativa até triagem individual.
+
 O arquivo ativo de cada artigo fica em src/content/articles. VHN-VF-A01 em src/drafts é um registro histórico da v2. Antes da aprovação, documente as fontes e a validação de cada alegação, confirme autoria, datas e créditos, confira imagens e links, e registre o responsável e a data de cada revisão. Separe revisão de fontes, revisão editorial e revisão clínica. A rota e os cards só são gerados com status aprovado e todos os estados requeridos. Nos dois pilotos há revisão clínica pendente. Valide em uma cópia isolada antes de publicar.
 
 Os diagramas originais two-readings.webp e log-fields.webp foram produzidos para Vera Health Notes em 25/11/2026. Uso editorial do projeto, sem material fotográfico de terceiros e sem crédito externo requerido. Referência factual para o primeiro: guia de monitoramento domiciliar da American Heart Association. O segundo ilustra os campos da planilha original e omite valores de saúde. As tabelas nos artigos marcam números como exemplos fictícios. Cada imagem tem 1200 × 630 px. O Astro gera o card a 480 px e preserva a altura proporcional.
