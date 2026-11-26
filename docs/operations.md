@@ -26,6 +26,12 @@ O Vera Health Notes é uma publicação editorial americana de wellness. O site 
 
 Esta ordem é permanente. Regra obrigatória ou decisão aprovada exige referência e escopo. Uma hipótese é proposta a verificar. Um teste é uma observação datada e vinculada à versão. Uma pendência identifica a evidência ou autorização ausente. Um registro histórico preserva a decisão original e a versão em que se aplicava. Alterações que revoguem uma regra aprovada precisam de justificativa, evidência e autorização quando exigida. A atualização dos documentos acompanha a correção.
 
+### Cláusula permanente de memória operacional e melhoria contínua
+
+Aplica-se a todas as atividades do Vera Health Notes. Antes de iniciar cada tarefa, consulte a versão mais recente da branch remota `docs/operational-memory`, incluindo este START HERE e as referências aplicáveis. O GitHub é a fonte de verdade. O agente recupera e aplica o conhecimento versionado sem depender da memória da conversa ou de lembretes do proprietário.
+
+Durante a execução e antes de finalizar, cumpra o [procedimento de fechamento](#fechamento-e-proteção-contra-regressão) e entregue o [resumo obrigatório da missão](#resumo-obrigatório-ao-encerrar-cada-missão). Uma correção só é concluída depois que o aprendizado correspondente foi registrado e sua gravação foi confirmada no GitHub.
+
 ### Estado atual em 26/11/2026 — publicação do lote 02
 
 **Cinco artigos novos no ar.** O [PR #9](https://github.com/fiqueligado853-commits/vera-health-notes/pull/9) foi integrado à `main` em [`e8b9524`](https://github.com/fiqueligado853-commits/vera-health-notes/commit/e8b952407095bb9648dbc971b27b511e0346ae0b). A fila contabiliza 17 artigos publicados até A025, somando os 12 do PR #8 com os cinco abaixo. Os oito IDs do lote anterior fora da autorização seguem excluídos. Os guias anteriores E01–E03 são outra série.
@@ -149,7 +155,24 @@ A001 prioriza orçamento e aproveitamento em dois jantares. A013 explica grupos 
 5. Execute `node scripts/verify-operational-memory.mjs memory <base>` no checkout da memória e consulte o workflow [Verify Vera Health Notes operational memory](../.github/workflows/verify-operational-memory.yml). Confirme o HEAD remoto, o diff e o resultado dos checks. Um check estrutural verde permite localizar regras e evidências. A aplicação e o mérito editorial são verificados no checklist e nos pareceres.
 6. Na próxima leva, use a tabela e o histórico como lista de regressões. Revalide casos próximos, incluindo ID/slug reconciliados, relações entre pautas, elegibilidade de rascunho, recorte de diagramas e aprovações independentes. Se uma alteração for aprovada sem a documentação correspondente, o fechamento fica pendente.
 
+7. Durante a execução, reúna os novos aprendizados, os critérios de qualidade aprovados, os erros com suas causas e as abordagens que falharam. Registre a solução aplicada, a forma de validação, o resultado e seus limites. Separe observações ainda sem evidência dos procedimentos validados.
+8. Compare o resultado com a produção anterior pertinente usando os mesmos critérios quando possível. Explicite diferenças de versão, escopo e medição. Incorpore as melhorias validadas ao próximo ciclo e aos checklists obrigatórios. Preserve prompts, técnicas, estratégias e procedimentos que funcionaram em sua fonte canônica, com a versão e as condições de aplicação.
+9. Preserve a qualidade dos padrões aprovados. Uma mudança de padrão exige justificativa documentada e evidência de qualidade equivalente ou superior, além da autorização aplicável. Qualquer descarte exige justificativa e registro histórico suficientes para recuperar o conhecimento anterior.
+10. Atualize o estado real do projeto, as pendências e a próxima ação operacional. Versione as alterações no GitHub e confirme a ref, o diff, os arquivos gravados e os checks aplicáveis antes de relatar a conclusão.
+
 O comando de medição de extensão e os controles de build, importação e preview têm usos complementares no [checklist editorial](editorial/README.md#checklist-obrigatório-por-artigo). O workflow de memória é executado na branch de memória. Antes de cada nova leva, rode o verificador no checkout de memória e os controles técnicos pertinentes na branch dos manuscritos.
+
+### Resumo obrigatório ao encerrar cada missão
+
+1. **Novos conhecimentos adquiridos** e evidências que os sustentam.
+2. **Erros que não deverão ser repetidos**, com causas e abordagens descartadas.
+3. **Melhorias incorporadas ao processo**, com a comparação anterior e a validação aplicável.
+4. **Documentos atualizados**, com links verificáveis.
+5. **Commit correspondente**, confirmado no GitHub, e PR quando houver.
+6. **Pendências identificadas**, com o requisito exato que falta.
+7. **Estado atual do projeto e próxima ação operacional**.
+
+Quando um item não se aplicar ou não houver alteração, explicite essa condição e o que foi verificado. Se a gravação ou validação estiver bloqueada, indique o ponto pendente e a evidência necessária antes de considerar a correção concluída.
 
 ### Histórico versionado de aprendizado
 
@@ -158,6 +181,7 @@ O comando de medição de extensão e os controles de build, importação e prev
 | VHN-MEM-20261126-01 | 2026-11-26 | Uma nova conversa podia perder requisitos e aprendizados dispersos. | Autoridades divididas entre Git, briefing, pesquisa e registros de execução, sem checagem de regressão da memória. | START HERE com orientação de consulta e lições históricas, sem checklist individual nem comparação automática do histórico. | Inicialização obrigatória por tarefa, checklist por versão, síntese da inteligência, registro cumulativo, medição de extensão e comparação automática no Git. | operations.md, editorial/README.md, editorial/headlines.md, inteligência editorial e comercial, verificador, testes e workflow. | Node 24: 4 testes aprovados, 14 links de leitura, comparação local com base Git e medição dos 24 manuscritos presentes na coleção da branch de memória, incluindo os 20 da fila. | Implementado. Commit com assunto VHN-MEM-20261126-01; evidência editorial histórica no PR #8. |
 | VHN-MEM-20261126-02 | 2026-11-26 | Lista de elementos de prova ainda não extraída. | A autoridade era um documento separado do acervo. | Comprovação e distinção de escopo estavam registradas de forma geral. | Indexar os 18 elementos com limites de uso editorial e comercial e documentar as lacunas de extração. | editorial/headlines.md | Aula sobre elementos de prova.pdf, cinco páginas com texto recuperável. Verificações adicionais registradas no documento. | Implementado com pendências identificadas. Commit VHN-MEM-20261126-02. |
 | VHN-MEM-20261126-03 | 2026-11-26 | PDFs de copy não extraídos e lições do lote 02 ainda dispersas. | Materiais rasterizados e publicação verificada em outro fluxo. | Existiam a referência geral e o log de recuperação parcial, sem resultados de produção do lote. | Indexar as 11 fascinations e os ângulos por fonte, preservar a lacuna de 17, fixar o padrão de checagem documental e registrar as cinco rotas. | operations.md e editorial/headlines.md | Leitura visual dos PDFs, verificador de extensão, pareceres por blob, preview em três larguras, Cloudflare e QA HTTP no domínio. | Implementado. PR #9 e commit VHN-MEM-20261126-03. |
+| VHN-MEM-20261126-04 | 2026-11-26 | O procedimento existente não explicitava o resumo de encerramento em todas as missões. | As regras de retomada, aprendizado e QA estavam distribuídas entre a memória e o checklist editorial. | O fechamento já exigia validação, registro no histórico e confirmação no GitHub. | Tornar obrigatórios em todas as missões a comparação com trabalhos anteriores, a preservação de abordagens validadas e o resumo de fechamento completo. | docs/operations.md e docs/editorial/README.md | Conferência do texto contra a cláusula do proprietário e validação estrutural da memória pelo workflow existente. | Implementado. Commit VHN-MEM-20261126-04. |
 
 ## Infraestrutura e monitoramento
 
