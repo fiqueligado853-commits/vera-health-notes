@@ -11,7 +11,7 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: ["VHN-E01"]
+related_ids: ["VHN-E04","VHN-E01"]
 hero:
   image: "../../assets/articles/queue/a015.webp"
   alt: "Hands comparing two plain cans at a grocery shelf"
@@ -33,7 +33,7 @@ According to the FDA, 5% Daily Value or less per serving is generally considered
 
 ## Step 4: Understand the wording on the front
 
-“Reduced sodium” means something different from “low sodium,” and the word “natural” does not tell you the sodium amount. Compare the full panel and ingredient statement. Avoid assuming a product is appropriate solely because it uses a reassuring phrase or color. Nutrition claims have defined contexts; the numbers on the panel make the decision more concrete.
+[The FDA’s general guide](https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet) distinguishes “low sodium” (140 mg or less per serving) from “reduced sodium” (at least 25% less than the regular version). “No salt added” means no salt was added during processing, and the food may still contain sodium. To choose between brands, compare the milligrams for the amount you’ll eat.
 
 ## Step 5: Check how much you will actually use
 
@@ -50,8 +50,6 @@ People with certain medical conditions, medications, or prescribed dietary plans
 ## Compare two cans on matching terms
 
 Imagine a can labeled 200 mg sodium per half cup and another labeled 350 mg per cup. For an equal one-cup serving the first would provide 400 mg and the second 350 mg. These are illustrative values, not results from actual groceries. When comparing by weight instead of volume, use the grams printed beside the serving size.
-
-[The FDA explains](https://www.fda.gov/food/nutrition-education-resources-materials/sodium-your-diet) that a reduced-sodium product has at least 25% less sodium than the regular reference product. “No salt added” describes the processing, and the food may still contain sodium. Those phrases can help you find products to compare. The milligrams for the amount you’ll eat tell you which option fits your needs.
 
 ## Use the same order at the shelf
 

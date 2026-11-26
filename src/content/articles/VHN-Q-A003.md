@@ -11,7 +11,7 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: []
+related_ids: ["VHN-E04","VHN-Q-A016"]
 hero:
   image: "../../assets/articles/queue/a003.webp"
   alt: "Three bowls with oatmeal and berries, plain yogurt, and nuts"
@@ -21,7 +21,7 @@ Healthy eating advice sometimes arrives as a list of everything you should stop 
 
 ## Swap 1: Try the lower-sodium beans in your usual recipe
 
-Beans can make quick tacos, salads, or grain bowls. But two cans on the same shelf may differ in sodium, and the serving sizes may not match. Compare Nutrition Facts panels, then choose a no-salt-added or lower-sodium option when it works for your recipe. Rinsing canned beans may also be useful, although it does not make every product nutritionally identical. **Try it tonight:** use a familiar bean recipe and change only the can you buy. Judge the result by flavor, convenience, and whether you would do it again.
+Beans can make quick tacos, salads, or grain bowls. But two cans on the same shelf may differ in sodium, and the serving sizes may not match. Compare Nutrition Facts panels, then choose a no-salt-added or lower-sodium option when it works for your recipe. Drain the beans as the recipe directs and use the label to compare the products. **Try it tonight:** use a familiar bean recipe and change only the can you buy. Judge the result by flavor, convenience, and whether you would do it again.
 
 ## Swap 2: Try brown rice in place of white rice
 
@@ -33,7 +33,7 @@ Bottled sauces can make cooking faster. They can also be a significant source of
 
 ## Swap 4: Keep frozen vegetables for rushed dinners
 
-Fresh produce is great when you will use it; frozen vegetables can be equally practical for busy nights. Choose plain versions or compare added seasonings and sauces. Keep one vegetable that cooks quickly and one you can eat raw. **Try it.** Put broccoli into a familiar stir-fry or carrots beside a sandwich. Your meals do not need to become photogenic “wellness bowls” to make vegetables part of the routine.
+Fresh produce is great when you will use it; frozen vegetables can be equally practical for busy nights. Choose plain versions or compare added seasonings and sauces. Keep one frozen vegetable for cooking and one fresh vegetable you like to eat raw. **Try it.** Put broccoli into a familiar stir-fry or carrots beside a sandwich. Your meals do not need to become photogenic “wellness bowls” to make vegetables part of the routine.
 
 ## Swap 5: Rethink the weeknight protein
 

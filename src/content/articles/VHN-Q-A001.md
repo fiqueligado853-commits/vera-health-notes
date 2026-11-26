@@ -1,8 +1,8 @@
 ---
 id: "VHN-Q-A001"
-title: "10 Foods Worth Adding to a Heart-Healthy Grocery List"
+title: "10 Foods for a Heart-Healthy Grocery List on a Budget"
 slug: "10-foods-worth-adding-to-a-heart-healthy-grocery-list"
-description: "Build a practical heart-healthy grocery list around foods you already cook, with ideas for using them across several meals and staying within budget."
+description: "Build a heart-healthy grocery list on a budget. Compare unit prices, choose foods you can use twice, and start with a two-dinner shopping cart."
 format: "A_LIST"
 category: "nutrition-ingredients"
 language: "en-US"
@@ -11,13 +11,13 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: []
+related_ids: ["VHN-Q-A013","VHN-Q-A014"]
 hero:
   image: "../../assets/articles/queue/a001.webp"
   alt: "Groceries including produce, oats and pantry staples in a reusable bag"
 ---
 
-There is a particular kind of grocery-store optimism: you walk in determined to eat better, and ten minutes later you are staring at an unfamiliar grain wondering whether you will ever cook it. A heart-friendly shopping cart does not need to look like a completely different life. Start with foods you recognize, consider the balance of your meals, and make changes you will repeat. [The DASH eating pattern](https://www.nhlbi.nih.gov/health/dash-eating-plan) is a helpful reference because it emphasizes familiar food groups rather than specialty products.
+Start with two dinners you already know how to make, then look for ingredients they can share. For a grain bowl and a soup, that might mean brown rice, canned beans, carrots, and a bag of frozen greens. Use the rest of this list to fill gaps in the cart. The [DASH eating plan](https://www.nhlbi.nih.gov/health/dash-eating-plan) is a reference for food groups, while the price and quantity you can use will depend on your store and household.
 
 ## 1–3. Oats, berries, and leafy greens
 
@@ -41,7 +41,7 @@ Before checking out, ask which ingredients can serve multiple meals. Frozen prod
 
 ## Build a two-dinner cart
 
-Start with the meals that are most likely to fall apart when the week gets busy. Suppose you plan one grain bowl and one soup. Canned beans, a bag of plain frozen greens, brown rice and a couple of carrots can do double duty. You could use the rice as the bowl’s base and cook a small amount into the soup. Buy berries only if you have a breakfast planned for them or room in the freezer.
+Use the rice as the bowl’s base and cook some into the soup. Add beans and carrots to both dishes, and save frozen greens for whichever meal needs them. Before you add berries, check whether you have a breakfast planned for them or room in the freezer.
 
 If two formats both work for the recipe, compare the price per ounce and the amount you’ll use. A bigger bag can have a better unit price and still be the more expensive choice if half of it goes unused. On packaged foods, the Nutrition Facts serving is a separate measurement from the shelf’s price unit. Check the unit you actually need before choosing.
 

@@ -11,13 +11,13 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: []
+related_ids: ["VHN-Q-A010","VHN-Q-A020"]
 hero:
   image: "../../assets/articles/queue/a006.webp"
   alt: "An adult changing position beside a chair in a home workspace"
 ---
 
-You intended to take a walk at lunch. Then a meeting ran late, the inbox filled up, and suddenly it was 5 p.m. If this sounds familiar, the useful question may not be “How do I become a different person?” but “Where can movement fit into the day I actually have?” [The CDC recommends](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html) regular physical activity and encourages adults to break up sitting when possible. Start with small actions that fit your circumstances and abilities.
+A long drive, a class, and a workday at a desk leave different chances to move. Choose a break you can take safely in the place you’ll actually be. The [CDC encourages adults to move more and sit less](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html). A short change of position or a comfortable walk can be a practical starting point.
 
 ## 1. Stand up when a task ends
 
@@ -27,9 +27,9 @@ A completed phone call, finished document, or meeting break offers a natural rem
 
 Instead of creating a separate appointment for every walk, look for movement already connected to your day. Walk to collect a package, take a slightly longer route to lunch, or do an indoor lap when the weather makes going outside inconvenient. Small activities do not need to be dramatic to count as moving more.
 
-## 3. Reconsider your lunch break
+## 3. Look for a break on travel days
 
-Lunch can become another stretch of sitting when you eat at your desk. If conditions allow, step away and spend part of the break moving comfortably. A short walk is not a cure for circulatory disease or other symptoms, but it can help you replace some sedentary time with activity. Aim for a routine that feels sustainable rather than an exact step count someone else chose.
+If you’re driving, use a planned stop to step out and move when it’s safe. On a bus or train, change position in your seat or wait until there’s a safe, permitted opportunity to get up. What works depends on the trip and your mobility.
 
 ## 4. Make the environment do some work
 

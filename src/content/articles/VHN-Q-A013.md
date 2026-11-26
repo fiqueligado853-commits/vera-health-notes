@@ -2,7 +2,7 @@
 id: "VHN-Q-A013"
 title: "10 Everyday Foods That Fit DASH and the Food Groups They Cover"
 slug: "10-everyday-foods-that-fit-a-dash-style-eating-plan"
-description: "Map ten familiar foods to the DASH eating plan’s food groups and see how those categories can inform a practical first grocery trip."
+description: "See how ten familiar foods fit the DASH food groups and learn the difference between daily and weekly serving goals in the NHLBI plan."
 format: "A_LIST"
 category: "nutrition-ingredients"
 language: "en-US"
@@ -11,41 +11,37 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: []
+related_ids: ["VHN-Q-A001","VHN-Q-A004"]
 hero:
   image: "../../assets/articles/queue/a013.webp"
   alt: "An assortment of grains, legumes, vegetables, fruit and yogurt in small bowls"
 ---
 
-When someone recommends a “heart-healthy eating plan,” the phrase can sound like an entirely different menu. But the NHLBI's DASH approach is built around familiar food groups and realistic serving patterns. It emphasizes vegetables, fruits, whole grains, low-fat dairy where appropriate, and other foods within an overall plan. This list is a starting point for shopping, not a personalized meal prescription. Food allergies, medical conditions, cultural preferences, and budgets all deserve consideration.
+The DASH plan groups foods by how they fit into an overall eating pattern. Apples count toward fruit, broccoli toward vegetables, and beans toward a group with its own weekly goal. Use the ten examples below to read the [NHLBI’s DASH serving table](https://www.nhlbi.nih.gov/health/dash-eating-plan) and see where the foods you already eat fit.
 
 ## 1–2. Apples and berries
 
-Fruit can fit into breakfast, a snack, or dessert. Apples are easy to pack, while fresh or frozen berries work well with yogurt or oats. Neither food has a special power to “clean” arteries. Their value is in a broader pattern of including fruits and vegetables regularly. **Shopping idea:** buy one fruit you can eat without preparation and one you can use in meals.
+Fruit can fit into breakfast, a snack, or dessert. Apples are easy to pack, while fresh or frozen berries work well with yogurt or oats. Neither food has a special power to “clean” arteries. Their value is in a broader pattern of including fruits and vegetables regularly.
 
 ## 3–4. Carrots and broccoli
 
-These vegetables can be served raw, roasted, or added to familiar dishes. Frozen broccoli is convenient when fresh produce might spoil before you use it. Look at packaged versions with sauces or seasonings if sodium is a concern. **Shopping idea:** choose one vegetable that cooks quickly and another you can snack on. Planning two uses for each increases the chance they will actually get eaten.
+These vegetables can be served raw, roasted, or added to familiar dishes. Frozen broccoli is convenient when fresh produce might spoil before you use it. Look at packaged versions with sauces or seasonings if sodium is a concern.
 
 ## 5–6. Oats and brown rice
 
-Whole grains are a central DASH food group. Plain oats can make a simple breakfast, and brown rice can work with beans, vegetables, fish, or poultry. They are not the only options; whole-grain bread, barley, and other foods can fit too. **Shopping idea:** pick the grain that works with meals you already prepare. Check labels on flavored or packaged preparations rather than assuming every version is alike.
+Whole grains are a central DASH food group. Plain oats can make a simple breakfast, and brown rice can work with beans, vegetables, fish, or poultry. They are not the only options; whole-grain bread, barley, and other foods can fit too.
 
 ## 7–8. Beans and unsalted nuts
 
-Beans offer flexible meal options, and nuts can be used in modest amounts as snacks or toppings. Compare sodium when buying canned beans or packaged nuts; no-salt-added and unsalted choices may make comparison easier. People with allergies need safe alternatives. **Shopping idea:** plan one bean-based lunch or dinner and one simple topping you will use during the week.
+Beans offer flexible meal options, and nuts can be used in modest amounts as snacks or toppings. Compare sodium when buying canned beans or packaged nuts; no-salt-added and unsalted choices may make comparison easier. People with allergies need safe alternatives.
 
 ## 9–10. Plain yogurt and fish
 
-Plain yogurt may work for breakfasts and sauces, while fish can provide an easy meal component. The details of preparation matter. Flavored yogurt can contain added sugars; breaded or heavily seasoned fish can differ from plain fish. Choose alternatives as needed for allergies, dietary preferences, or cost. **Shopping idea:** select a product with a short, familiar preparation method, then pair it with a vegetable and grain.
+Plain yogurt may work for breakfasts and sauces, while fish can provide an easy meal component. The details of preparation matter. Flavored yogurt can contain added sugars; breaded or heavily seasoned fish can differ from plain fish. Choose alternatives as needed for allergies, dietary preferences, or cost.
 
-## What DASH means beyond the list
+## Read daily and weekly goals separately
 
-DASH is not a ten-food shopping challenge. The NHLBI provides food-group goals and sodium options across a daily or weekly pattern. Meals can be adapted to many cuisines, and the plan does not demand unusual ingredients. A registered dietitian or healthcare professional can help if you need individual guidance for conditions such as kidney disease or medication-related dietary restrictions.
-
-## A simple first cart
-
-If you are starting from scratch, purchase just a few foods you can combine: oats, fruit, a vegetable, beans, and a grain. Add familiar proteins and dairy or suitable alternatives. Review the week before buying more. The most effective list is not the longest one; it is the one that becomes breakfast, lunch, and dinner.
+In the NHLBI’s 2,000-calorie example, vegetables and fruit each have a daily goal of four to five servings. Nuts, seeds, dry beans, and peas together have a goal of four to five servings **per week**. The table is an example at one calorie level. Use the serving sizes in the NHLBI guide and ask a registered dietitian or healthcare professional if you need an individualized plan.
 
 ## Use the list to recognize DASH food groups
 
@@ -53,7 +49,8 @@ The NHLBI tables distinguish goals reported by day from goals reported by week. 
 
 | Food group | Examples from this list |
 | --- | --- |
-| Fruit and vegetables | Apples, berries, carrots and broccoli |
+| Fruit | Apples and berries |
+| Vegetables | Carrots and broccoli |
 | Whole grains | Plain oats and brown rice |
 | Nuts, legumes and seeds | Beans and unsalted nuts |
 | Low-fat dairy | Plain low-fat yogurt |

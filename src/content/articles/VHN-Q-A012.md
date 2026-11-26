@@ -1,8 +1,8 @@
 ---
 id: "VHN-Q-A012"
-title: "Why Your Evening Routine Matters More Than You Might Think"
+title: "How to Build a Simple Bedtime Wind-Down Routine"
 slug: "why-your-evening-routine-matters-more-than-you-might-think"
-description: "Create a short wind-down routine you can repeat, with an example for busy nights and guidance on when to discuss sleep problems."
+description: "Build a short bedtime routine with a regular wake-up time, a wind-down cue, and a shorter version for busy nights."
 format: "C_EVIDENCE"
 category: "everyday-wellness"
 language: "en-US"
@@ -11,13 +11,13 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: []
+related_ids: ["VHN-Q-A011"]
 hero:
   image: "../../assets/articles/queue/a012.webp"
   alt: "A person reading under a blanket in a softly lit bedroom"
 ---
 
-You brush your teeth, check the weather, open one last message—and suddenly another half hour disappears. Evenings rarely follow a script, which is why a small predictable sequence can be useful. Sleep organizations recommend consistent timing and relaxing pre-bed habits. That does not mean a routine can cure insomnia or erase stress. It means you can shape part of the environment and behavior surrounding sleep.
+Set a wake-up time you can usually keep, then choose one cue that marks the start of winding down. For example, close your work apps, get ready for bed, and read a few pages. Keeping a shorter version of the same sequence makes it easier to use on a busy night.
 
 ## What a routine actually does
 
@@ -48,10 +48,6 @@ Chronic insomnia and other sleep disorders may require proper diagnosis and trea
 On a regular evening, close your work apps, get ready for bed and read a few pages under a dim lamp. On a busy evening, keep just the order of those actions and shorten the reading. The routine has done its job if it helps you finish daytime tasks and sets aside some time for rest.
 
 Living with other people may change which step is practical. You might put away tomorrow’s supplies before leaving a shared space, then keep the final step quiet. Choose a version you can still use on nights when the household is running late.
-
-## Try the shorter version first
-
-Tonight, decide on one action that marks the end of your day. Make it comfortable, affordable, and repeatable.
 
 ## Sources and further reading
 

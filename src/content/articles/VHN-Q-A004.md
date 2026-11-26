@@ -11,13 +11,13 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: []
+related_ids: ["VHN-Q-A013"]
 hero:
   image: "../../assets/articles/queue/a004.webp"
   alt: "Breakfast bowl with oats, fruit and plain yogurt"
 ---
 
-Breakfast advice can make a bowl of cereal feel like a moral decision. One article insists on protein, another wants a particular grain, and a third sells something you have never heard of. Rather than chase the perfect breakfast, look at a simpler framework: a mix of foods you enjoy, sensible portions, and the overall pattern of what you eat across the day. Heart-friendly eating plans such as DASH offer useful building blocks.
+A practical breakfast can start with three things: a familiar base, fruit or vegetables, and something you find satisfying. Think oatmeal with berries and unsalted nut butter, or whole-grain toast with an egg and spinach. These combinations borrow familiar food groups from the DASH eating pattern and leave room for different appetites and schedules.
 
 ## Start with one familiar foundation
 

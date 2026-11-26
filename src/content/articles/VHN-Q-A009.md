@@ -11,17 +11,17 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: []
+related_ids: ["VHN-Q-A020"]
 hero:
   image: "../../assets/articles/queue/a009.webp"
   alt: "Two people taking an evening walk along a residential sidewalk"
 ---
 
-Some evenings, dinner ends and the couch wins. On others, a few minutes outside feels like a welcome reset. Walking after eating has become a popular wellness tip, partly because it asks for something modest rather than another intensive workout. But popular is not the same as proven for every benefit. The interesting question is what researchers have actually measured—and what remains uncertain.
+In small studies, exercise after a meal reduced the short-term rise in blood glucose compared with staying inactive. Those studies used different meals and exercise routines, and they do not tell us whether a regular dinner walk changes long-term health outcomes. Here’s what the research measured and what to consider if an evening walk fits your routine.
 
 ## Why researchers look at post-meal movement
 
-After a meal, blood glucose changes as the body processes food. Trials have examined whether exercise after eating can influence that short-term response. [A 2023 systematic review and meta-analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC10036272/) found evidence that post-meal exercise can reduce post-meal glucose excursions compared with no exercise in the populations studied. This does not mean a walk prevents diabetes, replaces medications, or delivers the same effect to everyone. The size of the benefit and relevance depend on context and study design.
+After a meal, blood glucose changes as the body processes food. Trials have examined whether exercise after eating can influence that short-term response. [A 2023 systematic review and meta-analysis](https://pubmed.ncbi.nlm.nih.gov/36715875/) found evidence that post-meal exercise can reduce post-meal glucose excursions compared with no exercise in the populations studied. This does not mean a walk prevents diabetes, replaces medications, or delivers the same effect to everyone. The size of the benefit and relevance depend on context and study design.
 
 ## The timing question
 
@@ -33,7 +33,7 @@ People often describe a comfortable walk as a way to feel less sluggish after di
 
 ## What it cannot replace
 
-A ten-minute walk is not a stand-alone treatment for high blood pressure, excess weight, or a cardiovascular condition. [The CDC recommends](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html) at least 150 minutes of moderate-intensity aerobic activity per week for most adults, along with muscle-strengthening activity, adjusted to ability and health circumstances. A short dinner walk can contribute to the larger pattern, but it does not make every other habit irrelevant.
+A ten-minute walk is not a stand-alone treatment for high blood pressure, excess weight, or a cardiovascular condition. [The CDC recommends](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html) at least 150 minutes of moderate-intensity aerobic activity per week for most adults, along with muscle-strengthening activity on at least two days a week. A gentle stroll adds movement. A walk that reaches moderate intensity counts toward the moderate-activity target.
 
 ## Make the first walk almost too easy
 
@@ -45,7 +45,7 @@ After a week, ask whether you enjoyed it, whether it fit your schedule, and whet
 
 ## Read one result without overreading it
 
-The review included eight randomized crossover trials with 116 participants. In a crossover trial, a participant may complete more than one study condition, such as exercise and a control condition. The authors rated the included trials at high risk of bias. Their pooled result points to a short-term effect on glucose after a meal, with important uncertainty about how large that effect would be in a different setting.
+The review included eight randomized crossover trials involving 116 people, 47 of whom had type 2 diabetes. People in a crossover trial can take part in more than one condition, such as exercise and rest. The authors rated the included trials at high risk of bias. Their pooled result points to a short-term effect on glucose after a meal, with important uncertainty about how large that effect would be in a different setting.
 
 The paper does not answer whether taking a walk after dinner every night changes someone’s risk of heart disease or how their long-term blood glucose will change. If the practical question is whether a short walk fits your life, try judging the habit by whether you enjoy it and can repeat it.
 
@@ -55,6 +55,6 @@ A post-dinner walk does not have to be a miracle to be worthwhile. There is cred
 
 ## Sources and further reading
 
-- [Engeroff et al. | Exercise timing and post-meal glucose, 2023 systematic review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10036272/)
+- [Engeroff et al. | Exercise timing and post-meal glucose, 2023 systematic review](https://pubmed.ncbi.nlm.nih.gov/36715875/)
 - [CDC | Adult Activity: An Overview](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html)
 - [CDC | What Counts as Physical Activity for Adults](https://www.cdc.gov/physical-activity-basics/adding-adults/what-counts.html)

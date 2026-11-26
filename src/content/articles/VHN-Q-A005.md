@@ -2,7 +2,7 @@
 id: "VHN-Q-A005"
 title: "Why Your Legs May Feel Heavy After Sitting All Day"
 slug: "why-your-legs-may-feel-heavy-after-sitting-all-day"
-description: "Notice patterns in heavy legs after prolonged sitting, learn what details to record, and see which warning signs call for prompt care."
+description: "Explore why legs may feel heavy after prolonged sitting, what a change in position can tell you, and which signs warrant urgent care."
 format: "B_SYMPTOMS"
 category: "everyday-wellness"
 language: "en-US"
@@ -11,13 +11,13 @@ clinical_review: "pending"
 editorial_review: "pending"
 source_review: "pending"
 affiliate_links: false
-related_ids: []
+related_ids: ["VHN-Q-A007","VHN-Q-A008"]
 hero:
   image: "../../assets/articles/queue/a005.webp"
   alt: "An adult seated at a desk with both feet resting on the floor"
 ---
 
-You close your laptop, stand up, and your legs feel oddly heavy. Maybe it fades after moving around. Maybe it happens most evenings. And perhaps it is difficult to describe: not exactly pain, but not simply tiredness either. Remaining in one position for a long time can contribute to discomfort, yet persistent leg heaviness has more than one possible explanation. A useful first step is to notice the pattern rather than assign yourself a diagnosis.
+If both legs feel heavy when you stand after a long meeting, notice whether the feeling fades once you move or keeps returning in other settings. Prolonged sitting can contribute to discomfort. Heaviness that persists, affects one leg, or comes with visible changes needs a closer look.
 
 ## When not to wait
 
@@ -39,19 +39,9 @@ Muscle fatigue after exercise, different medical conditions, medication effects,
 
 If you can do so safely, consider standing and moving periodically during the day, taking comfortable walks, and varying seated positions. The CDC encourages reducing sitting time and increasing physical activity, while recognizing that small steps count. Some people find a walk or position change more practical than attempting an ambitious workout plan. These habits support general health, but they are not substitutes for diagnosing persistent symptoms. Compression garments or other treatments should be discussed with a clinician when appropriate.
 
-## A short symptom note can help
+## See whether it happens away from the desk
 
-Before an appointment, write down when the feeling begins, whether it is one-sided, how long it lasts, what makes it better or worse, and any swelling, color change, or new medications. Avoid trying to rate the circulation in your legs yourself. A simple timeline makes the discussion more specific and lets the professional decide which evaluation is necessary.
-
-## Separate the chair from the symptom
-
-Write down how long you had been sitting and what you were doing just before the sensation started. An example of a useful note would be “both legs felt heavy when I stood up after a long meeting, no visible swelling.” Add whether you could walk as usual and whether the feeling changed after you moved. This is context someone can ask about, rather than a conclusion about your circulation.
-
-Keep track of whether the symptom occurs on days away from the desk. Symptoms that show up in different settings or interfere with ordinary activity are worth bringing up. Recording a pattern is optional context for a visit and should never delay checking urgent symptoms.
-
-## Bring the pattern to your visit
-
-The question is not simply whether your legs are tired. It is whether the pattern is new, persistent, changing, or accompanied by other symptoms. Use everyday movement as a general healthy habit, and get medical advice when your body keeps raising the same question.
+Think about when the feeling starts. Does it appear only after a long stretch in the chair, or do you notice it on days when you’re on your feet? Does it keep you from walking the way you normally do? If it recurs or changes, those observations can help a clinician decide what to check.
 
 ## Sources and further reading
 
