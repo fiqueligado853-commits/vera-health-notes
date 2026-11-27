@@ -10,7 +10,7 @@ Consultei as árvores completas das 11 branches remotas, os oito PRs e a memóri
 |---|---|---|---|---|
 | G01 | Recuperar histórico | Memória, branches, PRs, inventário e QA do PR #8 | CONCLUÍDO E VERIFICADO | Usar os commits e links desta auditoria como ponto de partida. |
 | G02 | Verificar documentação oficial | OpenAI, Google, Microsoft/Bing, IndexNow, Perplexity e Cloudflare | CONCLUÍDO E VERIFICADO | Revalidar documentação quando a plataforma anunciar mudança. |
-| G03 | Robots, sitemap, HTTPS e diretivas servidas | Origem Git/Astro, DNS e QA anterior. GET novo sem conexão | PARCIALMENTE CONCLUÍDO | Obter corpo e cabeçalhos na borda e comparar com Git. |
+| G03 | Robots, sitemap, HTTPS e diretivas servidas | Origem Git/Astro e [coleta direta de borda](https://github.com/fiqueligado853-commits/vera-health-notes/actions/runs/45917571767/job/140240369763). Robots idêntico e dois artigos amostrados. | CONCLUÍDO E VERIFICADO | Reabrir diante de mudança ou evidência nova. Painel e eventos reais seguem em G04. |
 | G04 | Cloudflare, modos e tráfego dos bots | Deploy anterior confirmado. Configuração e eventos indisponíveis nesta sessão | BLOQUEADO POR ACESSO | Abrir a zona autenticada e correlacionar os eventos reais. |
 | G05 | 12 rotas e oito exclusões | QA anterior no domínio + inspeção individual do Markdown e dos templates em `79e7120` | PARCIALMENTE CONCLUÍDO | Revalidar HTML servido, snippet e as 20 respostas de borda. |
 | G06 | Indexação e citações por plataforma | Pesquisa web indicativa executada. Sem inspeções autenticadas ou respostas nativas com evidência | BLOQUEADO POR ACESSO | Abrir painéis e repetir amostra nativa. |
@@ -128,3 +128,26 @@ O link da American Health Association registra o resultado exibido pela busca e 
 ## 7. Alterações e retomada
 
 Esta auditoria registrou apenas documentação na branch de memória. O próximo passo dependente de acesso é reabrir as superfícies oficiais e aplicar as coletas das seções 2, 3 e 5. `main`, artigos e gates, configuração de SEO, DNS, WAF, políticas de treinamento, catálogo comercial e publicação ficaram fora do diff. Nenhum novo deploy, PR ou integração externa foi necessário.
+
+## Fechamento da Missão 03 — 26/11/2026
+
+**Coleta pública às 21h35 de São Paulo** (27/11, 00h35 UTC). A conexão direta da sessão anterior e o navegador autenticado não ofereceram o acesso necessário. O método público que funcionou foi uma execução curta em GitHub Actions, na branch isolada `qa/mission-03-edge-2026-11-26`, sem deploy. [Logs integrais e cabeçalhos](https://github.com/fiqueligado853-commits/vera-health-notes/actions/runs/45917571767/job/140240369763).
+
+| Sinal | Evidência nova | Limite |
+| --- | --- | --- |
+| HTTP e HTTPS | HTTP em `/robots.txt` redirecionou por 301 ao HTTPS. HTTPS respondeu 200, `text/plain; charset=utf-8`, sem sinal de desafio na resposta. | Medição de borda pública para o caminho consultado. |
+| Robots servido | 84 bytes, idêntico ao arquivo Git em `e8b9524`. `User-agent: *`, `Allow: /` e indicação do sitemap. SHA-256 `53dcff8f8d83b348ccb49e64e8a08354abfb57bdcddd252fd60978f170f65ce1`. | Sem diretivas injetadas na resposta medida. O painel Cloudflare não foi inspecionado. |
+| Sitemap | Índice e filho HTTP 200 com `application/xml`. O filho lista 36 URLs, das quais 20 são rotas de artigo. | Contagem pública do XML. Descoberta, processamento e indexação dependem de leitura do Google. |
+| Diretivas em dois lotes | A015 e A022 responderam 200. Sem X-Robots-Tag, meta robots/Googlebot/Bingbot ou `data-nosnippet` nas respostas medidas. | Amostra dos pontos pendentes. QA prévio de canônicas e rotas foi reaproveitado. |
+| Google, Bing, OpenAI e Perplexity | Cabeçalhos de agente Googlebot, bingbot, OAI-SearchBot, GPTBot, ChatGPT-User, PerplexityBot e Perplexity-User retornaram do robots o mesmo corpo em HTTP 200, sem desafio observado. | TESTE EXTERNO INDICATIVO. As requisições vieram do runner, sem vínculo com redes oficiais. Nenhum evento real foi verificado e nenhum bloqueio de crawler foi comprovado. |
+
+### Dados autenticados pendentes
+
+| Superfície | Situação desta missão | Evidência necessária |
+| --- | --- | --- |
+| Google Search Console | A interface pública levou à apresentação geral. Sem acesso autenticado à propriedade. O registro anterior de sitemap processado e zero URLs descobertas era histórico e não foi atualizado. | Confirmar propriedade e domínio, estado e última leitura do sitemap, descobertas, indexadas e não indexadas com razões, último rastreamento e canônica do Google. Extrair impressões, cliques, consultas e problemas por intervalo explícito. Separar estado indexado do teste ao vivo. |
+| Solicitação de indexação | Nenhuma enviada. Sem inspeção não há evidência suficiente de pertinência. | Concluir a inspeção e decidir por URL dentro dos limites da plataforma. |
+| Cloudflare | BLOQUEADO POR ACESSO para configurações e eventos reais. | AI Crawl Control e Security Events com host, janela, crawler verificado e, se aplicável, ação e regra. |
+| Bing, ChatGPT, Perplexity e IA do Google | Cobertura, citações, consultas nativas e visibilidade continuam sem verificação. | Bing Webmaster Tools e amostra nativa com o procedimento já descrito. O robots servido comprova uma condição técnica, sem medir exposição. |
+
+**Aprendizado aplicado.** Usar o runner isolado quando a rede da sessão falhar para verificações públicas. Reservar painéis e eventos autênticos para coleta própria. Conservar a evidência por commit, janela e escopo e evitar repetir a auditoria de documentação oficial ou o QA completo sem gatilho.

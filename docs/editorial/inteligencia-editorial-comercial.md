@@ -44,3 +44,17 @@ O catálogo a seguir preserva nomes e versões para recuperação nos acervos au
 | [Briefings do pacote A001–A020](article-briefs-vhn20.json), [piloto](pilot-e04.md) e [QA da fila](queue-a001-a020.md) | Registros versionados de imagens e princípios de posicionamento. Briefings trazem descrições/prompt de visual principal, meio e final quando úteis. São sugestões por pauta. Os arquivos entregues e verificados constam do inventário e do QA. |
 
 **Pendências delimitadas.** Não foi localizada uma matriz aprovada de cotas por modelo ou seção, uma posição obrigatória para cada imagem complementar, nem os prompts finais completos usados na geração de cada ativo aprovado. Os briefings preservam as direções que foram recuperadas. As quatro estruturas são normativas no piloto. A regra de palavras vale para artigo, com exceção justificada. A recuperação de fontes continuará pelo acervo identificado quando uma missão depender de um desses itens. Os oito artigos excluídos continuam submetidos às revisões e autorizações registradas no START HERE. Os dados autenticados de indexação e crawlers continuam registrados na auditoria GEO/AEO como pendentes.
+
+## VitalFlush — requisitos para sair de hold
+
+Fechamento de 26/11/2026. O [catálogo](https://github.com/fiqueligado853-commits/vera-health-notes/blob/e8b952407095bb9648dbc971b27b511e0346ae0b/src/data/offers.js) continua em `hold`, sem destino ativo. Recuperados o histórico comercial e o dossiê interno VHN-VF-08. As informações abaixo reaproveitam a checagem anterior. Nenhum checkout ou vídeo foi retestado nesta missão.
+
+| Etapa | Evidência já existente | Prova que falta para ativar |
+| --- | --- | --- |
+| Lead 03 e mídia | Reprodução anterior no Dropbox identificou o vídeo esperado. Pageus `/lead-3` teve 404 no registro anterior. O proprietário informou que possui autorização comercial. | Player oficial ou método autorizado de incorporação da Lead 03 e um destino ativo associado à oferta. Registrar a autorização aplicável ao meio de publicação, canais e ativos efetivamente usados. |
+| Checkout dos EUA | Histórico de checkout original vazio/redirecionado. Uma variante não aprovada exibiu os três kits em BRL com campos CPF/CEP. O proprietário confirmou localização de moeda pelo país. | Receber URLs ou deep links oficiais, aprovados pela rede/produtor, e conferir em contexto EUA quantidade, moeda e campos, preço total, envio, termos, renovação/upsell, cancelamento e política de reembolso. Manter a instrução de não tratar `:1` como correção aprovada. |
+| Atribuição | Identificador presente nas URLs históricas. | Validação da atribuição pelo produtor/rede, com método permitido, termos e condições atualizados e evidência oficial sem compra não autorizada. |
+| Vendedor, SKU e oferta | Dossiê registra divergência de garantia 60/90 dias entre páginas e material de roteiro separado da oferta efetiva. | Identificar vendedor responsável, rótulo/advertências, SKU, canal e política aplicável ao mesmo pedido e mesma versão. |
+| Compliance e inclusão | Biblioteca evergreen publicada. Sem ativação comercial nesta missão. | Revisar a Lead 03 efetivamente exibida, claims, fluxo e divulgação de afiliação no local apropriado. Confirmar pertinência editorial por página e aprovações previstas antes de mudar o catálogo. |
+
+Preservar a declaração do proprietário sobre direitos comerciais e localização de moeda. A checagem pendente é da implementação e do destino efetivamente autorizados.
