@@ -1,0 +1,16 @@
+name: Mission 03 public edge evidence
+on:
+  push:
+    branches: [qa/mission-03-edge-2026-11-26]
+permissions:
+  contents: read
+jobs:
+  edge:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node scripts/mission-03-edge.mjs
