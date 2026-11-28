@@ -108,7 +108,8 @@ export function validatePlan(plan, data, knownIds, id) {
   assert.ok(plan.overlap?.length && plan.overlap.every(item => knownIds.has(item.id) && nonempty(item.difference)),
     id + " missing inventory overlap check");
   assert.ok(plan.headlines?.length >= 5 && new Set(plan.headlines).size === plan.headlines.length
-    && plan.headlines.every(nonempty) && plan.headlines.includes(data.title) && nonempty(plan.headlineReason),
+    && plan.headlines.every(nonempty) && plan.selectedHeadline === data.title
+    && plan.headlines.includes(data.title) && nonempty(plan.headlineReason),
     id + " missing headline comparison");
 }
 

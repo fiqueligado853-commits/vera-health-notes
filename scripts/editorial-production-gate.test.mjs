@@ -23,7 +23,7 @@ function fixture(t, count, status = "review", stage = "complete") {
     visualRationale: "Decision diagram", model: data.format, language: [{ phrase: "exact wording", source: "https://example.com/language" }],
     search: [{ query: "read a supplement label", source: "https://example.com/query" }],
     overlap: [{ id: "VHN-E01", difference: "Different reader task" }],
-    headlines: ["Another title", data.title, "Third title", "Fourth title", "Fifth title"], headlineReason: "Specific and honest" };
+    headlines: ["Another title", data.title, "Third title", "Fourth title", "Fifth title"], selectedHeadline: data.title, headlineReason: "Specific and honest" };
   const checks = Object.fromEntries("depth originality utility headline hook narrative images seo geo aeo sources links compliance"
     .split(" ").map(key => [key, "Evidence for " + key]));
   const record = { id: data.id, author: "writer", plan, stage, version, checks };

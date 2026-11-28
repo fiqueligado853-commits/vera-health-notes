@@ -1,7 +1,19 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { parse } from "yaml";
-import { validateArticle } from "../scripts/editorial-production-gate.mjs";
+import { validateArticle } from "./editorial-production-gate.mjs";
+
+export function readManuscripts(root) {
+  const dir = join(root, "src/content/articles");
+  const articles = readdirSync(dir, { recursive: true }).filter(path => path.endsWith(".md")).map(file => {
+    const path = file.replaceAll("\\", "/");
+    const markdown = readFileSync(join(dir, file), "utf8");
+    const header = markdown.match(/^\uFEFF?---\r?\n([\s\S]+?)\r?\n---\r?\n/)?.[1];
+    if (!header) throw new Error("Missing frontmatter: " + path);
+    return { path, markdown, data: parse(header, { maxAliasCount: 0 }) };
+  });
+  return articles;
+}
 
 export default function editorialGate() {
   return {
@@ -9,14 +21,7 @@ export default function editorialGate() {
     hooks: {
       "astro:build:start": () => {
         const root = process.cwd();
-        const dir = join(root, "src/content/articles");
-        const articles = readdirSync(dir, { recursive: true }).filter(path => path.endsWith(".md")).map(file => {
-          const path = file.replaceAll("\\", "/");
-          const markdown = readFileSync(join(dir, file), "utf8");
-          const header = markdown.match(/^\uFEFF?---\r?\n([\s\S]+?)\r?\n---\r?\n/)?.[1];
-          if (!header) throw new Error("Missing frontmatter: " + path);
-          return { path, markdown, data: parse(header, { maxAliasCount: 0 }) };
-        });
+        const articles = readManuscripts(root);
         const knownIds = new Set(articles.map(article => article.data.id));
         if (new Set(articles.map(article => article.data.slug)).size !== articles.length) {
           throw new Error("Duplicate article slug");

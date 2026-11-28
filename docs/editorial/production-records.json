@@ -44,7 +44,8 @@
         "How to Compare a Blend Total With a Single Ingredient Amount",
         "What to Ask a Seller When a Proprietary Blend Shows One Number"
       ],
-      "headlineReason": "Option 2 matches the open-ended query without inventing a real 600 mg label. Option 1 overfits the hypothetical example, 3 is less direct, 4 sounds limited to two bottles, and 5 begins after the shopper's initial question."
+      "headlineReason": "Option 2 matches the open-ended query without inventing a real 600 mg label. Option 1 overfits the hypothetical example, 3 is less direct, 4 sounds limited to two bottles, and 5 begins after the shopper's initial question.",
+      "selectedHeadline": "How Much of an Ingredient Is in a Proprietary Blend?"
     },
     "stage": "complete",
     "checks": {
