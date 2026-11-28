@@ -58,3 +58,7 @@ Fechamento de 26/11/2026. O [catálogo](https://github.com/fiqueligado853-commit
 | Compliance e inclusão | Biblioteca evergreen publicada. Sem ativação comercial nesta missão. | Revisar a Lead 03 efetivamente exibida, claims, fluxo e divulgação de afiliação no local apropriado. Confirmar pertinência editorial por página e aprovações previstas antes de mudar o catálogo. |
 
 Preservar a declaração do proprietário sobre direitos comerciais e localização de moeda. A checagem pendente é da implementação e do destino efetivamente autorizados.
+
+## Prioridade editorial durante a suspensão comercial
+
+A suspensão da Missão 05 preserva todas as evidências de VitalFlush e impede pesquisa operacional de monetização, alterações de checkout, integração de VSL ou ativação de oferta e afiliados nesta missão. A pauta evergreen continua orientada às buscas após anúncios de suplementos. Antes de alocar uma URL, identifique a dúvida real sobre produto, ingrediente, mecanismo, evidência, benefício anunciado, objeção, legitimidade, comparação ou compra, usando a matriz de intenção e avaliação de sobreposição. A biblioteca deve entregar valor documental mesmo com todas as ofertas inativas.
