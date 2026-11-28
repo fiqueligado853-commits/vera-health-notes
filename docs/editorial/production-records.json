@@ -47,7 +47,7 @@
       "headlineReason": "Option 2 matches the open-ended query without inventing a real 600 mg label. Option 1 overfits the hypothetical example, 3 is less direct, 4 sounds limited to two bottles, and 5 begins after the shopper's initial question.",
       "selectedHeadline": "How Much of an Ingredient Is in a Proprietary Blend?"
     },
-    "stage": "complete",
+    "stage": "reviewed",
     "checks": {
       "depth": "Explain blend weight, weight order and why equal division fails. Separate bottle, serving and per-capsule units.",
       "originality": "Illustrative labels and seller message independently authored for the exact decision.",
@@ -63,6 +63,27 @@
       "links": "Internal links target the published serving-size and clinically-tested guides. The sources section names each authority.",
       "compliance": "No affiliate link, offer, recommendation, clinical conclusions, implied benefit or claimed dosing."
     },
-    "version": "2800808e0aa1eb357d7eeaf018425b9d3c46d012533e875a6efd359b951690e9"
+    "editorial": {
+      "by": "lot02_review_evidence",
+      "date": "2026-11-28",
+      "version": "2800808e0aa1eb357d7eeaf018425b9d3c46d012533e875a6efd359b951690e9",
+      "evidence": "https://github.com/fiqueligado853-commits/vera-health-notes/blob/editorial/lot-03-missions-2026-11-28/docs/editorial/lot-03-recovery-2026-11-28.md#parecer-independente-de-a036",
+      "decision": "approved"
+    },
+    "factual": {
+      "by": "lot02_review_evidence",
+      "date": "2026-11-28",
+      "version": "2800808e0aa1eb357d7eeaf018425b9d3c46d012533e875a6efd359b951690e9",
+      "evidence": "https://github.com/fiqueligado853-commits/vera-health-notes/blob/editorial/lot-03-missions-2026-11-28/docs/editorial/lot-03-recovery-2026-11-28.md#parecer-independente-de-a036",
+      "decision": "approved"
+    },
+    "specialty": {
+      "by": "lot02_review_evidence",
+      "date": "2026-11-28",
+      "version": "2800808e0aa1eb357d7eeaf018425b9d3c46d012533e875a6efd359b951690e9",
+      "evidence": "https://github.com/fiqueligado853-commits/vera-health-notes/blob/editorial/lot-03-missions-2026-11-28/docs/editorial/lot-03-recovery-2026-11-28.md#parecer-independente-de-a036",
+      "decision": "not-required",
+      "reason": "U.S. label literacy and hypothetical arithmetic, without personal, clinical, product, efficacy or safety evaluation."
+    }
   }
 }

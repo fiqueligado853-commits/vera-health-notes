@@ -7,9 +7,9 @@ format: "C_EVIDENCE"
 category: "product-research"
 language: "en-US"
 status: "review"
-clinical_review: "pending"
-editorial_review: "pending"
-source_review: "pending"
+clinical_review: "not-required"
+editorial_review: "approved"
+source_review: "approved"
 affiliate_links: false
 related_ids: ["VHN-E01","VHN-Q-A022"]
 hero:
