@@ -1,0 +1,67 @@
+{
+  "VHN-Q-A036": {
+    "id": "VHN-Q-A036",
+    "author": "codex-redacao-20261128",
+    "plan": {
+      "decision": "validated",
+      "supplementDecision": "Before paying for the formula shown in a supplement ad, find out whether it discloses the amount of the ingredient the ad emphasized.",
+      "persona": "U.S. shopper follows an ingredient-forward ad, opens an online label photo, and sees one numbered line for three ingredients. Wants to compare the same ingredient before purchasing.",
+      "intent": "Interpret a proprietary blend and recover a missing individual amount, if disclosed.",
+      "hook": "The ad highlights a particular ingredient; the facts panel gives a single amount for the blend.",
+      "originalUtility": "Written example comparing 600 mg of a blend with a direct 150 mg declaration; a separate bottle/per-serving case and a copy-ready request for the correct version.",
+      "model": "C_EVIDENCE",
+      "narrative": "Case-led evidence comparison, with a counterexample and seller-request message.",
+      "visualRationale": "A single annotated illustrative label line shows the numerical distinction. No brand, seller, official seal, or statement of clinical effect.",
+      "language": [
+        {
+          "phrase": "one total for a blend",
+          "source": "https://www.reddit.com/r/Supplements/comments/1y3ftda/how_to_read_a_supplement_label_6_things_most/",
+          "scope": "Indexed discussion excerpt; language signal only."
+        }
+      ],
+      "search": [
+        {
+          "query": "how much of each ingredient is in a proprietary blend supplement facts",
+          "source": "https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information-topic/dietary-supplement-labeling-guide-chapter-iv-nutrition-labeling",
+          "date": "2026-11-28",
+          "scope": "English search oriented to U.S. labels; no verified location or volume."
+        }
+      ],
+      "overlap": [
+        {
+          "id": "VHN-E01",
+          "difference": "E01 covers serving size and comparison across the panel, with a brief blend warning. This page handles the distinct post-ad question of an undisclosed ingredient amount, how rankings in the blend work, and how to request the missing record."
+        },
+        {
+          "id": "VHN-Q-A022",
+          "difference": "A022 locates and checks studies. A036 starts at a label and verifies the declared amount; it links to A022 for study evaluation."
+        }
+      ],
+      "headlines": [
+        "What Does 600 mg Mean on a Proprietary Blend Label?",
+        "How Much of an Ingredient Is in a Proprietary Blend?",
+        "Why a Proprietary Blend Total Cannot Tell You Every Ingredient Amount",
+        "How to Compare a Blend Total With a Single Ingredient Amount",
+        "What to Ask a Seller When a Proprietary Blend Shows One Number"
+      ],
+      "headlineReason": "Option 2 matches the open-ended query without inventing a real 600 mg label. Option 1 overfits the hypothetical example, 3 is less direct, 4 sounds limited to two bottles, and 5 begins after the shopper's initial question."
+    },
+    "stage": "complete",
+    "checks": {
+      "depth": "Explain blend weight, weight order and why equal division fails. Separate bottle, serving and per-capsule units.",
+      "originality": "Illustrative labels and seller message independently authored for the exact decision.",
+      "utility": "Provide measurable fields, a worked comparison and a way to handle an unresolved amount.",
+      "headline": "Option 2 matches the open-ended query without inventing a real 600 mg label. Option 1 overfits the hypothetical example, 3 is less direct, 4 sounds limited to two bottles, and 5 begins after the shopper's initial question.",
+      "hook": "The ad highlights a particular ingredient; the facts panel gives a single amount for the blend.",
+      "narrative": "Case-led evidence comparison, with a counterexample and seller-request message.",
+      "images": "Original 1440 × 900 WebP label fragment, with hypothetical text and redundant body text.",
+      "seo": "Distinct slug, original title and description, single template H1, topical H2s and related published links.",
+      "geo": "Answer in the first paragraph; attribute the governing rule and preserve the distinction between disclosed and unknown.",
+      "aeo": "Provide direct answer, comparison example, observation template and concrete next question.",
+      "sources": "Official eCFR rule and FDA labeling guide; public discussion used solely for word choice.",
+      "links": "Internal links target the published serving-size and clinically-tested guides. The sources section names each authority.",
+      "compliance": "No affiliate link, offer, recommendation, clinical conclusions, implied benefit or claimed dosing."
+    },
+    "version": "ebccecb6c6f8acabc9b48071c12e5985fa449c6c193a0cb509f48325c6819eb6"
+  }
+}
