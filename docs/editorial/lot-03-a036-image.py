@@ -1,0 +1,20 @@
+from pathlib import Path
+from PIL import Image,ImageDraw,ImageFont
+p=Path("work/vhn-critical")
+p.mkdir(parents=True,exist_ok=True)
+im=Image.new("RGB",(1440,900),"#e6e7d4")
+d=ImageDraw.Draw(im)
+font=lambda s,n="arial.ttf":ImageFont.truetype("C:/Windows/Fonts/"+n,s)
+d.rounded_rectangle((335,130,1105,790),radius=38,fill="#fdf9ec",outline="#405d4e",width=4)
+d.text((720,225),"Read the blend line",font=font(64,"georgiab.ttf"),anchor="mm",fill="#20372e")
+d.line((415,310,1025,310),fill="#8a6046",width=5)
+d.text((435,389),"Blend total",font=font(46,"arialbd.ttf"),fill="#20372e")
+d.text((1000,389),"600 mg",font=font(46,"arialbd.ttf"),anchor="ra",fill="#20372e")
+d.line((435,475,1000,475),fill="#b8c7b5",width=3)
+d.text((435,534),"Ingredient X",font=font(45),fill="#20372e")
+d.text((1000,534),"Unknown",font=font(45),anchor="ra",fill="#8a4d30")
+d.text((720,669),"Illustrative values, per serving",font=font(32),anchor="mm",fill="#405d4e")
+im.save(p/"a036.webp","WEBP",quality=86,method=6)
+with Image.open(p/"a036.webp") as out:
+    out.load()
+    assert out.format=="WEBP" and out.size==(1440,900)

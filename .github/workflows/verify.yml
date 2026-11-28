@@ -15,6 +15,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: node --test scripts/editorial-production-gate.test.mjs
       - run: npm run verify
       - name: Check draft layouts in Chromium
         if: github.event_name == 'pull_request'
