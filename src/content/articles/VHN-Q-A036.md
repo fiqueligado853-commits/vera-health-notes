@@ -25,7 +25,7 @@ This guide gives you a way to record exactly what the panel says, decide what re
 
 Find the Supplement Facts panel for the exact product and version you are considering. Note the serving size. Then follow the number on the right back to the name on the left. Is it beside a single dietary ingredient, or beside the name of a blend with several ingredients under it? The location of the number matters more than the size of the type on the front of the bottle.
 
-Under the [U.S. rule for supplement nutrition labeling](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-C/section-101.36), a proprietary blend must show its total weight, and the dietary ingredients covered by the rule are listed within the blend in descending order by weight. The [FDA labeling guide](https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information-topic/dietary-supplement-labeling-guide-chapter-iv-nutrition-labeling) gives a separate explanation of how nutrition labeling works. A total followed by multiple names is a different disclosure from several amounts each aligned with its own ingredient.
+Under the [U.S. rule for supplement nutrition labeling](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-C/section-101.36), the blend total covers the other dietary ingredients listed under that blend, in descending order of predominance by weight. The [FDA labeling guide](https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information/dietary-supplement-labeling-guide-chapter-iv-nutrition-labeling) gives a separate explanation of how nutrition labeling works. A total followed by multiple names is a different disclosure from several amounts each aligned with its own ingredient.
 
 A listing image can cut off the column that would let you associate amounts with particular lines. If the picture is blurry, do not try to infer which ingredient a number sits beside. Look for a legible picture of the full panel and confirm that it is for the same flavor, form, or quantity offered in the ad. Save that picture next to the listing link so a later update does not erase what you were comparing.
 
@@ -43,7 +43,7 @@ Dividing 600 by the three names gives 200, but that calculation assumes equal we
 
 ## Use the order of the names for the question it can answer
 
-Order can tell you about relative placement under the label rule. It cannot tell you how large the gap is between adjacent ingredients. If three ingredient names appear, knowing the first one ranks ahead of the last one is different from knowing the first ingredient provides most of the blend. This distinction matters when an advertisement puts one component in the spotlight and the package shows that component somewhere inside a larger list.
+Order can tell you about relative placement under the label rule. It cannot tell you how large the gap is between adjacent ingredients. If three ingredient names appear, knowing the first is at least as heavy as the last is different from knowing the first ingredient provides most of the blend. This distinction matters when an advertisement puts one component in the spotlight and the package shows that component somewhere inside a larger list.
 
 Do not import amounts for individual ingredients from a different bottle, an earlier listing, or a paper about a different preparation. A manufacturer may advertise a blend name across several forms. Keep the quoted amount attached to the panel that actually states it. If you see a second number elsewhere on the package, write down what it describes before matching it to anything in the blend. A quantity can refer to a serving, the full bottle, or a separately declared ingredient.
 
@@ -76,4 +76,4 @@ The best result may be a well-supported “unknown.” If knowing the individual
 ## Sources and further reading
 
 - [Electronic Code of Federal Regulations, 21 CFR 101.36](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-C/section-101.36)
-- [FDA, Dietary Supplement Labeling Guide: Nutrition Labeling](https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information-topic/dietary-supplement-labeling-guide-chapter-iv-nutrition-labeling)
+- [FDA, Dietary Supplement Labeling Guide: Nutrition Labeling](https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information/dietary-supplement-labeling-guide-chapter-iv-nutrition-labeling)

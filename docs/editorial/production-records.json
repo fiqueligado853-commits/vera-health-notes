@@ -22,7 +22,7 @@
       "search": [
         {
           "query": "how much of each ingredient is in a proprietary blend supplement facts",
-          "source": "https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information-topic/dietary-supplement-labeling-guide-chapter-iv-nutrition-labeling",
+          "source": "https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information/dietary-supplement-labeling-guide-chapter-iv-nutrition-labeling",
           "date": "2026-11-28",
           "scope": "English search oriented to U.S. labels; no verified location or volume."
         }
@@ -63,6 +63,6 @@
       "links": "Internal links target the published serving-size and clinically-tested guides. The sources section names each authority.",
       "compliance": "No affiliate link, offer, recommendation, clinical conclusions, implied benefit or claimed dosing."
     },
-    "version": "ebccecb6c6f8acabc9b48071c12e5985fa449c6c193a0cb509f48325c6819eb6"
+    "version": "2800808e0aa1eb357d7eeaf018425b9d3c46d012533e875a6efd359b951690e9"
   }
 }
